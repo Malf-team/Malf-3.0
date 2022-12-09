@@ -1,2 +1,2 @@
-# malf
-the official git repo for the minecraft modpack with the same name
+# Malf 3.0 (Working Title
+The official git repo for the Minecraft modpack with the same name.
