@@ -1,0 +1,44 @@
+- Game Stages
+- Quests (basic till en början)
+- Custom Machinery
+- Disablea Apotheosis Enchanting
+
+Mindre grejer:
+	- Ta bort AE2 Things Deep Item Storage
+	- Ta bort alchemistry-gaser från minecraft:water item tag
+	- Angel Ring bör inte kosta XP att använda
+	- Förhindra Alex Mobs Leafcutter Ant, Giant Squid, Whale från att spawna
+	- Ta bort recept för Beyond Earth Steel Ingot och göm från JEI om möjligt
+	- Ta bort Grappling Hook Mod? (pga buggar + att man kan flyga med den väldigt tidigt i progression)
+	- Gör nature compass dyrare (inte så mkt dock)
+	- Osmium genererar inte i overworld? (eller: kan inte processeras i tidiga stages)
+	- Iridium Genereras inte i overworld (bara biprodukt av att processera andra ores)
+	- Ändra starter kit (typ att man bara spawnar med en palt)
+	- Ändra Beyond Earths loot table för meteorer
+	- Custom main menu (lägg till ny cool panorama i bakgrunden)
+	- Unifya Ores och ta bort duplicates
+	- Ändra AEInfinitybooster recept till endgame
+	
+Mods att gatea bakom gamestages:
+	- AE2 (+ addons)
+	- Alchemistry (+ chemlib)
+	- Beyond Earth
+	- Botany Pots (+ trees)
+	- Building Gadgets
+	- CobbleForDays (cobblestone generators)
+	- Compacter
+	- Ender Storage
+	- Flux Networks
+	- Hostile Neural Networks
+	- Immersive Engineering (+ petroleum)
+	- Industrial Foregoing
+	- Mekanism (+ generators)
+	- Pipez
+	- PneumaticCraft
+	- Powah
+	- Ranged Pumps
+	- Simple Storage Network
+	- Solar Flux Reborn
+	- Simply Jetpacks
+	- Waystones
+	- 
