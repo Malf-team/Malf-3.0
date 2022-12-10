@@ -23,7 +23,7 @@ onEvent('recipes', event => {
 			  },
 			  "heat": 1
 		})
-        .id('malf:lava_to_magma')*/
+        .id('malf:lava_to_magma')
 		
 	event
         .custom({
@@ -37,7 +37,7 @@ onEvent('recipes', event => {
 			"amount": 5
 		  },
 		  "efficiency": 1
-		}).id('malf:lava_to_hydro')
+		}).id('malf:lava_to_hydro')*/
 })
 
 onEvent('item.tags', event => {
