@@ -1,0 +1,12 @@
+
+[Compacter]
+	#Maximum energy input (FE/t)
+	#Range: 0.0 ~ 3.4028234663852886E38
+	MaxInput = 5000.0
+	#Energy capacity (FE)
+	#Range: 0.0 ~ 3.4028234663852886E38
+	Capacity = 20000.0
+	#Energy used per craft operation (FE)
+	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
+	CraftEnergyUsed = 20.0
+

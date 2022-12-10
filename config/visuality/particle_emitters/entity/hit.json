@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "min_amount": 1,
+  "max_amount": 20,
+  "entries": [
+    {
+      "entity": [
+        "minecraft:skeleton",
+        "minecraft:skeleton_horse",
+        "minecraft:stray"
+      ],
+      "particle": "visuality:bone"
+    },
+    {
+      "entity": "minecraft:wither_skeleton",
+      "particle": "visuality:wither_bone"
+    },
+    {
+      "entity": "minecraft:chicken",
+      "particle": "visuality:feather"
+    },
+    {
+      "entity": [
+        "minecraft:villager",
+        "minecraft:wandering_trader"
+      ],
+      "particle": "visuality:emerald"
+    }
+  ]
+}

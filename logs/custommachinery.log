@@ -1,0 +1,7 @@
+[06:18:44.638][INFO]: Reading Custom Machinery Machines...
+[06:18:44.639][INFO]: Finished creating custom machines.
+[06:18:44.639][INFO]: Reading Custom Machinery Upgrades json
+[06:18:44.639][INFO]: No machine upgrade json found.
+[06:18:44.639][INFO]: Collecting machine upgrades with kubeJS.
+[06:18:44.639][INFO]: No machine upgrades found with kubejs
+[06:18:44.639][INFO]: Finished creating custom machine upgrades.

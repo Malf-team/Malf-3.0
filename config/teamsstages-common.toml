@@ -1,0 +1,6 @@
+#Allowed Values: Player, Team, Both
+"Default stage type" = "Both"
+"Both list" = []
+"Player list" = []
+"Team list" = []
+

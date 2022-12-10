@@ -1,0 +1,8 @@
+#Version Number of the Configuration File
+#Range: 3 ~ 3
+version = 3
+
+#Saved Profiles. Check Documentation for Info & Syntax
+[[profiles]]
+	type = "none"
+

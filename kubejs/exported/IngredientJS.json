@@ -1,0 +1,23 @@
+[
+    {
+        "type": "document:class",
+        "className": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS",
+        "fields": [],
+        "methods": [],
+        "interfaces": [
+            {
+                "type": "type:class",
+                "name": "dev.latvian.mods.rhino.mod.util.Copyable"
+            },
+            {
+                "type": "type:class",
+                "name": "dev.latvian.mods.rhino.mod.util.JsonSerializable"
+            },
+            {
+                "type": "type:class",
+                "name": "dev.latvian.mods.kubejs.util.WrappedJS"
+            }
+        ],
+        "constructors": []
+    }
+]

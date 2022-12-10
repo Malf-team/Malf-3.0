@@ -1,0 +1,24 @@
+{
+	id: "25f60809-da64-4d96-8224-2c94fff96b58"
+	type: "player"
+	player_name: "Valpnos_"
+	ranks: {
+		25f60809-da64-4d96-8224-2c94fff96b58: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Valpnos_"
+		"ftbteams:description": ""
+		"ftbteams:color": "#59F5FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbchunks:allow_explosions": 0b
+		"ftbchunks:allow_fake_players": 1b
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbchunks:entity_interact_mode": "allies"
+		"ftbchunks:claim_visibility": "public"
+		"ftbchunks:location_mode": "allies"
+	}
+	message_history: [ ]
+	extra: { }
+}
