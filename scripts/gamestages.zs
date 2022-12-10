@@ -149,6 +149,18 @@ ItemStages.createModRestriction("packagedauto", "tech2");
 ItemStages.createModRestriction("extendedcrafting", "tech2");
 ItemStages.createModRestriction("packagedexcrafting", "tech2");
 
+//Recipes: ---
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "immersiveengineering");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "immersivepetroleum");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "jeimultiblocks");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "pneumaticcraft");
+
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "pipez");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "storagenetwork");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "packagedauto");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "extendedcrafting");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "packagedexcrafting");
+
 
 // T3 -------------------------------------------------------------------------------
 
@@ -161,8 +173,20 @@ ItemStages.createModRestriction("mob_grinding_utils", "tech3");
 ItemStages.createModRestriction("solarflux", "tech3");
 ItemStages.createModRestriction("cobblefordays", "tech3");
 
+//Recipes: ---
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "ftbic");
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "industrialforegoing");
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "compactcrafting");
+
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "darkutils");
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "mob_grinding_utils");
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "solarflux");
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "cobblefordays");
+
+
 //AE2 Basics:
 ItemStages.createModRestriction("ae2", "tech3"); 
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "ae2");
 
 //ExCrafting
 ItemStages.restrict(<item:extendedcrafting:advanced_component>, "tech3");
@@ -189,6 +213,16 @@ ItemStages.createModRestriction("enderstorage", "tech4");
 ItemStages.createModRestriction("ae2additions", "tech4");
 ItemStages.createModRestriction("ae2things", "tech4");
 ItemStages.createModRestriction("simplyjetpacks", "tech4");
+
+//Recipes ---
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "thermal");
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "powah");
+
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "botanypots");
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "enderstorage");
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "ae2additions");
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "ae2things");
+mods.recipestages.Recipes.setRecipeStageByMod("tech4", "simplyjetpacks");
 
 
 //Solar Flux T4:
@@ -238,6 +272,21 @@ ItemStages.restrict(<item:extendedcrafting:ultimate_catalyst>, "tech5");
 ItemStages.restrict(<item:extendedcrafting:ultimate_table>, "tech5");
 ItemStages.restrict(<item:extendedcrafting:ultimate_auto_table>, "tech5");
 ItemStages.restrict(<item:packagedexcrafting:ultimate_crafter>, "tech5");
+
+
+// Recipes ---
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "mekanism");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "mekanismgenerators");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "beyond_earth");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "alchemistry");
+
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "fluxnetworks");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "hostilenetworks");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "lazierae2");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "aeinfinitybooster");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "entangled");
+mods.recipestages.Recipes.setRecipeStageByMod("tech5", "angelring");
+
 
 
 // -------------------------------------------------------------------------------
