@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 8, 2022, 7:28:03 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 10, 2022, 7:29:30 PM
 
 #forge:gasoline_additives
 - immersivepetroleum:gasoline_additives
@@ -13,8 +13,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #forge:diesel_sulfur
 - immersivepetroleum:diesel_sulfur
-
-#ceramics:cool_fluids
 
 #forge:benzene
 - immersivepetroleum:benzene
@@ -44,16 +42,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - create:honey
 - create:flowing_chocolate
 - create:chocolate
-- create_confectionery:black_chocolate
-- create_confectionery:flowing_black_chocolate
-- create_confectionery:white_chocolate
-- create_confectionery:flowing_white_chocolate
-- create_confectionery:hot_chocolate
-- create_confectionery:flowing_hot_chocolate
-- create_confectionery:caramel
-- create_confectionery:flowing_caramel
-- create_confectionery:ruby_chocolate
-- create_confectionery:flowing_ruby_chocolate
 - chemlib:hydrogen_fluid
 - chemlib:hydrogen_flowing
 - chemlib:helium_fluid
@@ -191,8 +179,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #beyond_earth:oil
 - beyond_earth:oil
 - beyond_earth:flowing_oil
-
-#ceramics:hot_fluids
 
 #forge:steam
 - mekanism:steam
@@ -459,6 +445,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - create:honey
 
 #create:no_infinite_draining
+- mekanismgenerators:bioethanol
+- mekanismgenerators:flowing_bioethanol
+- mekanismgenerators:deuterium
+- mekanismgenerators:flowing_deuterium
+- mekanismgenerators:fusion_fuel
+- mekanismgenerators:flowing_fusion_fuel
+- mekanismgenerators:tritium
+- mekanismgenerators:flowing_tritium
 - mekanism:hydrogen
 - mekanism:flowing_hydrogen
 - mekanism:oxygen
@@ -495,14 +489,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mekanism:flowing_heavy_water
 - mekanism:nutritional_paste
 - mekanism:flowing_nutritional_paste
-- mekanismgenerators:bioethanol
-- mekanismgenerators:flowing_bioethanol
-- mekanismgenerators:deuterium
-- mekanismgenerators:flowing_deuterium
-- mekanismgenerators:fusion_fuel
-- mekanismgenerators:flowing_fusion_fuel
-- mekanismgenerators:tritium
-- mekanismgenerators:flowing_tritium
 
 #forge:acetaldehyde
 - immersiveengineering:acetaldehyde

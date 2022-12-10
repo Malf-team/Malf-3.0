@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 8, 2022, 7:28:03 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 10, 2022, 7:29:31 PM
 
 #supplementaries:cage_baby_catchable
 - minecraft:cow
@@ -29,11 +29,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #immersiveengineering:shaderbag/blacklist
 - minecraft:wither
 - minecraft:iron_golem
-
-#byg:not_hurt_by_quartz_crystals
-- minecraft:ghast
-- minecraft:hoglin
-- minecraft:enderman
 
 #alexsmobs:mimic_octopus_fears
 - minecraft:drowned
@@ -205,8 +200,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:endermite
 - minecraft:silverfish
 - minecraft:fox
-- mekanism:robit
 - thermal:blizz
+- mekanism:robit
 - alexsmobs:sunbird
 - alexsmobs:capuchin_monkey
 - alexsmobs:mimicube
@@ -231,10 +226,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:end_crystal
 - minecraft:ender_dragon
 
+#pmmo:tamable
+- minecraft:cat
+- minecraft:donkey
+- minecraft:horse
+- minecraft:llama
+- minecraft:mule
+- minecraft:skeleton_horse
+- minecraft:trader_llama
+- minecraft:wolf
+
 #domesticationinnovation:petstore_fishtank
 - alexsmobs:lobster
 - alexsmobs:devils_hole_pupfish
 - alexsmobs:flying_fish
+
+#pmmo:rideable
+- minecraft:donkey
+- minecraft:horse
+- minecraft:mule
+- minecraft:pig
+- minecraft:skeleton_horse
+- minecraft:strider
 
 #alexsmobs:passive_land_animals
 - minecraft:cat
@@ -297,10 +310,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:trident
 - minecraft:dragon_fireball
 - minecraft:wither_skull
-- mekanism:flame
 - thermal:basalz_projectile
 - thermal:blitz_projectile
 - thermal:blizz_projectile
+- mekanism:flame
 - supplementaries:rope_arrow
 - supplementaries:brick_projectile
 
@@ -345,6 +358,40 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:trader_llama
 - minecraft:turtle
 - minecraft:villager
+- minecraft:wolf
+
+#pmmo:animals
+- minecraft:bat
+- minecraft:bee
+- minecraft:cat
+- minecraft:chicken
+- minecraft:cod
+- minecraft:cow
+- minecraft:dolphin
+- minecraft:donkey
+- minecraft:fox
+- minecraft:glow_squid
+- minecraft:goat
+- minecraft:horse
+- minecraft:iron_golem
+- minecraft:llama
+- minecraft:mooshroom
+- minecraft:mule
+- minecraft:ocelot
+- minecraft:panda
+- minecraft:parrot
+- minecraft:pig
+- minecraft:polar_bear
+- minecraft:pufferfish
+- minecraft:rabbit
+- minecraft:salmon
+- minecraft:sheep
+- minecraft:snow_golem
+- minecraft:squid
+- minecraft:strider
+- minecraft:trader_llama
+- minecraft:tropical_fish
+- minecraft:turtle
 - minecraft:wolf
 
 #ars_nouveau:magic_find
@@ -395,8 +442,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:polar_bear
 - minecraft:snow_golem
 - minecraft:wither
-- mekanism:robit
 - thermal:blizz
+- mekanism:robit
 - alexsmobs:moose
 - alexsmobs:snow_leopard
 - alexsmobs:froststalker
@@ -507,6 +554,40 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - beyond_earth:pygro
 - beyond_earth:pygro_brute
 - beyond_earth:mogler
+
+#pmmo:mobs
+- #minecraft:raiders
+- #minecraft:skeletons
+- minecraft:blaze
+- minecraft:cave_spider
+- minecraft:creeper
+- minecraft:drowned
+- minecraft:elder_guardian
+- minecraft:ender_dragon
+- minecraft:enderman
+- minecraft:endermite
+- minecraft:ghast
+- minecraft:giant
+- minecraft:guardian
+- minecraft:hoglin
+- minecraft:husk
+- minecraft:magma_cube
+- minecraft:phantom
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:shulker
+- minecraft:silverfish
+- minecraft:skeleton_horse
+- minecraft:slime
+- minecraft:spider
+- minecraft:vex
+- minecraft:witch
+- minecraft:wither
+- minecraft:zoglin
+- minecraft:zombie
+- minecraft:zombie_horse
+- minecraft:zombie_villager
+- minecraft:zombified_piglin
 
 #supplementaries:flute_pet
 - minecraft:horse?
@@ -853,6 +934,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - biomemakeover:scuttler?
 - ars_nouveau:starbuncle?
 - ars_nouveau:whirlisprig?
+
+#pmmo:breedable
+- minecraft:axolotl
+- minecraft:bee
+- minecraft:cat
+- minecraft:chicken
+- minecraft:cow
+- minecraft:donkey
+- minecraft:fox
+- minecraft:goat
+- minecraft:hoglin
+- minecraft:horse
+- minecraft:llama
+- minecraft:mooshroom
+- minecraft:ocelot
+- minecraft:panda
+- minecraft:pig
+- minecraft:rabbit
+- minecraft:sheep
+- minecraft:strider
+- minecraft:trader_llama
+- minecraft:turtle
+- minecraft:wolf
 
 #alexsmobs:komodo_dragon_targets
 - #alexsmobs:passive_land_animals

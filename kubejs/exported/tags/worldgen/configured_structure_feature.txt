@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 8, 2022, 7:28:01 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 10, 2022, 7:29:27 PM
 
 #terralith:zpointer/terralith_fractured_savanna
 - terralith:zpointer/terralith_fractured_savanna
@@ -48,9 +48,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:on_treasure_maps
 - minecraft:buried_treasure
 
-#morevillagers:on_mineshaft_explorer_maps
-- #bettermineshafts:better_mineshafts
-
 #terralith:zpointer/minecraft_sparse_jungle
 - terralith:zpointer/minecraft_sparse_jungle
 
@@ -95,12 +92,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #terralith:zpointer/minecraft_windswept_hills
 - terralith:zpointer/minecraft_windswept_hills
-
-#byg:village
-- byg:village_red_rock
-- byg:village_skyris
-- byg:village_ruins
-- byg:village_tropical
 
 #terralith:zpointer/terralith_birch_taiga
 - terralith:zpointer/terralith_birch_taiga
@@ -152,9 +143,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #terralith:zpointer/minecraft_deep_lukewarm_ocean
 - terralith:zpointer/minecraft_deep_lukewarm_ocean
-
-#betterdeserttemples:applies_mining_fatigue
-- betterdeserttemples:desert_temple
 
 #terralith:zpointer/minecraft_savanna
 - terralith:zpointer/minecraft_savanna
@@ -225,7 +213,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:village_savanna
 - minecraft:village_snowy
 - minecraft:village_taiga
-- #byg:village
 
 #minecraft:end_city
 - minecraft:end_city
@@ -253,19 +240,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:mineshaft
 - minecraft:mineshaft
 - minecraft:mineshaft_mesa
-- bettermineshafts:mineshaft_acacia
-- bettermineshafts:mineshaft_desert
-- bettermineshafts:mineshaft_ice
-- bettermineshafts:mineshaft_jungle
-- bettermineshafts:mineshaft_lush
-- bettermineshafts:mineshaft_mesa
-- bettermineshafts:mineshaft_mushroom
-- bettermineshafts:mineshaft_oak
-- bettermineshafts:mineshaft_red_desert
-- bettermineshafts:mineshaft_spruce
-- bettermineshafts:mineshaft_spruce_snowy
-- bettermineshafts:mineshaft_forest
-- bettermineshafts:mineshaft_dripstone
 
 #terralith:zpointer/minecraft_lukewarm_ocean
 - terralith:zpointer/minecraft_lukewarm_ocean
@@ -296,7 +270,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #minecraft:eye_of_ender_located
 - minecraft:stronghold
-- #betterstrongholds:stronghold
 
 #terralith:zpointer/terralith_forested_highlands
 - terralith:zpointer/terralith_forested_highlands
@@ -342,21 +315,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #terralith:zpointer/minecraft_frozen_peaks
 - terralith:zpointer/minecraft_frozen_peaks
-
-#bettermineshafts:better_mineshafts
-- bettermineshafts:mineshaft_acacia
-- bettermineshafts:mineshaft_desert
-- bettermineshafts:mineshaft_dripstone
-- bettermineshafts:mineshaft_forest
-- bettermineshafts:mineshaft_ice
-- bettermineshafts:mineshaft_jungle
-- bettermineshafts:mineshaft_lush
-- bettermineshafts:mineshaft_mesa
-- bettermineshafts:mineshaft_mushroom
-- bettermineshafts:mineshaft_oak
-- bettermineshafts:mineshaft_red_desert
-- bettermineshafts:mineshaft_spruce
-- bettermineshafts:mineshaft_spruce_snowy
 
 #terralith:zpointer/minecraft_mushroom_fields
 - terralith:zpointer/minecraft_mushroom_fields
@@ -449,12 +407,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #terralith:zpointer/minecraft_stony_peaks
 - terralith:zpointer/minecraft_stony_peaks
 
-#byg:arches
-- byg:red_rock_arch
-- byg:destroyed_red_rock_arch
-- byg:overgrown_stone_arch
-- byg:stone_arch
-
 #minecraft:dolphin_located
 - #minecraft:ocean_ruin
 - #minecraft:shipwreck
@@ -532,9 +484,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - feywild:library?
 - feywild:blacksmith?
 - repurposed_structures:village_mushroom?
-
-#betterstrongholds:stronghold
-- betterstrongholds:stronghold
 
 #terralith:zpointer/terralith_volcanic_crater
 - terralith:zpointer/terralith_volcanic_crater
