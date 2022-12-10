@@ -4,3 +4,8 @@ resourcepacks/
 logs/
 local/
 crash-reports/
+options.txt
+servers.dat
+patchouli_data.json
+usercache.json
+usernamecache.json

@@ -1,7 +1,0 @@
-#Tue Oct 18 22:55:45 CEST 2022
-WeatherAngle=true
-minlight=0.004
-morningFog=true
-polishedRefl=true
-DoF_Strength=40
-Bloom=false
