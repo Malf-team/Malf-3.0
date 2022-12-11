@@ -1,10 +1,11 @@
-- Game Stages
-- Quests (basic till en början)
-- Custom Machinery
-- Disablea Apotheosis Enchanting
-- Compact Crafting
+Större grejer:
+	- Game Stages
+	- Quests (basic till en början)
+	- Custom Machinery
+	- Disablea Apotheosis Enchanting
+	- Compact Crafting
 
-Mindre grejer:
+Mindre grejer: (✔ = gjort, ◍ = halvklart)
 	- Ta bort AE2 Things Deep Item Storage
 	- Ta bort alchemistry-gaser från minecraft:water item tag
 	- Angel Ring bör inte kosta XP att använda
@@ -17,12 +18,18 @@ Mindre grejer:
 	- Ändra starter kit (typ att man bara spawnar med en palt)
 	- Ändra Beyond Earths loot table för meteorer
 	- Custom main menu (lägg till ny cool panorama i bakgrunden)
-	- Unifya Ores och ta bort duplicates
+	- ✔ Unifya Ores
+	- Göm Borttagna ores från JEI
 	- Ändra AEInfinitybooster recept till endgame
-	- Extended Crafting måste användas för varje nivå av tech
+	- Extended Crafting måste användas för varje ny nivå av tech
 	- Black steel kan bara göras genom bulk haunting
 	- Machine Frames unlockar nya tech-stages
 	- Custom Solar Flux Panels efter VIII
+	- ◍ Stäng av worldgen av uraninite från Powah och gör ett custom machinery-recept till det ? (typ uranium + oxygen = uraninite)
+	- Unifya plates och rods och ta bort billiga craftingrecept för dem, t.ex. Immersive Engineering-hammaren
+	- Ta bort ftbic:nuke
+	- Ta bort så att Pneumaticcraft-huts spawnar i villages
+	- Nerfa receptet på mekanism turbines, fission reactor, och fusion reactor för att inte utklassa annan power generation (typ powah)
 	
 Mods att gatea bakom gamestages:
 	- AE2 (+ addons)
@@ -50,4 +57,13 @@ Mods att gatea bakom gamestages:
 	
 PMMO:
 	- Nerfa excavation XP av att minea dirt
+	- Ta bort veinmining
 	- Ta bort / ändra requirements för Special Drops och andra icke-vanilla tools
+
+Rare Earth:
+	(varje steg ger bättre biprodukter, men det är alltid en chans för det)
+	- T1: Rare Earth Dust --(create washing)--> Washed Rare Earth Dust --(smält)--> Clay Ball
+	- T2: Washed Rare Earth --(vakuum i pneucraft)--> Dried Rare Earth --(smält)--> Slag (IE)
+	- T3: Dried Rare Earth --(FTBIC centrifuge)--> Centrifuged Rare Earth --(smält)--> Scrap (FTBIC)
+	- T4: Centrifuged Rare Earth --(thermal energizer?)--> Electrolyzed Rare Earth --(smält)--> Slag (thermal)
+	- T5: ??
