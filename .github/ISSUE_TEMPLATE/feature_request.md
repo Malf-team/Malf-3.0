@@ -1,8 +1,8 @@
 ---
 name: Feature
-about: Suggest an idea for this project
+about: Suggest an idea for this project, without specific tag
 title: ''
-labels: 'enhancement'
+labels: 'feature'
 assignees: ''
 
 ---
