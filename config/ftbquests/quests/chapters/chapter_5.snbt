@@ -1,0 +1,15 @@
+{
+	id: "3FFCE9A5C0F5619E"
+	group: "2109B316A6A26036"
+	order_index: 4
+	filename: "chapter_5"
+	title: "Tier 5"
+	icon: {
+		id: "beyond_earth:rocket_t3"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

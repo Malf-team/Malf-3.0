@@ -1,0 +1,107 @@
+{
+	id: "70A05EEB6565B6A9"
+	group: "2109B316A6A26036"
+	order_index: 0
+	filename: "tech_1"
+	title: "Tier 1"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Back to the basics"
+			icon: "minecraft:oak_log"
+			x: 0.0d
+			y: 0.0d
+			description: ["Punching time B)"]
+			id: "70C8284D33582EAC"
+			tasks: [{
+				id: "03D19B8EDD83EDAC"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 4L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "39DC24D7FAAB0C16"
+			tasks: [{
+				id: "23C369965E52AD3D"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 16L
+			}]
+		}
+		{
+			title: "Basic Create"
+			x: 1.0d
+			y: 1.5d
+			shape: "gear"
+			dependencies: [
+				"70C8284D33582EAC"
+				"39DC24D7FAAB0C16"
+			]
+			size: 2.0d
+			id: "6D6F6F664A233BAC"
+			tasks: [
+				{
+					id: "4ABE0EA08756B754"
+					type: "item"
+					item: "create:shaft"
+					count: 8L
+				}
+				{
+					id: "636029835FC33704"
+					type: "item"
+					item: "create:cogwheel"
+					count: 2L
+				}
+				{
+					id: "5D61A5E7C31FAAC7"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			shape: "square"
+			dependencies: ["6D6F6F664A233BAC"]
+			size: 2.5d
+			id: "256B954C2C30DD82"
+			tasks: [{
+				id: "238D00FB6CEB7E31"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [
+				{
+					id: "2A062DBAC51CDBE5"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/gamestage add @p tech2"
+					player_command: false
+				}
+				{
+					id: "72B703FA5F85659D"
+					type: "command"
+					team_reward: true
+					auto: "invisible"
+					command: "/say @p has entered Tech Tier 2!"
+					player_command: false
+				}
+			]
+		}
+	]
+}

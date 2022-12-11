@@ -1,0 +1,11 @@
+{
+	id: "1882D20C950E117E"
+	group: "03FB6003BD401BE5"
+	order_index: 0
+	filename: "chapter_1"
+	title: "Chapter I"
+	icon: "botania:white_mystical_flower"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

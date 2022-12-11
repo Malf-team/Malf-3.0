@@ -1,0 +1,11 @@
+{
+	id: "202C4F37EAB9ADDF"
+	group: "2109B316A6A26036"
+	order_index: 3
+	filename: "chapter_4"
+	title: "Tier 4"
+	icon: "thermal:dynamo_compression"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

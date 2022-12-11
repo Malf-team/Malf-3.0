@@ -1,0 +1,11 @@
+{
+	id: "5449134D758B7B3B"
+	group: "03FB6003BD401BE5"
+	order_index: 2
+	filename: "chapter_3"
+	title: "Chapter III"
+	icon: "apotheosis:gem_dust"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

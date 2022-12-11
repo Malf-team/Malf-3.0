@@ -1,0 +1,11 @@
+{
+	id: "38B974CC34073C8A"
+	group: "64FDA6B5D546D1BA"
+	order_index: 2
+	filename: "stage_iii"
+	title: "Stage III"
+	icon: "farmersrespite:yellow_tea"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

@@ -1,0 +1,11 @@
+{
+	id: "5046BF227CCD3E16"
+	group: "64FDA6B5D546D1BA"
+	order_index: 3
+	filename: "stage_iv"
+	title: "Stage IV"
+	icon: "farmersrespite:blazing_chili"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
