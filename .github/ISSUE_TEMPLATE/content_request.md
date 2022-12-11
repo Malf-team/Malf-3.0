@@ -2,7 +2,7 @@
 name: Content Feature
 about: Feature/request involving content addition/removal, like mods, textures, audio etc.
 title: ''
-labels: ['enhancement', 'content']
+labels: ['feature', 'content']
 assignees: ''
 
 ---
