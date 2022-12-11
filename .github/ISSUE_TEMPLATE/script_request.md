@@ -2,7 +2,7 @@
 name: Script Feature
 about: Feature which involves scripts
 title: ''
-labels: 'script'
+labels: ['enhancement', 'script']
 assignees: ''
 
 ---
