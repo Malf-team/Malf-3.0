@@ -4,7 +4,7 @@
 - Disablea Apotheosis Enchanting
 - Compact Crafting
 
-Mindre grejer:
+Mindre grejer: (✔ = gjort, ◍ = halvklart)
 	- Ta bort AE2 Things Deep Item Storage
 	- Ta bort alchemistry-gaser från minecraft:water item tag
 	- Angel Ring bör inte kosta XP att använda
@@ -12,17 +12,23 @@ Mindre grejer:
 	- Ta bort recept för Beyond Earth Steel Ingot och göm från JEI om möjligt
 	- Ta bort Grappling Hook Mod? (pga buggar + att man kan flyga med den väldigt tidigt i progression)
 	- Gör nature compass dyrare (inte så mkt dock)
-	- Osmium genererar inte i overworld? (eller: kan inte processeras i tidiga stages)
-	- Iridium Genereras inte i overworld (bara biprodukt av att processera andra ores)
+	- ◍ Osmium genererar inte i overworld? (eller: kan inte processeras i tidiga stages)
+	- ◍ Iridium Genereras inte i overworld (bara biprodukt av att processera andra ores)
 	- Ändra starter kit (typ att man bara spawnar med en palt)
 	- Ändra Beyond Earths loot table för meteorer
 	- Custom main menu (lägg till ny cool panorama i bakgrunden)
-	- Unifya Ores och ta bort duplicates
+	- ✔ Unifya Ores
+	- Göm Borttagna ores från JEI
 	- Ändra AEInfinitybooster recept till endgame
 	- Extended Crafting måste användas för varje nivå av tech
 	- Black steel kan bara göras genom bulk haunting
 	- Machine Frames unlockar nya tech-stages
 	- Custom Solar Flux Panels efter VIII
+	- ◍ Stäng av worldgen av uraninite från Powah och gör ett custom machinery-recept till det ? (typ uranium + oxygen = uraninite)
+	- Unifya plates och rods och ta bort billiga craftingrecept för dem, t.ex. Immersive Engineering-hammaren
+	- Ta bort ftbic:nuke
+	- Ta bort så att Pneumaticcraft-huts spawnar i villages
+	- Nerfa receptet på mekanism turbines, fission reactor, och fusion reactor för att inte utklassa annan power generation (typ powah)
 	
 Mods att gatea bakom gamestages:
 	- AE2 (+ addons)
