@@ -11,7 +11,7 @@
 		[worldgen.v2.striated_ores_nether]
 			# 
 			#Range: > 0
-			clusterSize = 32
+			clusterSize = 28
 			# 
 			#Amount of clusters generated per Chunk.
 			#  >1 to spawn multiple.
@@ -29,7 +29,7 @@
 		[worldgen.v2.striated_ores_overworld]
 			# 
 			#Range: > 0
-			clusterSize = 32
+			clusterSize = 36
 			# 
 			#Amount of clusters generated per Chunk.
 			#  >1 to spawn multiple.
@@ -54,7 +54,7 @@
 			#  <1 to make it a chance.
 			#  0 to disable.
 			#Range: 0.0 ~ 512.0
-			frequency = 8.0
+			frequency = 0
 			# 
 			#Range: > -2147483648
 			minHeight = -63
