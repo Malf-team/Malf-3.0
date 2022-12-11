@@ -2,7 +2,7 @@
 name: Config Feature
 about: Feature which involves configs
 title: ''
-labels: 'enhancement', 'config'
+labels: ['enhancement', 'config']
 assignees: ''
 
 ---
