@@ -117,7 +117,7 @@
 		# 200 ticks is what a regular furnace takes.
 		# Default: 5
 		#Range: 2 ~ 72000
-		speed = 5
+		speed = 10
 
 	[furnaces.copper_furnace]
 		# How much RF to generate per tick
