@@ -3,75 +3,75 @@
 
 	[spawncontrol.overworld]
 		#Enable Aluminum Worldgen(Overworld)
-		aluminum = true
+		aluminum = false
 		#Enable Iridium Worldgen(Overworld)
-		iridium = true
+		iridium = false
 		#Enable Lead Worldgen(Overworld)
-		lead = true
+		lead = false
 		#Enable Nickel Worldgen(Overworld)
-		nickel = true
+		nickel = false
 		#Enable Osmium Worldgen(Overworld)
-		osmium = true
+		osmium = false
 		#Enable Platinum Worldgen(Overworld)
-		platinum = true
+		platinum = false
 		#Enable Silver Worldgen(Overworld)
-		silver = true
+		silver = false
 		#Enable Tin Worldgen(Overworld)
-		tin = true
+		tin = false
 		#Enable Uranium Worldgen(Overworld)
-		uranium = true
+		uranium = false
 		#Enable Zinc Worldgen(Overworld)
-		zinc = true
+		zinc = false
 		#Enable Ruby Worldgen(Overworld-Plains)
-		ruby = true
+		ruby = false
 		#Enable Sapphire Worldgen(Overworld-Ocean)
-		sapphire = true
+		sapphire = false
 		#Enable Peridot Worldgen(Overworld-Desert)
-		peridot = true
+		peridot = false
 
 	[spawncontrol.nether]
 		#Enable Aluminum Worldgen(Nether)
-		aluminum_nether = true
+		aluminum_nether = false
 		#Enable Iridium Worldgen(Nether)
-		iridium_nether = true
+		iridium_nether = false
 		#Enable Lead Worldgen(Nether)
-		lead_nether = true
+		lead_nether = false
 		#Enable Nickel Worldgen(Nether)
-		nickel_nether = true
+		nickel_nether = false
 		#Enable Osmium Worldgen(Nether)
-		osmium_nether = true
+		osmium_nether = false
 		#Enable Platinum Worldgen(Nether)
-		platinum_nether = true
+		platinum_nether = false
 		#Enable Silver Worldgen(Nether)
-		silver_nether = true
+		silver_nether = false
 		#Enable Tin Worldgen(Nether)
-		tin_nether = true
+		tin_nether = false
 		#Enable Uranium Worldgen(Nether)
-		uranium_nether = true
+		uranium_nether = false
 		#Enable Zinc Worldgen(Nether)
-		zinc_nether = true
+		zinc_nether = false
 
 	[spawncontrol.end]
 		#Enable Aluminum Worldgen(The End)
-		aluminum_end = true
+		aluminum_end = false
 		#Enable Iridium Worldgen(The End)
-		iridium_end = true
+		iridium_end = false
 		#Enable Lead Worldgen(The End)
-		lead_end = true
+		lead_end = false
 		#Enable Nickel Worldgen(The End)
-		nickel_end = true
+		nickel_end = false
 		#Enable Osmium Worldgen(The End)
-		osmium_end = true
+		osmium_end = false
 		#Enable Platinum Worldgen(The End)
-		platinum_end = true
+		platinum_end = false
 		#Enable Silver Worldgen(The End)
-		silver_end = true
+		silver_end = false
 		#Enable Tin Worldgen(The End)
-		tin_end = true
+		tin_end = false
 		#Enable Uranium Worldgen(The End)
-		uranium_end = true
+		uranium_end = false
 		#Enable Zinc Worldgen(The End)
-		zinc_end = true
+		zinc_end = false
 
 [spawntuning]
 

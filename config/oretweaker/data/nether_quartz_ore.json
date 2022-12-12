@@ -6,10 +6,10 @@
         "minecraft:netherrack"
       ],
       "distribution": "UNIFORM",
-      "minY": 10,
-      "maxY": 116,
-      "maxVeinSize": 14,
-      "spawnRate": 16.0,
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1,
       "discardChanceOnAirExposure": 0.0,
       "biomeFilters": {
         "biomeBlacklist": [],
@@ -25,10 +25,10 @@
         "minecraft:netherrack"
       ],
       "distribution": "UNIFORM",
-      "minY": 10,
-      "maxY": 116,
-      "maxVeinSize": 14,
-      "spawnRate": 32.0,
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1,
       "discardChanceOnAirExposure": 0.0,
       "biomeFilters": {
         "biomeBlacklist": [],

@@ -6,10 +6,10 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "UNIFORM",
-      "minY": 32,
-      "maxY": 256,
-      "maxVeinSize": 9,
-      "spawnRate": 50.0,
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1,
       "discardChanceOnAirExposure": 0.0,
       "biomeFilters": {
         "biomeBlacklist": [],
@@ -27,10 +27,10 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "TRIANGLE",
-      "minY": -64,
-      "maxY": 32,
-      "maxVeinSize": 9,
-      "spawnRate": 4.0,
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1,
       "discardChanceOnAirExposure": 0.5,
       "biomeFilters": {
         "biomeBlacklist": [],
@@ -46,10 +46,10 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "UNIFORM",
-      "minY": -64,
-      "maxY": -48,
-      "maxVeinSize": 9,
-      "spawnRate": 0.5,
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1,
       "discardChanceOnAirExposure": 0.5,
       "biomeFilters": {
         "biomeBlacklist": [],
