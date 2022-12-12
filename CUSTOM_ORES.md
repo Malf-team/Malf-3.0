@@ -8,6 +8,7 @@ Iron
   - Pyrite
   - Limonite
   - Banded iron ores
+  - Ilmenite
 
 Copper
   - Tetrahedrite
