@@ -54,3 +54,15 @@ Lead
 
 Uranium
   - Pitchblende
+
+Zinc
+  - Sphalerite
+
+Osmium
+  - Biproduct of Copper/Nickel processing
+
+Iridium
+ - Biproduct of Copper/Nickel processing
+
+Platinum
+ - Biproduct of Copper/Nickel processing
