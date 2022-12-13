@@ -10,3 +10,10 @@ patchouli_data.json
 usercache.json
 usernamecache.json
 .curseclient
+config/powah.json5
+config/bettervillage.properties
+config/craftpresence.properties
+config/durabilitytooltip-common.toml
+config/oculus.properties
+config/libraryferret.properties
+config/sound_physics_remastered
