@@ -17,6 +17,9 @@ Copper
   - Cuprite
   - Azurite
 
+Gold
+  - (Gold)
+
 Coal
   - Peat
   - Lignite
@@ -58,6 +61,9 @@ Uranium
 
 Zinc
   - Sphalerite
+
+Silver
+  - Argentite
 
 Osmium
   - Biproduct of Copper/Nickel processing
