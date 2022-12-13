@@ -12,7 +12,7 @@
 
 [GENERATOR]
 	#Disables large veins from generating
-	disable_large_veins = false
+	disable_large_veins = true
 	#Attempts to auto generate deepslate variants if present
 	auto_generate_deepslate_variants = true
 
