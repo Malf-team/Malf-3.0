@@ -6,11 +6,11 @@ console.info('Hello, World! (You will only see this line once in console, during
 const ore_names = ["iron", "copper", "gold", "aluminum", "lead", "silver", "nickel", "uranium", "tin", "zinc"]
 
 const malf_common_ores = ["hematite", "tetrahedrite", "gold", "cinnabar", "lazurite", "kimberlite", "beryl", "cassiterite", "bauxite", "pentlandite", "galena", "pitchblende", "sphalerite", "argentite"]
-const malf_exotic_ores = ["ethereal_bronze"]
+const malf_exotic_ores = ["ethereal_bronze", "rare_earth"]
 
 const malf_ore_hardness = {"ethereal_bronze":4}
 const malf_ore_mining_level = {"ethereal_bronze":"diamond"}
-const malf_ore_luminosity = {"ethereal_bronze":0.2, "pitchblende":0.05} //0.0 ~ 1.0
+const malf_ore_luminosity = {"ethereal_bronze":0.2, "pitchblende":0.1} //0.0 ~ 1.0
 
 function capitalizeFirstLetter(string) { //Capitalizes first letter
 	return string.charAt(0).toUpperCase() + string.slice(1);
@@ -61,14 +61,25 @@ onEvent('block.registry', event => {
 		if (typeof malf_ore_mining_level[name] !== 'undefined') { mining_level = malf_ore_mining_level[name] } // Sets mining level if defined
 
 		var luminosity = 0 // Standard luminosity
-		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets hardness if defined
+		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets luminosity if defined
 		
 		for (var i = 0; i < variants.length; i++) {
 			var full_name = name + variants[i] + "_ore"
+			var texture_path = ""
+			
+			
+			if (variants[i] == "") {
+				texture_path = ("malf:block/ores/stone/" + full_name)
+			}
+			if (variants[i] != "") {
+				texture_path = ("malf:block/ores/" + variants[i].slice(1) + "/" + full_name)
+			}
+
+			//console.log("texture path: "+texture_path)
 
 			if (variants[i] === "_deepslate") { hardness += 1 }
 
-			event.create('malf:' + full_name)
+			event.create('malf:' + full_name) //Create the ore!
 				.material('stone')
 				.hardness(hardness)
 				.displayName(fancify(full_name))
@@ -78,6 +89,7 @@ onEvent('block.registry', event => {
 				.tagBoth('forge:ores')
 				.tagBoth('forge:ores/' + name)
 				.lightLevel(luminosity)
+				.textureAll(texture_path)
 		}
 	}
 
