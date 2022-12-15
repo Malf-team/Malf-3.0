@@ -20,7 +20,7 @@ function fancify(name) { //Capitalizes and adds spaces to an item id name ('lapi
 	var final_string = ""
 
 	for (var i = 0; i < word.length; i++) {
-		if (word[i] === "deepslate") {word[i] = "slate"} //Shortens deepslate to slate
+		//if (word[i] === "deepslate") {word[i] = "slate"} //Shortens deepslate to slate
 		word[i] = capitalizeFirstLetter(word[i]);
 
 		if (i !== 0) { final_string += (" " + word[i]) } //Add space before the word, unless first word
@@ -51,8 +51,8 @@ onEvent('block.registry', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 
-	function createOreBlocks(name) { // Creates a new ore block with all listed variants
-		var variants = ["", "_deepslate", "_nether", "_end"]; // ("" = normal variant), needs a "_" before the name (for technical reasons!)
+	function createOreBlocks(name) { // Creates a new ore block with all listed variant
+		var variant = ["", "deepslate", "nether", "end"]; // ("" = normal variant)
 
 		var hardness = 3 // Standard hardness
 		if (typeof malf_ore_hardness[name] !== 'undefined') { hardness = malf_ore_hardness[name] } // Sets hardness if defined
@@ -63,21 +63,19 @@ onEvent('block.registry', event => {
 		var luminosity = 0 // Standard luminosity
 		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets luminosity if defined
 		
-		for (var i = 0; i < variants.length; i++) {
-			var full_name = name + variants[i] + "_ore"
+		for (var i = 0; i < variant.length; i++) {
+			var full_name = ""
 			var texture_path = ""
-			
-			
-			if (variants[i] == "") {
+
+			if (variant[i]) {
+				full_name = variant[i] + "_" + name + "_ore"
+				texture_path = ("malf:block/ores/" + variant[i] + "/" + full_name)
+			} else {
+				full_name = (name + "_ore")
 				texture_path = ("malf:block/ores/stone/" + full_name)
 			}
-			if (variants[i] != "") {
-				texture_path = ("malf:block/ores/" + variants[i].slice(1) + "/" + full_name)
-			}
 
-			//console.log("texture path: "+texture_path)
-
-			if (variants[i] === "_deepslate") { hardness += 1 }
+			if (variant[i] === "deepslate") { hardness += 1 }
 
 			event.create('malf:' + full_name) //Create the ore!
 				.material('stone')

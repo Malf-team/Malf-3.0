@@ -1,7 +1,7 @@
 {
   "oreConfig": [
     {
-      "ore": "minecraft:diamond_ore",
+      "ore": "malf:ethereal_bronze_ore",
       "fillers": [
         "STONE_ORE_REPLACEABLES"
       ],
@@ -20,7 +20,7 @@
       "replace": true
     },
     {
-      "ore": "minecraft:diamond_ore",
+      "ore": "malf:ethereal_bronze_ore",
       "fillers": [
         "STONE_ORE_REPLACEABLES"
       ],
@@ -39,7 +39,7 @@
       "replace": true
     },
     {
-      "ore": "minecraft:diamond_ore",
+      "ore": "malf:ethereal_bronze_ore",
       "fillers": [
         "STONE_ORE_REPLACEABLES"
       ],
