@@ -303,7 +303,7 @@
 		timeModifier = 1.0
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
 		#Range: > 1
-		electrodeDamage = 96000
+		electrodeDamage = 192000
 		#The recycling functionality of the arc furnace is no longer controlled by a config option.
 		#Like all IE recipes, this is now controlled via a datapack, using the recipe file:
 		#immersiveengineering/recipes/arc_recycling_list.json
