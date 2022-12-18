@@ -6,16 +6,14 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "TRIANGLE",
-      "minY": -100,
+      "minY": -70,
       "maxY": 0,
       "maxVeinSize": 3,
       "spawnRate": 1.5,
       "discardChanceOnAirExposure": 0.5,
       "biomeFilters": {
         "biomeBlacklist": [],
-        "biomeWhitelist": [
-          "OVERWORLD"
-        ]
+        "biomeWhitelist": ["OVERWORLD", "terralith:alpha_islands", "terralith:alpha_islands_winter", "terralith:alpine_grove", "terralith:alpine_highlands", "terralith:amethyst_canyon", "terralith:amethyst_rainforest", "terralith:ancient_sands", "terralith:andesite_caves", "terralith:arid_highlands", "terralith:ashen_savanna", "terralith:basalt_cliffs", "terralith:birch_taiga", "terralith:blooming_plateau", "terralith:blooming_valley", "terralith:brushland", "terralith:bryce_canyon", "terralith:caldera", "terralith:cloud_forest", "terralith:cold_shrubland", "terralith:crystal_caves", "terralith:deep_caves", "terralith:desert_canyon", "terralith:desert_caves", "terralith:desert_oasis", "terralith:desert_spires", "terralith:diorite_caves", "terralith:emerald_peaks", "terralith:forested_highlands", "terralith:fractured_savanna", "terralith:frostfire_caves", "terralith:frozen_cliffs", "terralith:fungal_caves", "terralith:glacial_chasm", "terralith:granite_caves", "terralith:granite_cliffs", "terralith:gravel_beach", "terralith:gravel_desert", "terralith:haze_mountain", "terralith:highlands", "terralith:hot_shrubland", "terralith:ice_caves", "terralith:ice_marsh", "terralith:infested_caves", "terralith:jungle_mountains", "terralith:lavender_forest", "terralith:lavender_valley", "terralith:lush_valley", "terralith:mantle_caves", "terralith:mirage_isles", "terralith:moonlight_grove", "terralith:moonlight_valley", "terralith:mountain_steppe", "terralith:orchid_swamp", "terralith:painted_mountains", "terralith:red_oasis", "terralith:rocky_jungle", "terralith:rocky_mountains", "terralith:rocky_shrubland", "terralith:sakura_grove", "terralith:sakura_valley", "terralith:sandstone_valley", "terralith:savanna_badlands", "terralith:savanna_slopes", "terralith:scarlet_mountains", "terralith:shield", "terralith:shield_clearing", "terralith:shrubland", "terralith:siberian_grove", "terralith:siberian_taiga", "terralith:skylands", "terralith:skylands_autumn", "terralith:skylands_spring", "terralith:skylands_summer", "terralith:skylands_winter", "terralith:snowy_badlands", "terralith:snowy_maple_forest", "terralith:snowy_shield", "terralith:steppe", "terralith:stony_spires", "terralith:temperate_highlands", "terralith:thermal_caves", "terralith:tropical_jungle", "terralith:tuff_caves", "terralith:valley_clearing", "terralith:volcanic_crater", "terralith:volcanic_peaks", "terralith:warm_river", "terralith:warped_mesa", "terralith:white_cliffs", "terralith:white_mesa", "terralith:windswept_spires", "terralith:wintry_forest", "terralith:wintry_lowlands", "terralith:yellowstone", "terralith:yosemite_cliffs", "terralith:yosemite_lowlands"]
       },
       "replace": true
     },
@@ -25,16 +23,14 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "TRIANGLE",
-      "minY": -100,
+      "minY": -80,
       "maxY": 0,
       "maxVeinSize": 9,
       "spawnRate": 0.05,
       "discardChanceOnAirExposure": 0.7,
       "biomeFilters": {
         "biomeBlacklist": [],
-        "biomeWhitelist": [
-          "OVERWORLD"
-        ]
+        "biomeWhitelist": ["OVERWORLD", "terralith:alpha_islands", "terralith:alpha_islands_winter", "terralith:alpine_grove", "terralith:alpine_highlands", "terralith:amethyst_canyon", "terralith:amethyst_rainforest", "terralith:ancient_sands", "terralith:andesite_caves", "terralith:arid_highlands", "terralith:ashen_savanna", "terralith:basalt_cliffs", "terralith:birch_taiga", "terralith:blooming_plateau", "terralith:blooming_valley", "terralith:brushland", "terralith:bryce_canyon", "terralith:caldera", "terralith:cloud_forest", "terralith:cold_shrubland", "terralith:crystal_caves", "terralith:deep_caves", "terralith:desert_canyon", "terralith:desert_caves", "terralith:desert_oasis", "terralith:desert_spires", "terralith:diorite_caves", "terralith:emerald_peaks", "terralith:forested_highlands", "terralith:fractured_savanna", "terralith:frostfire_caves", "terralith:frozen_cliffs", "terralith:fungal_caves", "terralith:glacial_chasm", "terralith:granite_caves", "terralith:granite_cliffs", "terralith:gravel_beach", "terralith:gravel_desert", "terralith:haze_mountain", "terralith:highlands", "terralith:hot_shrubland", "terralith:ice_caves", "terralith:ice_marsh", "terralith:infested_caves", "terralith:jungle_mountains", "terralith:lavender_forest", "terralith:lavender_valley", "terralith:lush_valley", "terralith:mantle_caves", "terralith:mirage_isles", "terralith:moonlight_grove", "terralith:moonlight_valley", "terralith:mountain_steppe", "terralith:orchid_swamp", "terralith:painted_mountains", "terralith:red_oasis", "terralith:rocky_jungle", "terralith:rocky_mountains", "terralith:rocky_shrubland", "terralith:sakura_grove", "terralith:sakura_valley", "terralith:sandstone_valley", "terralith:savanna_badlands", "terralith:savanna_slopes", "terralith:scarlet_mountains", "terralith:shield", "terralith:shield_clearing", "terralith:shrubland", "terralith:siberian_grove", "terralith:siberian_taiga", "terralith:skylands", "terralith:skylands_autumn", "terralith:skylands_spring", "terralith:skylands_summer", "terralith:skylands_winter", "terralith:snowy_badlands", "terralith:snowy_maple_forest", "terralith:snowy_shield", "terralith:steppe", "terralith:stony_spires", "terralith:temperate_highlands", "terralith:thermal_caves", "terralith:tropical_jungle", "terralith:tuff_caves", "terralith:valley_clearing", "terralith:volcanic_crater", "terralith:volcanic_peaks", "terralith:warm_river", "terralith:warped_mesa", "terralith:white_cliffs", "terralith:white_mesa", "terralith:windswept_spires", "terralith:wintry_forest", "terralith:wintry_lowlands", "terralith:yellowstone", "terralith:yosemite_cliffs", "terralith:yosemite_lowlands"]
       },
       "replace": true
     },
@@ -44,16 +40,14 @@
         "STONE_ORE_REPLACEABLES"
       ],
       "distribution": "TRIANGLE",
-      "minY": -100,
+      "minY": -90,
       "maxY": 0,
       "maxVeinSize": 5,
       "spawnRate": 5.0,
       "discardChanceOnAirExposure": 1.0,
       "biomeFilters": {
         "biomeBlacklist": [],
-        "biomeWhitelist": [
-          "OVERWORLD"
-        ]
+        "biomeWhitelist": ["OVERWORLD", "terralith:alpha_islands", "terralith:alpha_islands_winter", "terralith:alpine_grove", "terralith:alpine_highlands", "terralith:amethyst_canyon", "terralith:amethyst_rainforest", "terralith:ancient_sands", "terralith:andesite_caves", "terralith:arid_highlands", "terralith:ashen_savanna", "terralith:basalt_cliffs", "terralith:birch_taiga", "terralith:blooming_plateau", "terralith:blooming_valley", "terralith:brushland", "terralith:bryce_canyon", "terralith:caldera", "terralith:cloud_forest", "terralith:cold_shrubland", "terralith:crystal_caves", "terralith:deep_caves", "terralith:desert_canyon", "terralith:desert_caves", "terralith:desert_oasis", "terralith:desert_spires", "terralith:diorite_caves", "terralith:emerald_peaks", "terralith:forested_highlands", "terralith:fractured_savanna", "terralith:frostfire_caves", "terralith:frozen_cliffs", "terralith:fungal_caves", "terralith:glacial_chasm", "terralith:granite_caves", "terralith:granite_cliffs", "terralith:gravel_beach", "terralith:gravel_desert", "terralith:haze_mountain", "terralith:highlands", "terralith:hot_shrubland", "terralith:ice_caves", "terralith:ice_marsh", "terralith:infested_caves", "terralith:jungle_mountains", "terralith:lavender_forest", "terralith:lavender_valley", "terralith:lush_valley", "terralith:mantle_caves", "terralith:mirage_isles", "terralith:moonlight_grove", "terralith:moonlight_valley", "terralith:mountain_steppe", "terralith:orchid_swamp", "terralith:painted_mountains", "terralith:red_oasis", "terralith:rocky_jungle", "terralith:rocky_mountains", "terralith:rocky_shrubland", "terralith:sakura_grove", "terralith:sakura_valley", "terralith:sandstone_valley", "terralith:savanna_badlands", "terralith:savanna_slopes", "terralith:scarlet_mountains", "terralith:shield", "terralith:shield_clearing", "terralith:shrubland", "terralith:siberian_grove", "terralith:siberian_taiga", "terralith:skylands", "terralith:skylands_autumn", "terralith:skylands_spring", "terralith:skylands_summer", "terralith:skylands_winter", "terralith:snowy_badlands", "terralith:snowy_maple_forest", "terralith:snowy_shield", "terralith:steppe", "terralith:stony_spires", "terralith:temperate_highlands", "terralith:thermal_caves", "terralith:tropical_jungle", "terralith:tuff_caves", "terralith:valley_clearing", "terralith:volcanic_crater", "terralith:volcanic_peaks", "terralith:warm_river", "terralith:warped_mesa", "terralith:white_cliffs", "terralith:white_mesa", "terralith:windswept_spires", "terralith:wintry_forest", "terralith:wintry_lowlands", "terralith:yellowstone", "terralith:yosemite_cliffs", "terralith:yosemite_lowlands"]
       },
       "replace": true
     },

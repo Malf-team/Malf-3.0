@@ -1,14 +1,14 @@
-const searchSettings = {
+/*const searchSettings = {
 	radius:25,
 	speed: 1000,
 	worldBottom: 0,
 	worldTop: 256
 }
-/*
-X = East (+) West (-)
-Y = Up (+) Down (-)
-Z = North(+) South (-)
-*/
+
+// X = East (+) West (-)
+// Y = Up (+) Down (-)
+// Z = North(+) South (-)
+
 const movePos = (event, block, data) => {
 	const endOfX = (block.x >= data.maxX)
 	const endOfY = (block.y >= data.maxY)
@@ -88,4 +88,5 @@ onEvent('item.right_click', event => {
 			event.reschedule()
 		}
 	})
-})
+}) 
+*/
