@@ -16,6 +16,8 @@ onEvent('item.registry', event => {
     		.saturation(0.8)
 			.effect('nausea', 150, 0, 1)
 	})
+	event.create('malf:iron_plate').displayName("Iron Plate")
+	event.create('malf:iron_dust').displayName("Iron Dust")
 	
 	
 })
