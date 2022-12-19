@@ -134,6 +134,9 @@ val ae2_T4_items = ["ae2:64k_crafting_storage",
 "ae2:fe_p2p_tunnel",
 "ae2:light_p2p_tunnel"] as string[];
 
+val alltheores_itemtypes = ["ingot", "dust", "rod", "gear", "plate", "nugget", "block"] as string[];
+val alltheores_itemtypes_short = ["rod", "gear"];
+
 //Tech:
 
 // T2 -------------------------------------------------------------------------------
@@ -143,7 +146,7 @@ ItemStages.createModRestriction("immersivepetroleum", "tech2");
 ItemStages.createModRestriction("jeimultiblocks", "tech2");
 ItemStages.createModRestriction("pneumaticcraft", "tech2");
 
-ItemStages.createModRestriction("pipez", "tech2");
+ItemStages.createModRestriction("createaddition", "tech2");
 ItemStages.createModRestriction("storagenetwork", "tech2");
 ItemStages.createModRestriction("packagedauto", "tech2");
 ItemStages.createModRestriction("extendedcrafting", "tech2");
@@ -155,19 +158,30 @@ mods.recipestages.Recipes.setRecipeStageByMod("tech2", "immersivepetroleum");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "jeimultiblocks");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "pneumaticcraft");
 
-mods.recipestages.Recipes.setRecipeStageByMod("tech2", "pipez");
+mods.recipestages.Recipes.setRecipeStageByMod("tech2", "createaddition");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "storagenetwork");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "packagedauto");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "extendedcrafting");
 mods.recipestages.Recipes.setRecipeStageByMod("tech2", "packagedexcrafting");
 
+for element in alltheores_itemtypes {
+    ItemStages.restrict(<item:alltheores:steel_${element}>, "tech2");
+    ItemStages.restrict(<item:alltheores:electrum_${element}>, "tech2");
+    ItemStages.restrict(<item:alltheores:constantan_${element}>, "tech2");
+}
+
+
+
+
 
 // T3 -------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
 
 ItemStages.createModRestriction("ftbic", "tech3");
 ItemStages.createModRestriction("industrialforegoing", "tech3");
 ItemStages.createModRestriction("compactcrafting", "tech3");
 
+ItemStages.createModRestriction("pipez", "tech3");
 ItemStages.createModRestriction("darkutils", "tech3");
 ItemStages.createModRestriction("mob_grinding_utils", "tech3");
 ItemStages.createModRestriction("solarflux", "tech3");
@@ -178,6 +192,7 @@ mods.recipestages.Recipes.setRecipeStageByMod("tech3", "ftbic");
 mods.recipestages.Recipes.setRecipeStageByMod("tech3", "industrialforegoing");
 mods.recipestages.Recipes.setRecipeStageByMod("tech3", "compactcrafting");
 
+mods.recipestages.Recipes.setRecipeStageByMod("tech3", "pipez");
 mods.recipestages.Recipes.setRecipeStageByMod("tech3", "darkutils");
 mods.recipestages.Recipes.setRecipeStageByMod("tech3", "mob_grinding_utils");
 mods.recipestages.Recipes.setRecipeStageByMod("tech3", "solarflux");
@@ -194,6 +209,13 @@ ItemStages.restrict(<item:extendedcrafting:advanced_catalyst>, "tech3");
 ItemStages.restrict(<item:extendedcrafting:advanced_table>, "tech3");
 ItemStages.restrict(<item:extendedcrafting:advanced_auto_table>, "tech3");
 ItemStages.restrict(<item:packagedexcrafting:advanced_crafter>, "tech3");
+
+for element in alltheores_itemtypes {
+    ItemStages.restrict(<item:alltheores:invar_${element}>, "tech3");
+}
+for element in alltheores_itemtypes_short {
+    ItemStages.restrict(<item:alltheores:iridium_${element}>, "tech3");
+}
 
 //AE2 T3:
 /*
@@ -213,6 +235,7 @@ ItemStages.createModRestriction("enderstorage", "tech4");
 ItemStages.createModRestriction("ae2additions", "tech4");
 ItemStages.createModRestriction("ae2things", "tech4");
 ItemStages.createModRestriction("simplyjetpacks", "tech4");
+
 
 //Recipes ---
 mods.recipestages.Recipes.setRecipeStageByMod("tech4", "thermal");
@@ -249,6 +272,15 @@ ItemStages.restrict(<item:extendedcrafting:elite_catalyst>, "tech4");
 ItemStages.restrict(<item:extendedcrafting:elite_table>, "tech4");
 ItemStages.restrict(<item:extendedcrafting:elite_auto_table>, "tech4");
 ItemStages.restrict(<item:packagedexcrafting:elite_crafter>, "tech4");
+
+for element in alltheores_itemtypes {
+    ItemStages.restrict(<item:alltheores:enderium_${element}>, "tech4");
+    ItemStages.restrict(<item:alltheores:lumium_${element}>, "tech4");
+    ItemStages.restrict(<item:alltheores:signalum_${element}>, "tech4");
+}
+for element in alltheores_itemtypes_short {
+    ItemStages.restrict(<item:alltheores:platinum_${element}>, "tech4");
+}
 
 
 
@@ -287,7 +319,9 @@ mods.recipestages.Recipes.setRecipeStageByMod("tech5", "aeinfinitybooster");
 mods.recipestages.Recipes.setRecipeStageByMod("tech5", "entangled");
 mods.recipestages.Recipes.setRecipeStageByMod("tech5", "angelring");
 
-
+for element in alltheores_itemtypes_short {
+    ItemStages.restrict(<item:alltheores:osmium_${element}>, "tech5");
+}
 
 // -------------------------------------------------------------------------------
 
