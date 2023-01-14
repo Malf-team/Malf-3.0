@@ -1,5 +1,5 @@
 
-#With default value every difficulty perk maxes out at difficulty 250
+#Default difficulty caps at 250
 [general]
 	#Disable/Enables the whole difficulty scaling of this mod. Requires a mc restart
 	"Enable difficulty scaling" = true
@@ -9,16 +9,16 @@
 	#Handles increase in difficulty regarding current difficulty.
 	#Format is <minimum current difficulty>-<increase every 2400 ticks>
 	#Example ["0-0.01","10-0.1","30-0"]
-	#So the difficulty increases by 0.01 every 2400 ticks (->0.1 per mc day) till it reaches a difficulty of 10.
+	#So the difficulty increases by 0.01 every 2400 ticks (->0.1 per mc day since a mc day has 24000 ticks) till it reaches a difficulty of 10.
 	#Then it increases by 1 per mc day till it reaches 30 and then stops.
 	"Difficulty Increase" = ["0-0.1", "250-0"]
 	#Wether difficulty should only increase with at least one online players or not
 	"Ignore Players" = false
-	#Should punish time skipping with e.g. bed, commands? If false, difficulty will increase by 0.1 regardless of skipped time.
+	#If true will increase difficulty by the amount of time skipped. Else will only increase difficulty once.
 	"Punish Time Skip" = true
 	#Disable/Enable friendly fire for owned pets.
 	FriendlyFire = false
-	#Blacklist for pet you should't be able to give armor to. Pets from mods, which have custom armor should be included here.
+	#Blacklist for pet you should't be able to give armor to. Pets from mods, which have custom armor already should be included here (for balancing reasons).
 	"Pet Blacklist" = []
 	#Treat pet blacklist as whitelist
 	"Pet Whitelist" = false
@@ -34,18 +34,9 @@
 
 #Black/Whitelist for various stuff
 [list]
-	#Entities added here will be blacklisted from their assigned flags. Usage:
-	#<entity registry name> or <namespace> followed by any of:
-	#[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PARROT,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].
-	#Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!
-	#Examples:
-	#minecraft:sheep is equal to minecraft:sheep|ALL and excludes sheeps from all modifications
-	#minecraft:sheep|REVERSE|ATTRIBUTES will add sheep to attributes modification only
-	#minecraft:sheep|ATTRIBUTES will add sheep to everything except attributes
-	"More Entities" = ["ars_nouveau:familiar_whirlisprig", "alexsmobs:emu", "alexsmobs:cockroach", "alexsmobs:froststalker", "alexsmobs:centipede_tail", "ars_nouveau:wixie", "alexsmobs:snow_leopard", "alexsmobs:lobster", "alexsmobs:seagull", "littlelogistics:fluid_barge", "alexsmobs:moose", "alexsmobs:seal", "littlelogistics:energy_tug", "minecraft:glow_squid", "alexsmobs:shoebill", "alexsmobs:flutter", "alexsmobs:roadrunner", "alexsmobs:laviathan", "minecraft:trader_llama", "create_confectionery:little_gingerbread_man", "ars_nouveau:familiar_wixie", "ars_nouveau:cascading_weald_walker", "ars_nouveau:vexing_weald_walker", "alexsmobs:terrapin", "alexsmobs:capuchin_monkey", "alexsmobs:endergrade", "minecraft:horse", "alexsmobs:anaconda", "minecraft:polar_bear", "minecraft:llama", "minecraft:pig", "minecraft:turtle", "alexsmobs:alligator_snapping_turtle", "alexsmobs:maned_wolf", "minecraft:sheep", "minecraft:goat", "minecraft:dolphin", "littlelogistics:tug", "alexsmobs:rattlesnake", "alexsmobs:gelada_monkey", "farmingforblockheads:merchant", "minecraft:cod", "alexsmobs:mantis_shrimp", "littlelogistics:chunk_loader_barge", "ars_nouveau:familiar_starbuncle", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "minecraft:donkey", "alexsmobs:tiger", "alexsmobs:raccoon", "ars_nouveau:starbuncle", "alexsmobs:grizzly_bear", "alexsmobs:platypus", "minecraft:squid", "minecraft:skeleton_horse", "quark:stoneling", "minecraft:cow", "ars_nouveau:dummy", "alexsmobs:fly", "ars_nouveau:familiar_drygmy", "minecraft:bee", "ars_nouveau:whirlisprig", "quark:shiba", "alexsmobs:devils_hole_pupfish", "pneumaticcraft:harvesting_drone", "quark:toretoise", "alexsmobs:crocodile", "guardvillagers:guard", "alexsmobs:toucan", "minecraft:salmon", "alexsmobs:sea_bear", "quark:frog", "minecraft:snow_golem", "minecraft:mooshroom", "ars_nouveau:flourishing_weald_walker", "alexsmobs:frilled_shark", "alexsmobs:bison", "alexsmobs:anteater", "minecraft:villager", "pneumaticcraft:amadrone", "alexsmobs:bald_eagle", "supplementaries:red_merchant", "minecraft:rabbit", "minecraft:axolotl", "botania:doppleganger", "alexsmobs:blobfish", "pneumaticcraft:drone", "pneumaticcraft:programmable_controller", "alexsmobs:gorilla", "littlelogistics:barge", "littlelogistics:seater_barge", "alexsmobs:orca", "alexsmobs:tusklin", "minecraft:strider", "beyond_earth:alien", "minecraft:parrot", "quark:crab", "alexsmobs:leafcutter_ant", "littlelogistics:fishing_barge", "alexsmobs:cosmic_cod", "decoration_delight:stool_entity", "ars_nouveau:drygmy", "alexsmobs:mungus", "alexsmobs:jerboa", "minecraft:bat", "minecraft:wandering_trader", "pneumaticcraft:logistics_drone", "alexsmobs:spectre", "alexsmobs:cosmaw", "ars_nouveau:summon_horse", "ars_nouveau:familiar_bookwyrm", "alexsmobs:catfish", "minecraft:iron_golem", "alexsmobs:kangaroo", "alexsmobs:comb_jelly", "botania:pixie", "dummmmmmy:target_dummy", "railways:conductor", "alexsmobs:mimic_octopus", "alexsmobs:hummingbird", "alexsmobs:elephant", "alexsmobs:bunfungus", "pneumaticcraft:collector_drone", "alexsmobs:gazelle", "minecraft:mule", "ars_nouveau:bookwyrm", "alexsmobs:crow", "minecraft:zombie_horse", "alexsmobs:sunbird", "alexsmobs:flying_fish", "alexsmobs:tasmanian_devil", "alexsmobs:centipede_body", "minecraft:cat", "minecraft:pufferfish", "alexsmobs:stradpole", "ars_nouveau:amethyst_golem", "alexsmobs:tarantula_hawk", "ars_nouveau:blazing_weald_walker", "minecraft:fox", "ars_nouveau:summon_wolf", "alexsmobs:cachalot_whale", "minecraft:tropical_fish", "pneumaticcraft:guard_drone", "mekanism:robit", "minecraft:ocelot", "alexsmobs:warped_toad", "minecraft:chicken", "alexsmobs:giant_squid", "minecraft:wolf", "minecraft:panda"]
 	#Any of the following 
-	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, PARROT, TARGETVILLAGER, NEUTRALAGGRO]
-	#added here will disable that feature.
+	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, PHANTOM, TARGETVILLAGER, NEUTRALAGGRO]
+	#added here will disable that feature completely.
 	#E.g. ["GUARDIAN"] will disable the guardian feature
 	"Flag Blacklist" = []
 	#Treat ATTRIBUTES flags as whitelist
@@ -64,31 +55,34 @@
 	"Steal Whitelist" = false
 	#Treat GUARDIAN flags as whitelist
 	"Guardian Whitelist" = false
-	#Treat PARROT flags as whitelist
-	"Parrot Whitelist" = false
 	#Treat TARGETVILLAGER flags as whitelist
 	"Villager Whitelist" = false
 	#Treat NEUTRALAGGRO flags as whitelist
 	"Neutral Aggro Whitelist" = false
-
-#Debugging
-[debug]
-	#Enable showing of entity paths
-	"Path Debugging" = false
+	#Entities added here will be blacklisted from their assigned flags. Usage:
+	#<entity registry name> or <namespace> followed by any of:
+	#[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PHANTOM,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].
+	#Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!
+	#Examples (without <>):
+	#<minecraft:sheep> (equal to minecraft:sheep|ALL) excludes sheeps from all modifications
+	#<minecraft:sheep|REVERSE|ATTRIBUTES will> add sheep to attributes modification only
+	#<minecraft:sheep|ATTRIBUTES> will add sheep to everything except attributes
+	#<minecraft> blacklists all minecraft mobs from everything
+	"Entity Configs" = ["ars_nouveau:familiar_whirlisprig", "alexsmobs:emu", "alexsmobs:cockroach", "alexsmobs:froststalker", "alexsmobs:centipede_tail", "ars_nouveau:wixie", "alexsmobs:snow_leopard", "alexsmobs:lobster", "alexsmobs:seagull", "littlelogistics:fluid_barge", "alexsmobs:moose", "alexsmobs:seal", "littlelogistics:energy_tug", "minecraft:glow_squid", "alexsmobs:shoebill", "alexsmobs:flutter", "alexsmobs:roadrunner", "alexsmobs:laviathan", "minecraft:trader_llama", "ars_nouveau:familiar_wixie", "ars_nouveau:cascading_weald_walker", "ars_nouveau:vexing_weald_walker", "alexsmobs:terrapin", "alexsmobs:capuchin_monkey", "alexsmobs:endergrade", "minecraft:horse", "alexsmobs:anaconda", "minecraft:polar_bear", "minecraft:llama", "minecraft:pig", "minecraft:turtle", "alexsmobs:alligator_snapping_turtle", "alexsmobs:maned_wolf", "minecraft:sheep", "minecraft:goat", "minecraft:dolphin", "littlelogistics:tug", "alexsmobs:rattlesnake", "alexsmobs:gelada_monkey", "farmingforblockheads:merchant", "minecraft:cod", "alexsmobs:mantis_shrimp", "littlelogistics:chunk_loader_barge", "ars_nouveau:familiar_starbuncle", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "minecraft:donkey", "alexsmobs:tiger", "alexsmobs:raccoon", "ars_nouveau:starbuncle", "alexsmobs:grizzly_bear", "alexsmobs:platypus", "minecraft:squid", "minecraft:skeleton_horse", "quark:stoneling", "minecraft:cow", "ars_nouveau:dummy", "alexsmobs:fly", "ars_nouveau:familiar_drygmy", "minecraft:bee", "ars_nouveau:whirlisprig", "quark:shiba", "alexsmobs:devils_hole_pupfish", "pneumaticcraft:harvesting_drone", "quark:toretoise", "alexsmobs:crocodile", "guardvillagers:guard", "alexsmobs:toucan", "minecraft:salmon", "alexsmobs:sea_bear", "quark:frog", "minecraft:snow_golem", "minecraft:mooshroom", "ars_nouveau:flourishing_weald_walker", "alexsmobs:frilled_shark", "alexsmobs:bison", "alexsmobs:anteater", "minecraft:villager", "pneumaticcraft:amadrone", "alexsmobs:bald_eagle", "supplementaries:red_merchant", "minecraft:rabbit", "minecraft:axolotl", "botania:doppleganger", "alexsmobs:blobfish", "pneumaticcraft:drone", "pneumaticcraft:programmable_controller", "alexsmobs:gorilla", "littlelogistics:barge", "littlelogistics:seater_barge", "alexsmobs:orca", "alexsmobs:tusklin", "minecraft:strider", "beyond_earth:alien", "minecraft:parrot", "quark:crab", "alexsmobs:leafcutter_ant", "littlelogistics:fishing_barge", "alexsmobs:cosmic_cod", "decoration_delight:stool_entity", "ars_nouveau:drygmy", "alexsmobs:mungus", "alexsmobs:jerboa", "minecraft:bat", "minecraft:wandering_trader", "pneumaticcraft:logistics_drone", "alexsmobs:spectre", "alexsmobs:cosmaw", "ars_nouveau:summon_horse", "ars_nouveau:familiar_bookwyrm", "alexsmobs:catfish", "minecraft:iron_golem", "alexsmobs:kangaroo", "alexsmobs:comb_jelly", "botania:pixie", "dummmmmmy:target_dummy", "alexsmobs:mimic_octopus", "alexsmobs:hummingbird", "alexsmobs:elephant", "alexsmobs:bunfungus", "pneumaticcraft:collector_drone", "alexsmobs:gazelle", "minecraft:mule", "ars_nouveau:bookwyrm", "alexsmobs:crow", "minecraft:zombie_horse", "alexsmobs:sunbird", "alexsmobs:flying_fish", "alexsmobs:tasmanian_devil", "alexsmobs:centipede_body", "minecraft:cat", "minecraft:pufferfish", "alexsmobs:stradpole", "ars_nouveau:amethyst_golem", "alexsmobs:tarantula_hawk", "ars_nouveau:blazing_weald_walker", "minecraft:fox", "ars_nouveau:summon_wolf", "alexsmobs:cachalot_whale", "minecraft:tropical_fish", "pneumaticcraft:guard_drone", "mekanism:robit", "minecraft:ocelot", "alexsmobs:warped_toad", "minecraft:chicken", "alexsmobs:giant_squid", "minecraft:wolf", "minecraft:panda"]
+	#Treat PARROT flags as whitelist
+	"Phantom Whitelist" = false
 
 #Settings for mod integration
 [integration]
 	#Should the scaling health mods difficulty system be used instead of this ones. (Requires scaling health mod)
 	"Use Scaling Health Mod" = true
+	#If true and playerEx is installed will use the level from playerEx as difficulty
+	"Use Player EX Mod" = true
+	#If true and LevelZ is installed will use the the total skill level from LevelZ as difficulty
+	"Use LevelZ Mod" = true
 
 #Settings regarding custom ai for mobs
 [ai]
-	#Whitelist for blocks, which can be actively broken. 
-	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
-	#Note: If you include common blocks (like grass blocks) the pathfinding will be a bit strange
-	"Block Whitelist" = ["forge:glass", "forge:glass_panes", "minecraft:fence_gates", "forge:fence_gates", "minecraft:wooden_doors"]
-	#Treat Block Whitelist as Blocklist
-	"Block as Blacklist" = false
 	#Use the block breaking sound instead of a knocking sound
 	Sound = false
 	#Chance for a mob to be able to break blocks
@@ -100,13 +94,12 @@
 	#Cooldown for breaking blocks
 	#Range: > 0
 	"Breaker Cooldown" = 20
-	#Chance for a mob to be able to steal items
+	#Chance for a mob to be able to steal items from inventory blocks
 	#Range: 0.0 ~ 1.0
 	"Stealer Chance" = 0.3
 	#Items which will be given to mobs who can break blocks. Empty list = no items. Syntax: id;weight
+	#Note: Mobs can only break blocks if the tool they are holding can break the blocks
 	"Breaking items" = ["minecraft:diamond_pickaxe;1", "minecraft:iron_axe;2"]
-	#Should mobs be able to break tile entities? Evaluated before the break list
-	"Break Tiles" = true
 	#Chance for neutral mobs to be aggressive
 	#Range: 0.0 ~ 1.0
 	"Neutral Aggressive Chance" = 0.2
@@ -119,16 +112,26 @@
 	#Difficulty at which mobs are able to steal items
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Difficulty Steal AI" = 0.0
-	#Chance for mobs to be able to ride a guardian
+	#Chance for mobs to be able to summon an aquatic mount
 	#Range: 0.0 ~ 1.0
 	"Guardian Chance" = 1.0
-	#Chance for mobs to be able to ride a parrot
+	#Whitelist for blocks, which can be actively broken. 
+	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
+	#Note: If you include common blocks (like grass blocks) the pathfinding can have undesirable results.
+	"Block Break Whitelist" = ["forge:glass", "forge:glass_panes", "minecraft:fence_gates", "forge:fence_gates", "minecraft:wooden_doors"]
+	#Treat Block Whitelist as Blocklist
+	"Breaklist as Blacklist" = false
+	#If mobs should break blocks when not chasing a target
+	"Idle Break" = false
+	#Should mobs be able to break block entities? Evaluated before the break list
+	"Break BlockEntities" = true
+	#Chance for mobs to be able to summon a flying mount
 	#Range: 0.0 ~ 1.0
-	"Fly Chance" = 0.5
+	"Phantom Chance" = 0.5
 
 #Configs regarding mobs spawning with equipment
 [equipment]
-	#Blacklist for mods. Add modid to prevent items from that mod being equipped. (For individual items use the equipment.json)
+	#Blacklist items from whole mods. Add modid to prevent items from that mod being equipped. (For individual items use the equipment.json)
 	"Item Blacklist" = []
 	#Use blacklist as whitelist
 	"Item Whitelist" = false
@@ -171,7 +174,7 @@
 	#Adds additional x*difficulty% to base item chance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Item Chance add" = 0.2
-	#Should mobs drop the armor equipped through this mod? (Other methods e.g. through vanilla is not included)
+	#Should mobs drop the armor equipped through this mod? Will not change drops if the mob obtained the armor through other means (e.g. vanilla)
 	"Should drop equipment" = false
 
 #Settings for attribute modifiers
