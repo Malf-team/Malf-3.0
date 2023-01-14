@@ -73,3 +73,38 @@ Iridium
 
 Platinum
  - Biproduct of Copper/Nickel processing
+
+
+
+
+###### Custom Items + Fluids to add:
+
+Items: (Hematite as an example - replaced by all the variants)
+
+T1
+- Crushed Hematite        #
+- Washed Hematite         #
+T2
+- Hematite Grit           #
+- Squeezed Hematite       #
+- Vacuum Dried Hematite   #
+T3
+- Hematite Dust           #
+- Centrifuged Hematite    #
+T4
+- Pulverized Hematite     #
+- Energized Hematite      #
+
+
+Fluids:
+
+T3
+-  Hematite-Rich Water    #
+T4
+- Chemically Activated Hematite Water #
+- Refined Hematite Water  #
+
+
+
+###### Biproducts:
+

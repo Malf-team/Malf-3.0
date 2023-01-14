@@ -3,14 +3,7 @@
 
 console.info('Hello, World! (You will only see this line once in console, during startup)')
 
-const ore_names = ["iron", "copper", "gold", "aluminum", "lead", "silver", "nickel", "uranium", "tin", "zinc"]
 
-const malf_common_ores = ["hematite", "tetrahedrite", "gold", "cinnabar", "lazurite", "kimberlite", "beryl", "cassiterite", "bauxite", "pentlandite", "galena", "pitchblende", "sphalerite", "argentite"]
-const malf_exotic_ores = ["ethereal_bronze", "rare_earth"]
-
-const malf_ore_hardness = {"ethereal_bronze":4}
-const malf_ore_mining_level = {"ethereal_bronze":"diamond"}
-const malf_ore_luminosity = {"ethereal_bronze":0.2, "pitchblende":0.1} //0.0 ~ 1.0
 
 function capitalizeFirstLetter(string) { //Capitalizes first letter
 	return string.charAt(0).toUpperCase() + string.slice(1);
@@ -35,10 +28,21 @@ onEvent('item.registry', event => {
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
 
-	function setupWashedOre(item) {
-		event.create('malf:washed_'+item+"_ore").displayName("Washed "+capitalizeFirstLetter(item)+" Ore")
+	function setupOreItems(item) {
+		event.create('malf:raw_' + item).displayName("Raw " + fancify(item)).texture("malf:item/generated/raw/raw_" + item) //Raw
+		event.create('malf:crushed_' + item).displayName("Crushed " + fancify(item)).texture("malf:item/generated/crushed/crushed_" + item) //Crushed
+		event.create('malf:' + item + '_grit').displayName(fancify(item) + " Grit").texture("malf:item/generated/grit/" + item + "_grit") //Grit
+		event.create('malf:' + item + '_dust').displayName(fancify(item) + " Dust").texture("malf:item/generated/dust/" + item + "_dust") //Dust
+		event.create('malf:pulverized_' + item).displayName("Pulverized " + fancify(item)).texture("malf:item/generated/pulverized/pulverized_" + item) //Pulverized
+		event.create('malf:washed_'+item).displayName("Washed " + fancify(item)).texture("malf:item/generated/washed/washed_" + item) //Washed
+		event.create('malf:squeezed_' + item).displayName("Squeezed " + fancify(item)).texture("malf:item/generated/squeezed/squeezed_" + item) //Squeezed
+		event.create('malf:vacuum_dried_' + item).displayName("Vacuum Dried " + fancify(item)).texture("malf:item/generated/vacuum_dried/vacuum_dried_" + item) //Vacuum Dried
+		event.create('malf:centrifuged_' + item).displayName("Centrifuged " + fancify(item)).texture("malf:item/generated/centrifuged/centrifuged_" + item) //Centrifuged
+		event.create('malf:energized_' + item).displayName("Energized " + fancify(item)).texture("malf:item/generated/energized/energized_" + item) //Energized
+
 	}
-	ore_names.forEach(setupWashedOre)
+
+	malf_common_ores.forEach(setupOreItems)
 	
 	//Rare earth
 	event.create('malf:rare_earth_dust').displayName("Rare Earth Dust")
