@@ -107,4 +107,92 @@ T4
 
 
 ###### Biproducts:
+# (Ore)
+# - Biproduct 1
+# - Biproduct 2
+# - Biproduct 3
+# - Biproduct 4
 
+- Hematite:
+  - Iron
+  - Iron
+  - Iron
+  - Tungsten
+
+- Tetrahedrite:
+  - Copper
+  - Iron
+  - Sulfur
+  - Antimony (Sb)
+
+- Gold
+  - Gold
+  - Gold
+  - Silver
+  - Tellurium
+
+- Lazurite
+  - Lapis Lazuli
+  - Silicon
+  - Calcium
+  - Natrium
+
+- Cinnabar
+  - Redstone
+  - Sulfur
+  - Mercury
+  - Mercury
+
+- Kimberlite
+  - Diamond
+  - Carbon
+  - Magnesium
+  - Chromium
+
+- Beryl
+  - Emerald
+  - Silicon
+  - Quartz
+  - Beryllium
+
+- Cassiterite
+  - Tin
+  - Tin
+  - Arsenic
+  - Molybdenium
+
+- Bauxite
+  - Aluminum
+  - Aluminum
+  - Cadmium
+  - Gallium
+
+- Pentlandite
+  - Nickel
+  - Iron
+  - Sulfur
+  - Cobalt
+
+- Galena
+  - Lead
+  - Sulfur
+  - Zinc
+  - Silver
+
+- Pitchblende
+  - Uranium
+  - Lead
+  - Thorium
+  - Rare Earth
+
+- Sphalerite
+  - Zinc
+  - Sulfur
+  - Germanium
+  - Indium
+
+- Argentite
+  - Silver
+  - Silver
+  - Sulfur
+  - Actinium
