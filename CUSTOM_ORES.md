@@ -140,14 +140,14 @@ T4
 - Cinnabar
   - Redstone
   - Sulfur
-  - Mercury
-  - Mercury
+  - Mercury Sulfide
+  - Chromium
 
 - Kimberlite
   - Diamond
   - Carbon
   - Magnesium
-  - Chromium
+  - Platinum
 
 - Beryl
   - Emerald
@@ -196,3 +196,13 @@ T4
   - Silver
   - Sulfur
   - Actinium
+
+
+###### Exotic Ores/Alloys:
+# Doesn't have normal ore processing, obtained by partial ore processing or other means
+- Ethereal Bronze (Copper, Tin, ??)
+  # Very rare ore found in the ground. Can be alloyed late-game
+- Valyrian Steel
+  # Made with normal steel, alloyed with some other element with a magic spell
+- Acryx
+  # Rare ore found in other dimensions
