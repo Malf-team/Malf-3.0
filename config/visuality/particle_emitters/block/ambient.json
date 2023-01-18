@@ -46,6 +46,38 @@
       }
     },
     {
+      "block": [
+        "malf:ethereal_bronze_ore",
+        "malf:deepslate_ethereal_bronze_ore",
+        "malf:nether_ethereal_bronze_ore",
+        "malf:end_ethereal_bronze_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          0.6,
+          0.5,
+          1.0
+        ]
+      }
+    },
+    {
+      "block": [
+        "malf:ethereal_bronze_ore",
+        "malf:deepslate_ethereal_bronze_ore",
+        "malf:nether_ethereal_bronze_ore",
+        "malf:end_ethereal_bronze_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          1.0,
+          0.5,
+          0.6
+        ]
+      }
+    },
+    {
       "block": "minecraft:amethyst_cluster",
       "particle": {
         "type": "visuality:sparkle",

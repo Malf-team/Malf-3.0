@@ -1,4 +1,5 @@
 #Microphone activation type
+#Possible values are 'PTT' and 'VOICE'
 #Allowed Values: PTT, VOICE
 microphone_activation_type = "PTT"
 #The threshold for voice activation in dB
@@ -15,7 +16,7 @@ microphone_amplification = 1.0
 #Increase this value if you have an unstable internet connection
 #Range: 1 ~ 16
 output_buffer_size = 5
-#The maximum amount of audio packets that are held back, if a packet arrives out of order or gets dropped
+#The maximum amount of audio packets that are held back if a packet arrives out of order or gets dropped
 #This prevents discarding audio packets that are slightly out of order
 #Set this to 0 to disable
 #Range: 0 ~ 16
@@ -44,6 +45,7 @@ show_own_group_icon = true
 #Range: 0.01 ~ 10.0
 group_hud_icon_scale = 2.0
 #The orientation of the player icons in the group HUD
+#Possible values are 'VERTICAL' and 'HORIZONTAL'
 #Allowed Values: VERTICAL, HORIZONTAL
 group_player_icon_orientation = "VERTICAL"
 #The X position of the player icons in the group HUD
@@ -83,6 +85,7 @@ show_fake_players_disconnected = false
 #If the volume adjustment GUI should also show offline players
 offline_player_volume_adjustment = false
 #The 3D audio type
+#Possible values are 'NORMAL', 'REDUCED' and 'OFF'
 #Allowed Values: NORMAL, REDUCED, OFF
 audio_type = "NORMAL"
 #If the mod should load native libraries
