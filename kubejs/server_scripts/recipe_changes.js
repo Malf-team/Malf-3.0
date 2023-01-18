@@ -33,6 +33,16 @@ onEvent('recipes', event => {
 	R: '#forge:rods/steel'
 	}).id("malf:ie_gunpart_barrel")
 
+	event.shapeless('minecraft:diamond', ['4x malf:diamond_shard'])
+	event.shapeless('minecraft:emerald', ['4x malf:emerald_shard'])
+	event.shapeless('minecraft:quartz', ['4x malf:quartz_shard'])
+	event.shapeless('minecraft:lapis_lazuli', ['4x malf:lapis_lazuli_shard'])
+
+	event.shapeless('4x malf:diamond_shard', ['minecraft:diamond'])
+	event.shapeless('4x malf:emerald_shard', ['minecraft:emerald'])
+	event.shapeless('4x malf:quartz_shard', ['minecraft:quartz'])
+	event.shapeless('4x malf:lapis_lazuli_shard', ['minecraft:lapis_lazuli'])
+
 })
 
 onEvent('item.tags', event => {
