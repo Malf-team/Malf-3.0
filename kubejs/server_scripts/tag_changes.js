@@ -10,10 +10,10 @@ onEvent('recipes', event => {
 })
 
 onEvent('item.tags', event => {
-	event.get('forge:plates').add('malf:iron_plate')
-	event.get('forge:plates/iron').add('malf:iron_plate')
-	event.get('forge:dusts').add('malf:iron_dust')
-	event.get('forge:dusts/iron').add('malf:iron_dust')
+	//event.get('forge:plates').add('malf:iron_plate')
+	//event.get('forge:plates/iron').add('malf:iron_plate')
+	//event.get('forge:dusts').add('malf:iron_dust')
+	//event.get('forge:dusts/iron').add('malf:iron_dust')
 
 	
 
