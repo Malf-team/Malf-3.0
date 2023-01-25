@@ -184,22 +184,38 @@ onEvent('recipes', event => {
 		).id('malf:'+ore+"_centrifuge")
 
 
-		//IF-wash (dust, pulverized)
+		//IF-dissolution (dust, pulverized)
 		event.custom({
 			"input": [
 			  {
 				"item": "malf:"+ore+"_dust"
 			  }
 			],
-			"inputFluid": "{FluidName:\"minecraft:water\",Amount:200}",
-			"processingTime": 80,
-			"output": "{FluidName:'malf:diluted_"+ore+"_water',Amount:100}",
-			//"outputFluid": "{FluidName:\"malf:diluted_" + ore + "\",Amount:100}",
-			"type": "industrialforegoing:washing_machine"
+			"inputFluid": "{FluidName:\"minecraft:water\",Amount:1000}",
+			"processingTime": 100,
+			"output": {
+				"item": "minecraft:air",
+				"count": 1
+			  },
+			"outputFluid": "{FluidName:\"malf:"+ore+"-rich_water\",Amount:500}",
+			"type": "industrialforegoing:dissolution_chamber"
 		  })
 
-
-
+		event.custom({
+		"input": [
+			{
+			"item": "malf:pulverized_"+ore
+			}
+		],
+		"inputFluid": "{FluidName:\"minecraft:water\",Amount:1000}",
+		"processingTime": 40,
+		"output": {
+			"item": "minecraft:air",
+			"count": 1
+			},
+		"outputFluid": "{FluidName:\"malf:"+ore+"-rich_water\",Amount:500}",
+		"type": "industrialforegoing:dissolution_chamber"
+		})
 
 
 		//IF-fluid-sieve

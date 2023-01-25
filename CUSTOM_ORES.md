@@ -204,5 +204,7 @@ T4
   # Very rare ore found in the ground. Can be alloyed late-game
 - Valyrian Steel
   # Made with normal steel, alloyed with some other element with a magic spell
-- Acryx
+- Acryx Ore
   # Rare ore found in other dimensions
+- Vibranium
+  # Rare ore found in very specific biomes (and maybe in meteorites). High mining level required to mine it (netherite)

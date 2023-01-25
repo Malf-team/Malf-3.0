@@ -2,7 +2,7 @@
 // This file adds ore blocks, raw ore, dusts and ingots (maybe more depending on the ore)
 
 console.info('Hello, World! (You will only see this line once in console, during startup)')
-
+var tag_list = {}
 
 
 function capitalizeFirstLetter(string) { //Capitalizes first letter
@@ -40,13 +40,58 @@ onEvent('item.registry', event => {
 		event.create('malf:centrifuged_' + item).displayName("Centrifuged " + fancify(item)).texture("malf:item/generated/centrifuged/centrifuged_" + item) //Centrifuged
 		event.create('malf:energized_' + item).displayName("Energized " + fancify(item)).texture("malf:item/generated/energized/energized_" + item) //Energized
 
+		//Tags
+		tag_list['malf:raw_' + item] 		= ["forge:raw_materials", "forge:raw_materials/"+item]
+		tag_list['malf:crushed_' + item] 	= ["create:crushed_ores"]
+		tag_list['malf:' + item + '_dust'] 	= ["forge:dusts", "forge:dusts/"+item]
+	}
+
+	function setupIngotItem(item) {
+		var rarity = "common" // Standard rarity
+		if (typeof malf_ore_rarity[item] !== 'undefined') { rarity = malf_ore_rarity[item] }
+
+		var glow = false // Standard glow value
+		if (typeof malf_ore_glow[item] !== 'undefined') { glow = malf_ore_glow[item] }
+
+		event.create('malf:' + item + "_ingot").displayName(fancify(item) + " Ingot").texture("malf:item/generated/ingot/"+ item + "_ingot").rarity(rarity).glow(glow)
+		tag_list['malf:' + item + "_ingot"] = ["forge:ingots", "forge:ingots/"+item]
+	}
+
+	function setupRawItem(item) {
+		event.create('malf:raw_' + item).displayName("Raw " + fancify(item)).texture("malf:item/generated/raw/raw_" + item) //Raw
+		tag_list['malf:raw_' + item] = ["forge:raw_materials", "forge:raw_materials/"+item]
+	}
+
+	function setupDustItem(item) {
+		event.create('malf:' + item + '_dust').displayName(fancify(item) + " Dust").texture("malf:item/generated/dust/" + item + "_dust")
+		tag_list['malf:' + item + '_dust'] = ["forge:dusts", "forge:dusts/"+item]
+	}
+
+	function setupEnergizedItem(item) {
+		event.create('malf:energized_' + item).displayName("Energized " + fancify(item)).texture("malf:item/generated/energized/energized_" + item)
+	}
+
+	function setupExoticOreItems(item) {
+		setupRawItem(item)
+		setupDustItem(item)
+		setupIngotItem(item)
 	}
 
 	malf_common_ores.forEach(setupOreItems)
-	
+
+	//Ethereal Bronze
+	setupExoticOreItems("ethereal_bronze")
+
 	//Rare earth
 	event.create('malf:rare_earth_dust').displayName("Rare Earth Dust")
 	event.create('malf:rare_earth_mineral').displayName("Rare Earth Mineral")
+
+	//Vibranium
+	setupExoticOreItems("vibranium")
+
+	//Acryx
+	setupExoticOreItems("acryx")
+
 	
 	
 })
@@ -95,8 +140,40 @@ onEvent('block.registry', event => {
 		}
 	}
 
+	function createSingleOreBlock(name) { // Creates a new ore block with no variants (either normal stone version or custom)
+
+		var hardness = 3 // Standard hardness
+		if (typeof malf_ore_hardness[name] !== 'undefined') { hardness = malf_ore_hardness[name] } // Sets hardness if defined
+
+    	var mining_level = 'iron' // Standard mining level
+		if (typeof malf_ore_mining_level[name] !== 'undefined') { mining_level = malf_ore_mining_level[name] } // Sets mining level if defined
+
+		var luminosity = 0 // Standard luminosity
+		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets luminosity if defined
+
+		var full_name = (name + "_ore")
+		var texture_path = ("malf:block/ores/stone/" + full_name)
+
+		event.create('malf:' + full_name) //Create the ore!
+			.material('stone')
+			.hardness(hardness)
+			.displayName(fancify(full_name))
+			.tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a shovel in 1.18.2+
+			.tagBlock('minecraft:needs_' + mining_level + '_tool') // Make it require an iron or higher level tool on 1.18.2+
+			.requiresTool(true)
+			.tagBoth('forge:ores')
+			.tagBoth('forge:ores/' + name)
+			.lightLevel(luminosity)
+			.textureAll(texture_path)
+	}
+
 	malf_common_ores.forEach(createOreBlocks);
-	malf_exotic_ores.forEach(createOreBlocks);
+	//Exotic:
+	createOreBlocks("ethereal_bronze")
+	createOreBlocks("rare_earth")
+	createSingleOreBlock("vibranium")
+	createOreBlocks("acryx")
+
 	
 })
 
@@ -104,3 +181,5 @@ onEvent('item.modification', event => {
 
 
 })
+
+global['tag_list'] = tag_list

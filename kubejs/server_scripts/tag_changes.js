@@ -5,6 +5,8 @@ settings.logRemovedRecipes = true
 settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
+var tag_list = global['tag_list']
+
 onEvent('recipes', event => {
 	
 })
@@ -15,15 +17,25 @@ onEvent('item.tags', event => {
 	//event.get('forge:dusts').add('malf:iron_dust')
 	//event.get('forge:dusts/iron').add('malf:iron_dust')
 
-	
 
-	function tagOreItems(item) {
-		event.get('forge:raw').add('malf:iron_plate')
+	//Tag items from tag_list (from malf_custom_ores.js)
+	for (const [key, value] of Object.entries(tag_list)) {
+		event.get(value[0]).add(key)
+		
+		if (value.length > 1) {
+			event.get(value[1]).add(key)
+		}
 	}
 
 
 
 
+
+
+
+	function tagOreItems(item) {
+		event.get('forge:raw').add('malf:iron_plate')
+	}
 
 
 	var blocks_to_fix = []
