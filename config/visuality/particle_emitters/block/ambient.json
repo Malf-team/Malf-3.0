@@ -47,17 +47,30 @@
     },
     {
       "block": [
-        "malf:ethereal_bronze_ore",
-        "malf:deepslate_ethereal_bronze_ore",
-        "malf:nether_ethereal_bronze_ore",
-        "malf:end_ethereal_bronze_ore"
+        "malf:vibranium_ore"
       ],
       "particle": {
         "type": "visuality:sparkle",
         "value": [
-          0.6,
-          0.5,
-          1.0
+          0.25,
+          1.0,
+          0.8
+        ]
+      }
+    },
+    {
+      "block": [
+        "malf:acryx_ore",
+        "malf:deepslate_acryx_ore",
+        "malf:nether_acryx_ore",
+        "malf:end_acryx_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          1.0,
+          0.0,
+          0.45
         ]
       }
     },
