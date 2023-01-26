@@ -1,0 +1,7 @@
+
+["General Options"]
+	#List all the stages that you want to have.
+	stages = []
+	#Set this value to 'true' whenever you're having issues, this will allow the mod to output everything it tries to do in the log.
+	debugMode = false
+
