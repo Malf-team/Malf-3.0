@@ -5,8 +5,8 @@ const ore_names = ["iron", "copper", "gold", "aluminum", "lead", "silver", "nick
 const malf_common_ores = ["hematite", "tetrahedrite", "gold", "cinnabar", "lazurite", "kimberlite", "beryl", "cassiterite", "bauxite", "pentlandite", "galena", "pitchblende", "sphalerite", "argentite"]
 const malf_exotic_ores = ["ethereal_bronze", "rare_earth", "vibranium", "acryx"]
 
-const malf_ore_hardness = {"ethereal_bronze":5, "vibranium":15}
-const malf_ore_mining_level = {"hematite":"stone", "tetrahedrite":"stone", "cassiterite":"stone", "ethereal_bronze":"diamond", "vibranium":"netherite"}
+const malf_ore_hardness = {"ethereal_bronze":5, "vibranium":20}
+const malf_ore_mining_level = {"hematite":"stone", "tetrahedrite":"stone", "cassiterite":"stone", "ethereal_bronze":"diamond", "vibranium":"diamond"}
 const malf_ore_luminosity = {"ethereal_bronze":0.5, "pitchblende":0.1, "vibranium":0.7} //0.0 ~ 1.0
 const malf_ore_rarity = {"ethereal_bronze":"uncommon", "acryx":"uncommon", "vibranium":"rare"}
 const malf_ore_glow = {"vibranium":true}
@@ -16,10 +16,10 @@ var processing_output = {   "hematite":     ["iron", "iron", "iron", "tungsten"]
                             "tetrahedrite": ["copper", "iron", "sulfur", "antimony"],
                             "gold":         ["gold", "gold", "silver", "tellurium"],
                             "cinnabar":     ["#redstone", "sulfur", "mercury_sulfide", "chromium"],
-                            "lazurite":     ["#lapis", "silicon", "calcium", "natrium"],
+                            "lazurite":     ["#lapis", "silicon", "calcium", "sodium"],
                             "kimberlite":   ["#diamond", "carbon", "magnesium", "platinum"],
                             "beryl":        ["#emerald", "#quartz", "silicon", "beryllium"],
-                            "cassiterite":  ["tin", "tin", "arsenic", "molybdenium"],
+                            "cassiterite":  ["tin", "tin", "arsenic", "molybdenum"],
                             "bauxite":      ["aluminum", "aluminum", "cadmium", "gallium"],
                             "pentlandite":  ["nickel", "nickel", "iron", "cobalt"],
                             "galena":       ["lead", "sulfur", "zinc", "silver"],

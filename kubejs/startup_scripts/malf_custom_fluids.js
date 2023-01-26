@@ -92,18 +92,24 @@ onEvent('fluid.registry', event => {
 			.bucketColor(color)
 			.displayName('Diluted '+ capitalizeFirstLetter(name) +' Water')
 			.temperature(295)
+			.noBucket()
+			.noBlock()
 
 		event.create('malf:chemically_activated_'+ name +'_water')
 			.thinTexture(chemical_color)
 			.bucketColor(chemical_color)
 			.displayName('Chemically Activated '+ capitalizeFirstLetter(name) +' Water')
 			.temperature(295)
+			.noBucket()
+			.noBlock()
 
 		event.create('malf:refined_'+ name +'_water')
 			.thinTexture(refined_color)
 			.bucketColor(refined_color)
 			.displayName('Refined '+ capitalizeFirstLetter(name) +' Water')
 			.temperature(295)
+			.noBucket()
+			.noBlock()
 	}
 
 	malf_common_ores.forEach(makeFluids)
