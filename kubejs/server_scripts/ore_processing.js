@@ -6,9 +6,7 @@ settings.logErroringRecipes = true
 
 //______________________________________________________________________________________________
 
-const processing_output = global['processing_output']
-const malf_common_ores = global['malf_common_ores']
-const malf_exotic_ores = global['malf_exotic_ores']
+
 
 onEvent('recipes', event => {
 	function setup_ore_processing(ore) {
@@ -85,35 +83,27 @@ onEvent('recipes', event => {
 		}).id("malf:crushed_" + ore + "_to_grit")
 
 		//IE-squeeze
+
+		event.custom({
+			"type": "immersiveengineering:squeezer",
+			"result": {
+				"item": "malf:squeezed_" + ore,
+				"count": 1
+			},
+			"fluid": { 
+				"fluid": "minecraft:water",
+				"amount": 20
+			},
+			"input": { "item": "malf:washed_" + ore},
+			"energy": 18000
+		}).id("malf:washed_" + ore + "_squeeze")
+		
+		
 		if (ore == "kimberlite" || ore == "beryl") {
-			event.custom({
-				"type": "immersiveengineering:squeezer",
-				"result": {
-					"item": processing_output[ore][4],
-					"count": 6
-				},
-				"fluid": { 
-					"fluid": "minecraft:water",
-					"amount":20
-				},
-				"input": { "item": "malf:washed_" + ore},
-				"energy": 18000
-			}).id("malf:washed_" + ore + "_squeeze")
+			event.smelting("6x " + processing_output[ore][4], "malf:squeezed_" + ore).id("malf:squeezed_"+ore+"_smelting")
 		}
 		else {
-			event.custom({
-				"type": "immersiveengineering:squeezer",
-				"result": {
-					"item": processing_output[ore][4],
-					"count": 12
-				},
-				"fluid": { 
-					"fluid": "minecraft:water",
-					"amount":20
-				},
-				"input": { "item": "malf:washed_" + ore},
-				"energy": 18000
-			}).id("malf:washed_" + ore + "_squeeze")
+			event.smelting("12x " + processing_output[ore][4], "malf:squeezed_" + ore).id("malf:squeezed_"+ore+"_smelting")
 		}
 
 		//Pneu-vacuum
@@ -181,9 +171,9 @@ onEvent('recipes', event => {
 					}
 				]
 			}
-		).id('malf:'+ore+"_centrifuge")
+		).id('malf:'+ore+"_centrifuge1")
 
-
+			
 		//IF-dissolution (dust, pulverized)
 		event.custom({
 			"input": [
@@ -199,7 +189,7 @@ onEvent('recipes', event => {
 			  },
 			"outputFluid": "{FluidName:\"malf:"+ore+"-rich_water\",Amount:500}",
 			"type": "industrialforegoing:dissolution_chamber"
-		  })
+		  }).id('malf:'+ore+"_dust_dissolve")
 
 		event.custom({
 		"input": [
@@ -215,19 +205,147 @@ onEvent('recipes', event => {
 			},
 		"outputFluid": "{FluidName:\"malf:"+ore+"-rich_water\",Amount:500}",
 		"type": "industrialforegoing:dissolution_chamber"
-		})
+		}).id('malf:'+ore+"_pulverized_dissolve")
 
 
-		//IF-fluid-sieve
+		//Create-mixing
+		event.recipes.createMixing([
+			"malf:washed_" + ore,
+			Item.of(processing_output[ore][0])
+			
+		], Fluid.of('malf:'+ore+'-rich_water', 500)).heated().id('malf:'+ore+"_water_mixing")
+
+		event.recipes.createMixing([
+			"malf:washed_" + ore,
+			Item.of("2x " + processing_output[ore][1]),
+			Item.of(processing_output[ore][2]).withChance(0.5)
+			
+		], Fluid.of('malf:refined_'+ ore +'_water', 200)).heated().id('malf:refined_'+ore+"_water_mixing")
+
 		//Thermal-pulverizer
+		event.custom({
+			"type": "thermal:pulverizer",
+			"ingredient": {
+			  "item": "malf:"+ore+"_dust"
+			},
+			"result": [
+			  {
+				"item": "malf:pulverized_"+ore
+			  },
+			  {
+				"item": "malf:pulverized_"+ore,
+				"chance": 0.2
+			  }
+			]
+		  }).id('malf:'+ore+"_dust_to_pulverized")
+		
 		//thermal-alchemical-imbuer
+		event.custom({
+			"type": "thermal:brewer",
+			"ingredient": [
+				{
+					"fluid": 'malf:'+ore+'-rich_water',
+					"amount": 500,
+					
+				},
+				{
+					"item": "thermal:apatite_dust"
+				}
+			],
+			"result": [
+			  {
+				"fluid": 'malf:chemically_activated_'+ ore +'_water',
+				"amount": 500
+			  }
+			],
+			"energy": 6000
+		}).id('malf:'+ore+"_alchemical-imbuer")
+
 		//thermal-fractioning
+		event.custom({
+			"type": "thermal:refinery",
+			"ingredient": {
+			  "fluid": 'malf:chemically_activated_'+ ore +'_water',
+			  "amount": 500
+			},
+			"result": [
+			  {
+				"fluid": 'malf:refined_'+ ore +'_water',
+				"amount": 200
+			  },
+			  {
+				"fluid": 'minecraft:water',
+				"amount": 200
+			  },
+			  {
+				"item": processing_output[ore][2],
+				"chance": 0.5
+			  }
+			],
+			"energy": 6000
+		}).id('malf:'+ore+"_refinery")
+
 		//thermal-chiller
-		//thermal-centrifuge
+		event.custom({
+			"type": "thermal:chiller",
+			"ingredient": {
+			  "fluid": 'malf:refined_'+ ore +'_water',
+			  "amount": 200
+			},
+			"result": [
+			  {
+				"item": "malf:washed_" + ore,
+				"count": 2
+			  }
+			],
+			"energy": 6000
+		}).id('malf:'+ore+"_chiller")
+
+		
 		//powah-energize
+		event.custom({
+			"type": "powah:energizing",
+			"ingredients": [
+			  {"item": "malf:centrifuged_" + ore}
+			],
+			"energy": 100000,
+			"result": {
+			  "item": "malf:energized_" + ore
+			}
+		}).id('malf:'+ore+"_energizing")
 
+		
+		//thermal-centrifuge
+		event.custom({
+			"type": "thermal:centrifuge",
+			"ingredient": {
+				"item": "malf:energized_" + ore
+			},
+			"result": [
+				{
+					"item": processing_output[ore][0],
+					"count": 2,
+					"locked": true
+				},
+				{
+					"item": processing_output[ore][1],
+					"count": 1,
+					"locked": true
+				},
+				{
+					"item": processing_output[ore][2],
+					"chance": 0.5
+				},
+				{
+					"item": processing_output[ore][3],
+					"chance": 0.1
+				}
+			],
+			"energy": 18000
+		}).id('malf:'+ore+"_centrifuge2")
+		
 	}
-
+	
 
 
 
