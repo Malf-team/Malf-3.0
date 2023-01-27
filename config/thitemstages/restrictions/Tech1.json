@@ -1,0 +1,30 @@
+{
+    "Restriction Data": {
+      "stage": "Tech1",
+      "itemList": [],
+      "modList": [
+        "create",
+        "createaddition",
+        "createdeco",
+        "sliceanddice",
+        "littlelogistics"
+      ],
+      "tagList": [],
+      "exceptionList": [],
+      "containerList": [],
+      "dimensionList": []
+    },
+    "Settings": {
+      "advancedTooltips": "ALWAYS",
+      "itemTitle": "Unknown Item",
+      "pickupDelay": 15,
+      "hideInJEI": true,
+      "canPickup": false,
+      "containerListWhitelist": false,
+      "checkPlayerInventory": true,
+      "checkPlayerEquipment": false,
+      "destroyableBlocks": false,
+      "usableItems": false,
+      "usableBlocks": false
+    }
+  }

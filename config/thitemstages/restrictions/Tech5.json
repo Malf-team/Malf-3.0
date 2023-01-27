@@ -1,0 +1,44 @@
+{
+    "Restriction Data": {
+      "stage": "Tech5",
+      "itemList": [
+        "extendedcrafting:ultimate_component",
+        "extendedcrafting:ultimate_catalyst",
+        "extendedcrafting:ultimate_table",
+        "extendedcrafting:ultimate_auto_table",
+        "packagedexcrafting:ultimate_crafter",
+        "alltheores:osmium_rod", "alltheores:osmium_gear"
+
+      ],
+      "modList": [
+        "mekanism",
+        "mekanismgenerators",
+        "beyond_earth",
+        "alchemistry",
+
+        "fluxnetworks",
+        "hostilenetworks",
+        "lazierae2",
+        "aeinfinitybooster",
+        "entangled",
+        "angelring"
+      ],
+      "tagList": [],
+      "exceptionList": [],
+      "containerList": [],
+      "dimensionList": []
+    },
+    "Settings": {
+      "advancedTooltips": "ALWAYS",
+      "itemTitle": "Unknown Item",
+      "pickupDelay": 15,
+      "hideInJEI": true,
+      "canPickup": false,
+      "containerListWhitelist": false,
+      "checkPlayerInventory": true,
+      "checkPlayerEquipment": false,
+      "destroyableBlocks": false,
+      "usableItems": false,
+      "usableBlocks": false
+    }
+  }

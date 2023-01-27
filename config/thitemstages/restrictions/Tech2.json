@@ -1,0 +1,41 @@
+{
+    "Restriction Data": {
+      "stage": "Tech2",
+      "itemList": [
+        "alltheores:steel_ingot", "alltheores:steel_dust", "alltheores:steel_rod", "alltheores:steel_gear", "alltheores:steel_plate", "alltheores:steel_nugget", "alltheores:steel_block",
+        "alltheores:electrum_ingot", "alltheores:electrum_dust", "alltheores:electrum_rod", "alltheores:electrum_gear", "alltheores:electrum_plate", "alltheores:electrum_nugget", "alltheores:electrum_block",
+        "alltheores:constantan_ingot", "alltheores:constantan_dust", "alltheores:constantan_rod", "alltheores:constantan_gear", "alltheores:constantan_plate", "alltheores:constantan_nugget", "alltheores:constantan_block"
+      ],
+      "modList": [
+        "immersiveengineering",
+        "immersivepetroleum",
+        "jeimultiblocks",
+        "pneumaticcraft",
+
+        "createaddition",
+        "storagenetwork",
+        "packagedauto",
+        "extendedcrafting",
+        "packagedexcrafting"
+      ],
+      "tagList": [],
+      "exceptionList": [
+        "immersiveengineering:seed"
+      ],
+      "containerList": [],
+      "dimensionList": []
+    },
+    "Settings": {
+      "advancedTooltips": "ALWAYS",
+      "itemTitle": "Unknown Item",
+      "pickupDelay": 15,
+      "hideInJEI": true,
+      "canPickup": false,
+      "containerListWhitelist": false,
+      "checkPlayerInventory": true,
+      "checkPlayerEquipment": false,
+      "destroyableBlocks": false,
+      "usableItems": false,
+      "usableBlocks": false
+    }
+  }

@@ -1,0 +1,44 @@
+{
+    "Restriction Data": {
+      "stage": "Tech3",
+      "itemList": [
+        "extendedcrafting:advanced_component",
+        "extendedcrafting:advanced_catalyst",
+        "extendedcrafting:advanced_table",
+        "extendedcrafting:advanced_auto_table",
+        "packagedexcrafting:advanced_crafter",
+        "alltheores:invar_ingot", "alltheores:invar_dust", "alltheores:invar_rod", "alltheores:invar_gear", "alltheores:invar_plate", "alltheores:invar_nugget", "alltheores:invar_block",
+        "alltheores:iridium_ingot", "alltheores:iridium_dust", "alltheores:iridium_rod", "alltheores:iridium_gear", "alltheores:iridium_plate", "alltheores:iridium_nugget", "alltheores:iridium_block"
+    
+      ],
+      "modList": [
+        "ftbic",
+        "industrialforegoing",
+        "compactcrafting",
+        "ae2",
+
+        "pipez",
+        "darkutils",
+        "mob_grinding_utils",
+        "solarflux",
+        "cobblefordays"
+      ],
+      "tagList": [],
+      "exceptionList": [],
+      "containerList": [],
+      "dimensionList": []
+    },
+    "Settings": {
+      "advancedTooltips": "ALWAYS",
+      "itemTitle": "Unknown Item",
+      "pickupDelay": 15,
+      "hideInJEI": true,
+      "canPickup": false,
+      "containerListWhitelist": false,
+      "checkPlayerInventory": true,
+      "checkPlayerEquipment": false,
+      "destroyableBlocks": false,
+      "usableItems": false,
+      "usableBlocks": false
+    }
+  }

@@ -1,7 +1,7 @@
 
 ["General Options"]
 	#List all the stages that you want to have.
-	stages = ["Tech1", "Tech2", "Tech3", "Tech4", "Tech5", "Magic1", "Magic2", "Magic3", "Cultivation1", "Cultivation2", "Cultivation3"]
+	stages = ["Tech1", "Tech2", "Tech3"]
 	#Set this value to 'true' whenever you're having issues, this will allow the mod to output everything it tries to do in the log.
 	debugMode = false
 
