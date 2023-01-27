@@ -1,0 +1,40 @@
+{
+	id: "0608BA64E104A275"
+	group: "3199884485D9B460"
+	order_index: 0
+	filename: "starting_out"
+	title: "Starting Out"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		size: 4.0d
+		id: "60B67A6FB7EEA51C"
+		tasks: [{
+			id: "75C9294D0DD3EA57"
+			type: "item"
+			title: "Welcome!"
+			item: "minecraft:oak_log"
+			count: 8L
+		}]
+		rewards: [
+			{
+				id: "4C7DC1B51392F1FA"
+				type: "command"
+				team_reward: true
+				auto: "invisible"
+				command: "/thitemstages add @p tech1"
+				player_command: true
+			}
+			{
+				id: "7080D678955C18BB"
+				type: "item"
+				item: "minecraft:oak_sapling"
+				count: 2
+			}
+		]
+	}]
+	quest_links: [ ]
+}

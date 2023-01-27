@@ -1,7 +1,7 @@
 {
 	id: "3FFCE9A5C0F5619E"
 	group: "2109B316A6A26036"
-	order_index: 4
+	order_index: 2
 	filename: "chapter_5"
 	title: "Tier 5"
 	icon: {
@@ -12,4 +12,5 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [ ]
+	quest_links: [ ]
 }

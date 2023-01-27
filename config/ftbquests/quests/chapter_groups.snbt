@@ -1,5 +1,6 @@
 {
 	chapter_groups: [
+		{ id: "3199884485D9B460", title: "General" }
 		{ id: "2109B316A6A26036", title: "Technology" }
 		{ id: "03FB6003BD401BE5", title: "Magic" }
 		{ id: "64FDA6B5D546D1BA", title: "Cultivation" }

@@ -14,6 +14,7 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["Punching time B)"]
+			dependencies: ["60B67A6FB7EEA51C"]
 			id: "70C8284D33582EAC"
 			tasks: [{
 				id: "03D19B8EDD83EDAC"
@@ -32,6 +33,7 @@
 		{
 			x: 2.0d
 			y: 0.0d
+			dependencies: ["60B67A6FB7EEA51C"]
 			id: "39DC24D7FAAB0C16"
 			tasks: [{
 				id: "23C369965E52AD3D"
@@ -90,7 +92,7 @@
 					type: "command"
 					team_reward: true
 					auto: "invisible"
-					command: "/gamestage add @p tech2"
+					command: "/thitemstages add @p tech2"
 					player_command: false
 				}
 				{
@@ -104,4 +106,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

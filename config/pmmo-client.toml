@@ -9,7 +9,7 @@
 		#how far down from the top left corner the skill list should be
 		"Skill List Yoffset" = 0
 		#Should the skill list be displayed
-		"Display Skill List" = false
+		"Display Skill List" = true
 		#how far right from the bottom left corner the vein guage sholud be
 		"Vein Gauge Xoffset" = 4
 		#how far up from the bottm left corner the vein guage should be
@@ -124,7 +124,7 @@
 	[Client.Vein_Miner]
 		#The max blocks a vein activation should consume regardless of charge
 		#Range: > 0
-		Vein_Limit = 64
+		Vein_Limit = 65
 
 	#Toggles for helpful features related to mechanics
 	[Client.Tutorial]
