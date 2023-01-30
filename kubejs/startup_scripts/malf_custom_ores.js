@@ -77,6 +77,7 @@ onEvent('item.registry', event => {
 		setupIngotItem(item)
 	}
 
+	
 	malf_common_ores.forEach(setupOreItems)
 
 	//Ethereal Bronze

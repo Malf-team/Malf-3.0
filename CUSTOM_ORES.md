@@ -113,6 +113,8 @@ T4
 # - Biproduct 3
 # - Biproduct 4
 
+# Defined ingame in kubejs/startup_scripts/globals.js
+
 - Hematite:
   - Iron
   - Iron

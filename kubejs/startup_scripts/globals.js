@@ -2,8 +2,9 @@
 
 const ore_names = ["iron", "copper", "gold", "aluminum", "lead", "silver", "nickel", "uranium", "tin", "zinc"]
 
-const malf_common_ores = ["hematite", "tetrahedrite", "gold", "cinnabar", "lazurite", "kimberlite", "beryl", "cassiterite", "bauxite", "pentlandite", "galena", "pitchblende", "sphalerite", "argentite"]
+const malf_common_ores = ["hematite", "tetrahedrite", "gold", "cinnabar", "lazurite", "kimberlite", "beryl", "cassiterite", "bauxite", "pentlandite", "galena", "pitchblende", "sphalerite", "argentite", "ilmenite"]
 const malf_exotic_ores = ["ethereal_bronze", "rare_earth", "vibranium", "acryx"]
+const malf_exotic_materials = ["valyrian_steel"]
 
 const malf_ore_hardness = {"ethereal_bronze":5, "vibranium":20}
 const malf_ore_mining_level = {"hematite":"stone", "tetrahedrite":"stone", "cassiterite":"stone", "ethereal_bronze":"diamond", "vibranium":"diamond"}
@@ -25,8 +26,10 @@ var processing_output = {   "hematite":     ["iron", "iron", "iron", "tungsten"]
                             "galena":       ["lead", "sulfur", "zinc", "silver"],
                             "pitchblende":  ["uranium", "lead", "thorium", "#rare_earth"],
                             "sphalerite":   ["zinc", "sulfur", "germanium", "indium"],
-                            "argentite":    ["silver", "silver", "sulfur", "actinium"]
+                            "argentite":    ["silver", "silver", "sulfur", "actinium"],
+                            "ilmenite":     ["iron", "titanium", "magnesium", "manganese"],
                         }
+
 
 function convert_to_ID(output_array) {
     var item, new_id, nugget, ore
@@ -82,8 +85,17 @@ function convert_to_ID(output_array) {
     return output_array
 }
 
+
+var main_output = {}
+for (var [key, value] of Object.entries(processing_output)) {
+    main_output[key] = value[0]
+}
+
+
+
 processing_output = convert_to_ID(processing_output)
 
 global['processing_output'] = processing_output
+global['main_output'] = main_output
 global['malf_common_ores'] = malf_common_ores
 global['malf_exotic_ores'] = malf_exotic_ores

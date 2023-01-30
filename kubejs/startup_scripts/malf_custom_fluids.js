@@ -66,7 +66,8 @@ const ore_color = {	"hematite":0x998888,
 					"galena":0x473553,
 					"pitchblende":0x6C7F68,
 					"sphalerite":0xBFC5B8,
-					"argentite":0xD7DCB7
+					"argentite":0xD7DCB7,
+					"ilmenite":0xA12A4A
 				}
 const chemical_color_add = 0xCCCCDD
 const refined_color_add = 0xCCCC3D
