@@ -9,7 +9,7 @@
 		#how far down from the top left corner the skill list should be
 		"Skill List Yoffset" = 0
 		#Should the skill list be displayed
-		"Display Skill List" = true
+		"Display Skill List" = false
 		#how far right from the bottom left corner the vein guage sholud be
 		"Vein Gauge Xoffset" = 4
 		#how far up from the bottm left corner the vein guage should be
