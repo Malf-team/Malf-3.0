@@ -1,0 +1,234 @@
+{
+  "version": 3,
+  "location": "malf:warp_core",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 76,
+      "y": 75,
+      "width": 50,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    },
+    "forge_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 8,
+      "y": 127,
+      "width": 16,
+      "height": 40,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "DOWN_TO_UP",
+      "capacity": 10000,
+      "maxReceive": 50000,
+      "maxExtract": 50000
+    },
+    "fluid": [
+      {
+        "cIO": 0,
+        "gIO": 0,
+        "mIO": 0,
+        "slotName": "input1",
+        "x": 25,
+        "y": 63,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 36,
+        "h": 18,
+        "fillDir": "LEFT_TO_RIGHT",
+        "valid": [
+          "\"{Amount:1000,FluidName:\\\"minecraft:water\\\"}\""
+        ]
+      },
+      {
+        "cIO": 0,
+        "gIO": 0,
+        "mIO": 0,
+        "x": 25,
+        "y": 93,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 36,
+        "h": 18,
+        "fillDir": "LEFT_TO_RIGHT",
+        "valid": [
+          "\"{Amount:1000,FluidName:\\\"thermal:light_oil\\\"}\""
+        ]
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 135,
+        "y": 68,
+        "autoIO": false,
+        "tC": 10000,
+        "w": 18,
+        "h": 38,
+        "fillDir": "DOWN_TO_UP",
+        "valid": [
+          "\"{Amount:1000,FluidName:\\\"thermal:crude_oil\\\"}\""
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "multiblocked:controller_tester",
+          "meta": 1
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 10,
+      "parent": "idle",
+      "sound": {
+        "sound": "botania:air_rod",
+        "loop": true,
+        "delay": 0,
+        "volume": 1.0,
+        "pitch": 0.8
+      }
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "593d07fb-c638-4d2d-aa1b-fd1e12d228b2",
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "ABA",
+        "ABA",
+        " A ",
+        " A ",
+        "   "
+      ],
+      [
+        "AAA",
+        "BCB",
+        "BCB",
+        "ADA",
+        "ADA",
+        " A "
+      ],
+      [
+        "A@A",
+        "ABA",
+        "ABA",
+        " A ",
+        " A ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "mekanism:sps_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "malf:warp_core",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "mekanismgenerators:reactor_glass"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "mekanism:supercharged_coil"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "compressedcreativity:compressed_iron_casing"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

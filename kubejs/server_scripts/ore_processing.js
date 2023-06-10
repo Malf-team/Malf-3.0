@@ -10,6 +10,41 @@ settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
 	function setup_ore_processing(ore) {
+		// Smelting/Blasting Recipes for all items
+		// Extra boosted output for some ores, like cinnabar
+
+		if (ore == "cinnabar" || ore == "lazurite") {
+			event.smelting("4x " + processing_output[ore][0], 'malf:raw_' + ore).id("malf:raw_" + ore + "_smelting")
+			event.smelting("16x " + processing_output[ore][4], 'malf:crushed_' + ore).id("malf:crushed_" + ore + "_smelting")
+			event.smelting("4x " + processing_output[ore][0], 'malf:' + ore + '_grit').id("malf:" + ore + "_grit_smelting")
+			event.smelting("4x " + processing_output[ore][0], 'malf:' + ore + '_dust').id("malf:" + ore + "_dust_smelting")
+			event.smelting("4x " + processing_output[ore][0], 'malf:pulverized_' + ore).id("malf:pulverized_" + ore + "_smelting")
+			event.blasting("4x " + processing_output[ore][0], 'malf:washed_' + ore).id("malf:washed_" + ore + "_blasting")
+			event.smelting("4x " + processing_output[ore][0], 'malf:vacuum_dried_' + ore).id("malf:vacuum_dried_" + ore + "_smelting")
+			event.smelting("16x " + processing_output[ore][4], 'malf:centrifuged_' + ore).id("malf:centrifuged_" + ore + "_smelting")
+			event.smelting("4x " + processing_output[ore][0], 'malf:energized_' + ore).id("malf:energized_" + ore + "_smelting")
+		}
+
+		else {
+			event.smelting(processing_output[ore][0], 'malf:raw_' + ore).id("malf:raw_" + ore + "_smelting")
+			event.smelting(processing_output[ore][0], 'malf:' + ore + '_grit').id("malf:" + ore + "_grit_smelting")
+			event.smelting(processing_output[ore][0], 'malf:' + ore + '_dust').id("malf:" + ore + "_dust_smelting")
+			event.smelting(processing_output[ore][0], 'malf:pulverized_' + ore).id("malf:pulverized_" + ore + "_smelting")
+			event.blasting(processing_output[ore][0], 'malf:washed_' + ore).id("malf:washed_" + ore + "_blasting")
+			event.smelting(processing_output[ore][0], 'malf:vacuum_dried_' + ore).id("malf:vacuum_dried_" + ore + "_smelting")
+			event.smelting(processing_output[ore][0], 'malf:energized_' + ore).id("malf:energized_" + ore + "_smelting")
+
+			if (ore == "kimberlite" || ore == "beryl") {
+				event.smelting("4x " + processing_output[ore][4], 'malf:crushed_' + ore).id("malf:crushed_" + ore + "_smelting")
+				event.smelting("4x " + processing_output[ore][4], 'malf:centrifuged_' + ore).id("malf:centrifuged_" + ore + "_smelting")
+			}
+			else {
+				event.smelting("9x " + processing_output[ore][4], 'malf:crushed_' + ore).id("malf:crushed_" + ore + "_smelting")
+				event.smelting("9x " + processing_output[ore][4], 'malf:centrifuged_' + ore).id("malf:centrifuged_" + ore + "_smelting")
+			}
+		}
+
+
 
 		//Raw Ore --> Crushed Ore
 		event.recipes.createCrushing([
@@ -17,8 +52,8 @@ onEvent('recipes', event => {
 			Item.of("malf:crushed_"+ore).withChance(0.5)
 		], 'malf:raw_'+ore).id("malf:"+ore+"_crush")
 
-
-		if (ore == "kimberlite" || ore == "beryl") { //Splashing recipes but with 1, 2, 3 nuggets for gems
+		//Splashing recipes but with 1, 2, 3 nuggets for gems
+		if (ore == "kimberlite" || ore == "beryl") { 
 
 			event.recipes.createSplashing(["malf:washed_" + ore, 
 			Item.of("1x " + processing_output[ore][4]).withChance(0.5) //1x nuggets
@@ -33,7 +68,9 @@ onEvent('recipes', event => {
 			], "malf:"+ore+"_dust").id("malf:"+ore+"_wash_from_dust")
 
 		}
-		else { //Normal splashing recipes with 3, 5, 7 nuggets
+
+		//Normal splashing recipes with 3, 5, 7 nuggets
+		else { 
 
 			//Crushed Ore --> Washed Ore
 			event.recipes.createSplashing([
@@ -316,34 +353,66 @@ onEvent('recipes', event => {
 
 		
 		//thermal-centrifuge
-		event.custom({
-			"type": "thermal:centrifuge",
-			"ingredient": {
-				"item": "malf:energized_" + ore
-			},
-			"result": [
-				{
-					"item": processing_output[ore][0],
-					"count": 2,
-					"locked": true
+
+		if (ore == "cinnabar" || ore == "lazurite") {
+			event.custom({
+				"type": "thermal:centrifuge",
+				"ingredient": {
+					"item": "malf:energized_" + ore
 				},
-				{
-					"item": processing_output[ore][1],
-					"count": 1,
-					"locked": true
+				"result": [
+					{
+						"item": processing_output[ore][0],
+						"count": 8, //Boosted output for redstone + lapis
+						"locked": true
+					},
+					{
+						"item": processing_output[ore][1],
+						"count": 1,
+						"locked": true
+					},
+					{
+						"item": processing_output[ore][2],
+						"chance": 0.5
+					},
+					{
+						"item": processing_output[ore][3],
+						"chance": 0.1
+					}
+				],
+				"energy": 18000
+			}).id('malf:'+ore+"_centrifuge2")
+		}
+
+		else {
+			event.custom({
+				"type": "thermal:centrifuge",
+				"ingredient": {
+					"item": "malf:energized_" + ore
 				},
-				{
-					"item": processing_output[ore][2],
-					"chance": 0.5
-				},
-				{
-					"item": processing_output[ore][3],
-					"chance": 0.1
-				}
-			],
-			"energy": 18000
-		}).id('malf:'+ore+"_centrifuge2")
-		
+				"result": [
+					{
+						"item": processing_output[ore][0],
+						"count": 2,
+						"locked": true
+					},
+					{
+						"item": processing_output[ore][1],
+						"count": 1,
+						"locked": true
+					},
+					{
+						"item": processing_output[ore][2],
+						"chance": 0.5
+					},
+					{
+						"item": processing_output[ore][3],
+						"chance": 0.1
+					}
+				],
+				"energy": 18000
+			}).id('malf:'+ore+"_centrifuge2")
+		}
 	}
 	
 

@@ -20,7 +20,15 @@
       ],
       "tagList": [],
       "exceptionList": [
-        "immersiveengineering:seed"
+        "immersiveengineering:seed",
+        "immersiveengineering:shader_bag_common",
+        "immersiveengineering:shader_bag_uncommon",
+        "immersiveengineering:shader_bag_rare",
+        "immersiveengineering:shader_bag_epic",
+        "immersiveengineering:shader_bag_ie_masterwork",
+        "alltheores:steel_ingot",
+        "immersiveengineering:hammer"
+
       ],
       "containerList": [],
       "dimensionList": []

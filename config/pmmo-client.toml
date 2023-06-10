@@ -15,7 +15,7 @@
 		#how far up from the bottm left corner the vein guage should be
 		"Vein Gauge Yoffset" = 15
 		#Should the vein charge data be displayed
-		"Display Veing Gauge" = false
+		"Display Veing Gauge" = true
 		#how far offset from center the gain list should be
 		"Gain List Xoffset" = 0
 		#how far down from the top left corner the gain list should be
@@ -32,6 +32,8 @@
 		"Gain Blacklist" = []
 		#What color should the background be for the salvage item lines in the glossary
 		"Salvage Item Color" = 366125849
+		#if true, removes the skills button from the inventory screen
+		"hide skill button" = false
 
 	#Generic Tooltip Settings
 	[Client.ToolTip_Settings]

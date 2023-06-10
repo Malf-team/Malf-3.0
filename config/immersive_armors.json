@@ -1,8 +1,8 @@
 {
+  "_documentation": "https://github.com/Luke100000/ImmersiveArmors/blob/HEAD/config.md",
   "hideSecondLayerUnderArmor": true,
   "enableEffects": true,
   "enableEnchantmentGlint": true,
-  "_documentation": "https://github.com/Luke100000/ImmersiveArmors/blob/HEAD/config.md",
   "hudClockX": -111,
   "hudClockXOffhand": -140,
   "hudClockY": -20,

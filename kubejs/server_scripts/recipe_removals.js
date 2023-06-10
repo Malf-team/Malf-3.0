@@ -37,6 +37,10 @@ onEvent('recipes', event => {
 
 	ores_to_remove.forEach(remove_ore_recipe)
 	other_ores_to_remove.forEach(remove_other_ore)
+
+	event.remove({id: 'immersiveengineering:crafting/stick_aluminum'})
+	event.remove({id: 'immersiveengineering:crafting/stick_steel'})
+	event.remove({id: 'buildersaddition:iron_rod'})
 })
 
 onEvent('item.tags', event => {

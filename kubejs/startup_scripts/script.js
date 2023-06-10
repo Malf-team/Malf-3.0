@@ -23,6 +23,22 @@ onEvent('item.registry', event => {
 	event.create('malf:emerald_shard').displayName("Emerald Shard")
 	event.create('malf:quartz_shard').displayName("Quartz Shard")
 	event.create('malf:lapis_lazuli_shard').displayName("Lapis Lazuli Shard")
+
+	event.create('malf:unprocessed_steel_dust', "create:sequenced_assembly").displayName("Unprocessed Steel Dust")
+
+	event.create('malf:clay_dust').displayName("Clay Dust")
+	event.create('malf:brick_dust').displayName("Brick Dust")
+	
+	event.create('malf:blast_brick_blend').displayName("Blast Brick Blend")
+	event.create('malf:blast_brick').displayName("Blast Brick")
+
+	event.create('malf:coke_brick_blend').displayName("Coke Brick Blend")
+	event.create('malf:coke_brick').displayName("Coke Brick")
+
+	event.create('malf:circuit_tier_III').displayName("Tier III Circuit")
+	event.create('malf:circuit_tier_IV').displayName("Tier IV Circuit").rarity("uncommon")
+	event.create('malf:circuit_tier_V').displayName("Tier V Circuit").rarity("rare")
+	event.create('malf:circuit_tier_VI').displayName("Tier VI Circuit").rarity("epic").glow(true)
 	
 	
 })

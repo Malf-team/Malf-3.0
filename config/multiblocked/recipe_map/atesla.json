@@ -1,0 +1,19 @@
+{
+  "name": "atesla",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "01",
+      "duration": 20,
+      "inputs": {
+        "gtce_energy": [
+          {
+            "content": 256,
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {}
+    }
+  ]
+}

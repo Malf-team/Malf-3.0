@@ -1,0 +1,19 @@
+{
+  "name": "fusion_sun",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "0",
+      "duration": 200,
+      "inputs": {
+        "forge_energy": [
+          {
+            "content": 1000,
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {}
+    }
+  ]
+}

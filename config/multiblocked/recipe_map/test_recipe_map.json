@@ -1,0 +1,29 @@
+{
+  "name": "test_recipe_map",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "1",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 10,
+              "ore": "ingotIron"
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"water\",Amount:500}",
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

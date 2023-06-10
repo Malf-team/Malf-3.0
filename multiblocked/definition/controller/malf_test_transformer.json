@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "location": "malf:test_transformer",
+  "ui": "test_transformer.mbdui",
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 8,
+      "y": 10,
+      "width": 160,
+      "height": 4,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    }
+  },
+  "properties": {
+    "rotationState": "NONE",
+    "showInJei": true,
+    "isOpaque": false,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {},
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 0,
+      "parent": "idle",
+      "sound": {
+        "sound": "create:train2",
+        "loop": false,
+        "delay": 0,
+        "volume": 0.8,
+        "pitch": 0.5
+      }
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "593d07fb-c638-4d2d-aa1b-fd1e12d228b2",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "A@A"
+      ],
+      [
+        "ABA",
+        "C D"
+      ],
+      [
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "minecraft:polished_deepslate"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "malf:test_transformer",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "minecraft:copper_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "create:fluid_tank"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "minecraft:chest"
+          }
+        ],
+        "type": "blocks"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  }
+}

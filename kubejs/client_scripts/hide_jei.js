@@ -39,9 +39,9 @@ onEvent('jei.hide.items', (event) => {
 	ores_to_remove.forEach(hide_alltheores_ore)
 	other_ores_to_remove.forEach(hide_other_ore)
 
-
-
 	hide.forEach((id) => {
 		event.hide(id)
 	})
+
+	event.hide('malf:unprocessed_steel_dust')
 })

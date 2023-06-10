@@ -24,7 +24,7 @@
         "cobblefordays"
       ],
       "tagList": [],
-      "exceptionList": [],
+      "exceptionList": ["ftbic:rubber", "ftbic:industrial_grade_metal", "ftbic:fuse"],
       "containerList": [],
       "dimensionList": []
     },

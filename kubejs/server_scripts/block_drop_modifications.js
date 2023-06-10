@@ -1,4 +1,4 @@
-// priority: 10
+// priority: 0
 
 settings.logAddedRecipes = true
 settings.logRemovedRecipes = true
@@ -21,6 +21,7 @@ onEvent('block.loot_tables', event => {
       raw = "raw_" + ore
     }
     //Standard drops = raw ore drops, affected by fortune
+    console.log("Adding block drop for: " + "malf:" + ore + "_ore, dropping: " + "malf:" + raw)
 
     event.addBlock('#forge:ores/'+ore, (table) => {
       table.addPool((pool) => {

@@ -1,0 +1,201 @@
+{
+  "catalyst": "{id:\"minecraft:air\",Count:1b,Damage:0s}",
+  "consumeCatalyst": false,
+  "location": "multiblocked:bot_tc",
+  "allowRotate": false,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "botania:platform",
+      "meta": 1
+    },
+    "type": "blockstate"
+  },
+  "formedRenderer": {
+    "state": {
+      "id": "botania:pylon",
+      "meta": 1
+    },
+    "type": "blockstate"
+  },
+  "workingRenderer": {
+    "state": {
+      "id": "botania:pylon",
+      "meta": 2
+    },
+    "type": "blockstate"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        " ABA ",
+        "     ",
+        "     "
+      ],
+      [
+        "ACDEA",
+        "     ",
+        "     "
+      ],
+      [
+        "BDFDB",
+        "     ",
+        "  @  "
+      ],
+      [
+        "AGDHA",
+        "     ",
+        "     "
+      ],
+      [
+        " ABA ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "c3": {
+        "states": [
+          {
+            "id": "thaumcraft:pillar_arcane",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "A": {
+        "states": [
+          {
+            "id": "thaumcraft:pedestal_arcane",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "io": "IN"
+      },
+      "controller": {
+        "location": "multiblocked:bot_tc",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "botania:pool",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "CCC": {
+        "states": [
+          {
+            "id": "thaumcraft:pedestal_arcane",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "io": "OUT"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "thaumcraft:pillar_arcane",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "thaumcraft:jar_normal",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      },
+      "c1": {
+        "states": [
+          {
+            "id": "thaumcraft:pillar_arcane",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "c2": {
+        "states": [
+          {
+            "id": "thaumcraft:pillar_arcane",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "c2"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "c1"
+      ],
+      "F": [
+        "CCC"
+      ],
+      "G": [
+        "c3"
+      ],
+      "H": [
+        "C"
+      ]
+    }
+  },
+  "recipeMap": "bot_tc"
+}

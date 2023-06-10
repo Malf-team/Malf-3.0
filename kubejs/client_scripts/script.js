@@ -7,6 +7,16 @@ onEvent('item.tooltip', tooltip => {
 
 })
 
+onEvent('client.generate_assets', event => {
+	const rename = (item, newName) => event.addLang(Item.of(item).item.getDescriptionId(), newName)
+  
+	// rename mutton to BAAAAAAA
+	rename('immersiveengineering:cokebrick', "Coke Brick Block")
+	rename('immersiveengineering:blastbrick', "Blast Brick Block")
+	// rename all items with e in their path to EEEEEEEEEEEE
+	//Ingredient.of(/:.*e/).stacks.forEach(item => rename(item, "EEEEEEEEEEEE"))
+  })
+
 
 onEvent('jei.information', event => {
 

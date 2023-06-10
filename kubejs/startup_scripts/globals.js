@@ -7,7 +7,7 @@ const malf_exotic_ores = ["ethereal_bronze", "rare_earth", "vibranium", "acryx"]
 const malf_exotic_materials = ["valyrian_steel"]
 
 const malf_ore_hardness = {"ethereal_bronze":5, "vibranium":20}
-const malf_ore_mining_level = {"hematite":"stone", "tetrahedrite":"stone", "cassiterite":"stone", "ethereal_bronze":"diamond", "vibranium":"diamond"}
+const malf_ore_mining_level = {"hematite":"stone", "tetrahedrite":"stone", "cassiterite":"stone", "ethereal_bronze":"diamond", "vibranium":"netherite"}
 const malf_ore_luminosity = {"ethereal_bronze":0.5, "pitchblende":0.1, "vibranium":0.7} //0.0 ~ 1.0
 const malf_ore_rarity = {"ethereal_bronze":"uncommon", "acryx":"uncommon", "vibranium":"rare"}
 const malf_ore_glow = {"vibranium":true}

@@ -1,0 +1,60 @@
+{
+  "catalyst": "{id:\"minecraft:air\",Count:1b,Damage:0s}",
+  "consumeCatalyst": false,
+  "location": "multiblocked:atesla",
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "minecraft:iron_block",
+      "meta": 0
+    },
+    "type": "blockstate"
+  },
+  "formedRenderer": {
+    "modelName": "atesla",
+    "isGlobal": true,
+    "type": "geo"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        "A",
+        "@"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "eu": {
+        "capability": "gtce_energy",
+        "type": "capability",
+        "disableRenderFormed": true,
+        "io": "IN"
+      },
+      "controller": {
+        "location": "multiblocked:atesla",
+        "type": "component"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "eu"
+      ]
+    }
+  },
+  "recipeMap": "atesla"
+}

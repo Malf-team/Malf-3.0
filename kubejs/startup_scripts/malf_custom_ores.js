@@ -107,8 +107,17 @@ onEvent('block.registry', event => {
 		var hardness = 3 // Standard hardness
 		if (typeof malf_ore_hardness[name] !== 'undefined') { hardness = malf_ore_hardness[name] } // Sets hardness if defined
 
-    	var mining_level = 'iron' // Standard mining level
-		if (typeof malf_ore_mining_level[name] !== 'undefined') { mining_level = malf_ore_mining_level[name] } // Sets mining level if defined
+    	var mining_level_tag = 'minecraft:needs_iron_tool'  // Standard mining level
+		if (typeof malf_ore_mining_level[name] !== 'undefined') { 
+
+			if (malf_ore_mining_level[name] === 'netherite') {
+				mining_level_tag = 'forge:needs_netherite_tool' 
+			}
+			else {
+				mining_level_tag = 'minecraft:needs_' + malf_ore_mining_level[name] + '_tool' 
+			}
+			
+		} // Sets mining level if defined
 
 		var luminosity = 0 // Standard luminosity
 		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets luminosity if defined
@@ -132,7 +141,7 @@ onEvent('block.registry', event => {
 				.hardness(hardness)
 				.displayName(fancify(full_name))
 				.tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a shovel in 1.18.2+
-				.tagBlock('minecraft:needs_' + mining_level + '_tool') // Make it require an iron or higher level tool on 1.18.2+
+				.tagBlock(mining_level_tag) // Make it require an iron or higher level tool on 1.18.2+
 				.requiresTool(true)
 				.tagBoth('forge:ores')
 				.tagBoth('forge:ores/' + name)
@@ -146,8 +155,17 @@ onEvent('block.registry', event => {
 		var hardness = 3 // Standard hardness
 		if (typeof malf_ore_hardness[name] !== 'undefined') { hardness = malf_ore_hardness[name] } // Sets hardness if defined
 
-    	var mining_level = 'iron' // Standard mining level
-		if (typeof malf_ore_mining_level[name] !== 'undefined') { mining_level = malf_ore_mining_level[name] } // Sets mining level if defined
+    	var mining_level_tag = 'minecraft:needs_iron_tool'  // Standard mining level
+		if (typeof malf_ore_mining_level[name] !== 'undefined') { 
+
+			if (malf_ore_mining_level[name] === 'netherite') {
+				mining_level_tag = 'forge:needs_netherite_tool' 
+			}
+			else {
+				mining_level_tag = 'minecraft:needs_' + malf_ore_mining_level[name] + '_tool' 
+			}
+			
+		} // Sets mining level if defined
 
 		var luminosity = 0 // Standard luminosity
 		if (typeof malf_ore_luminosity[name] !== 'undefined') { luminosity = malf_ore_luminosity[name] } // Sets luminosity if defined
@@ -160,7 +178,7 @@ onEvent('block.registry', event => {
 			.hardness(hardness)
 			.displayName(fancify(full_name))
 			.tagBlock('minecraft:mineable/pickaxe') // Make it mine faster using a shovel in 1.18.2+
-			.tagBlock('minecraft:needs_' + mining_level + '_tool') // Make it require an iron or higher level tool on 1.18.2+
+			.tagBlock(mining_level_tag) // Make it require an iron or higher level tool on 1.18.2+
 			.requiresTool(true)
 			.tagBoth('forge:ores')
 			.tagBoth('forge:ores/' + name)

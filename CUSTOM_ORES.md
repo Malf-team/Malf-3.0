@@ -210,3 +210,11 @@ T4
   # Rare ore found in other dimensions
 - Vibranium
   # Rare ore found in very specific biomes (and maybe in meteorites). High mining level required to mine it (netherite)
+
+
+  Other sci-fi materials:
+
+  Paricium
+  Talgonite
+  Duranium
+  Polycomposite

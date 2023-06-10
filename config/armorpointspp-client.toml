@@ -2,7 +2,7 @@
 [general]
 	# Sets the texture sheet used for rendering
 	# See https://github.com/Cheos137/ArmorpointsPlusplus/wiki/Custom-Texture-Sheets for more information
-	# Builtin: default [default: default]
+	# Builtin: default, vanilla [default: default]
 	textureSheet = "default"
 	# Show resistance as border around armor
 	# Available: true, false [default: true]

@@ -1,0 +1,30 @@
+{
+  "name": "electrolytic",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "0",
+      "duration": 200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"water\",Amount:2000}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"oxygen\",Amount:500}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"hydrogen\",Amount:1000}",
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

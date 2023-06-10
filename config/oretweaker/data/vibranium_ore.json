@@ -1,54 +1,14 @@
 {
   "oreConfig": [
     {
-      "ore": "minecraft:diamond_ore",
-      "fillers": [
-        "STONE_ORE_REPLACEABLES"
-      ],
-      "distribution": "TRIANGLE",
+      "ore": "malf:vibranium_ore",
+      "filler": ["beyond_earth:sky_stone"],
+      "distribution": "UNIFORM",
       "minY": -144,
-      "maxY": 16,
-      "maxVeinSize": 4,
-      "spawnRate": 7.0,
-      "discardChanceOnAirExposure": 0.5,
-      "biomeFilters": {
-        "biomeBlacklist": [],
-        "biomeWhitelist": [
-          "OVERWORLD"
-        ]
-      },
-      "replace": true
-    },
-    {
-      "ore": "minecraft:diamond_ore",
-      "fillers": [
-        "STONE_ORE_REPLACEABLES"
-      ],
-      "distribution": "TRIANGLE",
-      "minY": -144,
-      "maxY": 16,
-      "maxVeinSize": 12,
-      "spawnRate": 0.11111111,
-      "discardChanceOnAirExposure": 0.7,
-      "biomeFilters": {
-        "biomeBlacklist": [],
-        "biomeWhitelist": [
-          "OVERWORLD"
-        ]
-      },
-      "replace": true
-    },
-    {
-      "ore": "minecraft:diamond_ore",
-      "fillers": [
-        "STONE_ORE_REPLACEABLES"
-      ],
-      "distribution": "TRIANGLE",
-      "minY": -144,
-      "maxY": 16,
-      "maxVeinSize": 8,
-      "spawnRate": 4.0,
-      "discardChanceOnAirExposure": 1.0,
+      "maxY": 150,
+      "maxVeinSize": 1,
+      "spawnRate": 200.0,
+      "discardChanceOnAirExposure": 0.2,
       "biomeFilters": {
         "biomeBlacklist": [],
         "biomeWhitelist": [

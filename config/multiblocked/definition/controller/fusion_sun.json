@@ -1,0 +1,152 @@
+{
+  "consumeCatalyst": false,
+  "location": "multiblocked:fusion_sun",
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "modelLocation": "multiblocked:fusion_sun",
+    "type": "imodel"
+  },
+  "formedRenderer": {
+    "modelName": "fusion_sun",
+    "isGlobal": true,
+    "type": "geo"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "B B",
+        "C C",
+        "B B",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "ADA",
+        " E ",
+        "   ",
+        " @ ",
+        "   ",
+        "   ",
+        " F "
+      ],
+      [
+        "AAA",
+        "B B",
+        "C C",
+        "B B",
+        "   ",
+        "   ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "multiblocked:fusion_sun",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "minecraft:cobblestone_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "disableRenderFormed": true
+      },
+      "C": {
+        "states": [
+          {
+            "id": "minecraft:cobblestone_wall",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "disableRenderFormed": true
+      },
+      "D": {
+        "states": [
+          {
+            "id": "minecraft:iron_block",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "disableRenderFormed": true
+      },
+      "E": {
+        "states": [
+          {
+            "id": "minecraft:enchanting_table",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "disableRenderFormed": true
+      },
+      "any": {
+        "type": "any"
+      },
+      "sun": {
+        "location": "multiblocked:sun",
+        "type": "component"
+      },
+      "energy": {
+        "io": "IN",
+        "capability": "forge_energy",
+        "type": "capability",
+        "disableRenderFormed": true
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "energy"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "sun"
+      ]
+    }
+  },
+  "recipeMap": "fusion_sun"
+}

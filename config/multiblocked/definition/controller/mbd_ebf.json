@@ -1,0 +1,115 @@
+{
+  "consumeCatalyst": false,
+  "location": "mbd:ebf",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/casing/ebf_casing",
+    "frontTexture": "multiblocked:blocks/overlay/overlay_front",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:blocks/casing/ebf_casing",
+    "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": true,
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "LEFT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AA@",
+        "AAA"
+      ],
+      [
+        "BBB",
+        "B B",
+        "BBB"
+      ],
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "mbd:ebf_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:ebf",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "mbd:coil",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item": {
+        "location": "mbd:item_bus",
+        "type": "component",
+        "minCount": 2,
+        "maxCount": 4,
+        "previewCount": 2
+      },
+      "fluid": {
+        "location": "mbd:fluid_hatch",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A",
+        "item",
+        "fluid"
+      ],
+      "B": [
+        "B"
+      ]
+    }
+  },
+  "recipeMap": "ebf"
+}
