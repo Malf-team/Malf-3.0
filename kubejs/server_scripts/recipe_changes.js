@@ -126,7 +126,7 @@ onEvent('recipes', event => {
 	event.recipes.createMixing(["mekanism:enriched_iron"], ['4x mekanism:dust_coal', 'chemlib:iron_dust']).id("malf:enriched_iron_mixing_coal")
 	event.recipes.createMixing(["mekanism:enriched_iron"], ['8x mekanism:dust_charcoal', 'chemlib:iron_dust']).id("malf:enriched_iron_mixing_charcoal")
 
-	event.recipes.createSequencedAssembly([ // start the recipe
+	/*event.recipes.createSequencedAssembly([ // start the recipe
 		Item.of('alltheores:steel_dust'), // have this item be an output with a certain chance
 	], 'mekanism:enriched_iron', [ // 'create:brass_ingot' is the input.
 		// the transitional item set by "transitionalItem('malf:unprocessed_steel_dust')" is the item that will be used during the recipe as the item that the input is using to transition to the output.
@@ -136,7 +136,7 @@ onEvent('recipes', event => {
 		event.recipes.createFilling('malf:unprocessed_steel_dust', ['malf:unprocessed_steel_dust', Fluid.of('minecraft:water', 500)]),
 		event.recipes.createPressing('malf:unprocessed_steel_dust', 'malf:unprocessed_steel_dust') // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
 
-	]).transitionalItem('malf:unprocessed_steel_dust').loops(1) // set the transitional item and the loops (amount of repetitions)
+	]).transitionalItem('malf:unprocessed_steel_dust').loops(1) // set the transitional item and the loops (amount of repetitions)*/
 
 
 	//T2:
