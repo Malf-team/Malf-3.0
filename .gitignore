@@ -17,7 +17,6 @@ config/durabilitytooltip-common.toml
 config/oculus.properties
 config/libraryferret.properties
 config/sound_physics_remastered
-config/craftpresence.json
 config/create-client.toml
 config/custommachinery.toml
 config/droplight-common.toml
