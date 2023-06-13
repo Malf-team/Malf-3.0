@@ -1,0 +1,14 @@
+name = "AE Additions"
+filename = "AEAdditions-1.19.2-4.0.3.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d7d4363578cd2ac387f78d1077449ea18105ccda"
+
+[update]
+[update.curseforge]
+file-id = 4379316
+project-id = 493962

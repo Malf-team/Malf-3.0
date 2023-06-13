@@ -1,0 +1,14 @@
+name = "Example Mod"
+filename = "drawerfps-1.19.2-1.8.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "23f3f81f6df336fbe54fd8cd386adeace3f45ef9"
+
+[update]
+[update.curseforge]
+file-id = 3934232
+project-id = 480816

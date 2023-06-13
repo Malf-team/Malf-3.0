@@ -1,0 +1,14 @@
+name = "Curious Elytra"
+filename = "elytraslot-forge-6.1.1+1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "c584c25f0f0117945a54f0270b931c5f41c0b3fc"
+
+[update]
+[update.curseforge]
+file-id = 4519258
+project-id = 317716

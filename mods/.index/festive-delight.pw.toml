@@ -1,0 +1,14 @@
+name = "Festive Delight"
+filename = "Festive_Delight_1.0_1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "75234c1d16d97a1a7443a83f8aaa58443c6ad0ef"
+
+[update]
+[update.curseforge]
+file-id = 4119945
+project-id = 711672

@@ -1,0 +1,14 @@
+name = "CleanCut"
+filename = "cleancut-mc1.18.2-4.0-forge.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "616ff020f296951ae0fed1a3ab540f1bbb4fb76d"
+
+[update]
+[update.curseforge]
+file-id = 3826151
+project-id = 392805

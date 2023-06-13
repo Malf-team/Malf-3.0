@@ -1,0 +1,14 @@
+name = "Extractinator"
+filename = "extractinator-forge-1.19.2-2.0.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "f0a3cc4c4b4781cacb546a8be1257a2a96f59f9e"
+
+[update]
+[update.curseforge]
+file-id = 4259812
+project-id = 567114

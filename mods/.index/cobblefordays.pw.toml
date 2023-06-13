@@ -1,0 +1,14 @@
+name = "Cobble For Days"
+filename = "CobbleForDays-1.6.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "2017ae8f726b94cc1fbdfce6712bd9aa455816d8"
+
+[update]
+[update.curseforge]
+file-id = 3975349
+project-id = 349460

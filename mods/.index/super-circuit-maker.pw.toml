@@ -1,0 +1,14 @@
+name = "Super Circuit Maker"
+filename = "SuperCircuitMaker2-0.2.9+1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "6a5265e024852b2f66db7962633c8e879e8f7634"
+
+[update]
+[update.curseforge]
+file-id = 3807867
+project-id = 248619

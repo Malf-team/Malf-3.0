@@ -1,0 +1,14 @@
+name = "Better Compatibility Checker"
+filename = "BetterCompatibilityChecker-1.0.10-build.50+mc1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "8219cb875a75a561befebb56511b9c4507fdb0ea"
+
+[update]
+[update.curseforge]
+file-id = 4441760
+project-id = 551894

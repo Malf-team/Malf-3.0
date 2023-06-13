@@ -1,0 +1,14 @@
+name = "Server Tab Info"
+filename = "ServerTabInfo-1.19.1-1.3.7.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "e8548b1242d420ba9912cb1953ee4951f504f6cc"
+
+[update]
+[update.curseforge]
+file-id = 3909235
+project-id = 291788

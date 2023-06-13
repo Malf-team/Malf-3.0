@@ -1,0 +1,14 @@
+name = "Better Combat"
+filename = "bettercombat-forge-1.7.1+1.19.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d56b38f8d809389b579f65dee51977037d313b60"
+
+[update]
+[update.curseforge]
+file-id = 4534619
+project-id = 639842

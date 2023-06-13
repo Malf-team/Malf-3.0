@@ -1,0 +1,14 @@
+name = "Pick Up Notifier"
+filename = "PickUpNotifier-v4.2.4-1.19.2-Forge.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d539afd6713da2dcef897a8f872fb795b1eaf335"
+
+[update]
+[update.curseforge]
+file-id = 4401357
+project-id = 351441

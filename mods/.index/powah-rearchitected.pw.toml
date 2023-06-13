@@ -1,0 +1,14 @@
+name = "Powah"
+filename = "Powah-4.0.10.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "b18769251600f88b301b84d326952afccbbdb066"
+
+[update]
+[update.curseforge]
+file-id = 4525233
+project-id = 633483

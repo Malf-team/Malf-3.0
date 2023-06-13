@@ -1,0 +1,14 @@
+name = "AllTheOres"
+filename = "alltheores-2.0.2-1.19.2-43.1.3.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d042a58cf52bfc3dc037b3e0a6507a3f6d10890b"
+
+[update]
+[update.curseforge]
+file-id = 4046926
+project-id = 405593

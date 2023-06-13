@@ -1,0 +1,14 @@
+name = "Decoration Delight: Refurbished"
+filename = "DecorationDelightRefurbished.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "08b9066b41846b48bb64c725f659207fbee2778b"
+
+[update]
+[update.curseforge]
+file-id = 4483476
+project-id = 687475

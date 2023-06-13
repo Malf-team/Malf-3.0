@@ -1,0 +1,14 @@
+name = "Valkyrien Skies 2"
+filename = "valkyrienskies-1192-2.2.0-beta.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "b113f1b63a2f132131e6f1ea1f8042d7aad9d6d7"
+
+[update]
+[update.curseforge]
+file-id = 4575464
+project-id = 258371

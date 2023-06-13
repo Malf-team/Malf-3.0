@@ -1,0 +1,14 @@
+name = "FTB Dripper"
+filename = "ftb-dripper-1902.1.0-build.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d99c83c9adefa897157a1b7120220269f65d3b27"
+
+[update]
+[update.curseforge]
+file-id = 4426915
+project-id = 521066

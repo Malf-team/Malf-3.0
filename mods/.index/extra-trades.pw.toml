@@ -1,0 +1,14 @@
+name = "Extra Trades"
+filename = "extratrades-1.19.2-1.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "4c27709ca596cb58000fcf6d0ee5144d47ffbf33"
+
+[update]
+[update.curseforge]
+file-id = 3927626
+project-id = 374033

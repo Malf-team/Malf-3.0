@@ -1,0 +1,14 @@
+name = "Cloth Config v4 API"
+filename = "cloth-config-8.2.88-forge.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "fbd645755abc0dbe5eb1adeb5e649835294a769f"
+
+[update]
+[update.curseforge]
+file-id = 3972423
+project-id = 348521

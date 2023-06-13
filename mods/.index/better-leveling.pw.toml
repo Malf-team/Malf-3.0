@@ -1,0 +1,14 @@
+name = "Better Leveling"
+filename = "betterleveling-1.18.2-0.6.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "c632f1cba4ba1c9a48cf4ac20f8f744dd2f1ae6a"
+
+[update]
+[update.curseforge]
+file-id = 4462615
+project-id = 695939

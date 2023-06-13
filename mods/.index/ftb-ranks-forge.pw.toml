@@ -1,0 +1,14 @@
+name = "FTB Ranks"
+filename = "ftb-ranks-forge-1902.1.15-build.77.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "caeae268bcc20b61830a5fb91d1787e2d2598641"
+
+[update]
+[update.curseforge]
+file-id = 4462454
+project-id = 314905

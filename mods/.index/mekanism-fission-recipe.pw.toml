@@ -1,0 +1,14 @@
+name = "Mekanism Fission Recipe"
+filename = "tiered-fissionrecipe-3.0.1-1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "bfff446ece5bbe7409d39bfeb42127aceea71918"
+
+[update]
+[update.curseforge]
+file-id = 4180883
+project-id = 518567

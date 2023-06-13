@@ -1,0 +1,14 @@
+name = "Droplight"
+filename = "Droplight-1.18.2-forge-1.0.7.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "561e31416c7ab4f52c1a585b924a409f2ca5df0b"
+
+[update]
+[update.curseforge]
+file-id = 4548078
+project-id = 665868
