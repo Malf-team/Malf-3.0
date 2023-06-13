@@ -2,9 +2,9 @@
     "Restriction Data": {
       "stage": "Tech2",
       "itemList": [
-        "alltheores:steel_ingot", "alltheores:steel_dust", "alltheores:steel_rod", "alltheores:steel_gear", "alltheores:steel_plate", "alltheores:steel_nugget", "alltheores:steel_block",
-        "alltheores:electrum_ingot", "alltheores:electrum_dust", "alltheores:electrum_rod", "alltheores:electrum_gear", "alltheores:electrum_plate", "alltheores:electrum_nugget", "alltheores:electrum_block",
-        "alltheores:constantan_ingot", "alltheores:constantan_dust", "alltheores:constantan_rod", "alltheores:constantan_gear", "alltheores:constantan_plate", "alltheores:constantan_nugget", "alltheores:constantan_block"
+        {"item": "alltheores:steel_ingot"}, {"item": "minecraft:chest"}, {"item": "alltheores:steel_rod"}, {"item": "alltheores:steel_gear"}, {"item": "alltheores:steel_plate"}, {"item": "alltheores:steel_nugget"}, {"item": "alltheores:steel_block"},
+        {"item": "alltheores:electrum_ingot"}, {"item": "alltheores:electrum_rod"}, {"item": "alltheores:electrum_gear"}, {"item": "alltheores:electrum_plate"}, {"item": "alltheores:electrum_nugget"}, {"item": "alltheores:electrum_block"},
+        {"item": "alltheores:constantan_ingot"}, {"item": "alltheores:constantan_rod"}, {"item": "alltheores:constantan_gear"}, {"item": "alltheores:constantan_plate"}, {"item": "alltheores:constantan_nugget"}, {"item": "alltheores:constantan_block"}
       ],
       "modList": [
         "immersiveengineering",
@@ -20,15 +20,14 @@
       ],
       "tagList": [],
       "exceptionList": [
-        "immersiveengineering:seed",
-        "immersiveengineering:shader_bag_common",
-        "immersiveengineering:shader_bag_uncommon",
-        "immersiveengineering:shader_bag_rare",
-        "immersiveengineering:shader_bag_epic",
-        "immersiveengineering:shader_bag_ie_masterwork",
-        "alltheores:steel_ingot",
-        "immersiveengineering:hammer"
-
+        {"item": "immersiveengineering:seed"},
+        {"item": "immersiveengineering:shader_bag_common"},
+        {"item": "immersiveengineering:shader_bag_uncommon"},
+        {"item": "immersiveengineering:shader_bag_rare"},
+        {"item": "immersiveengineering:shader_bag_epic"},
+        {"item": "immersiveengineering:shader_bag_ie_masterwork"},
+        {"item": "alltheores:steel_ingot"},
+        {"item": "immersiveengineering:hammer"}
       ],
       "containerList": [],
       "dimensionList": []

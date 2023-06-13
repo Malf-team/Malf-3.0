@@ -2,13 +2,13 @@
     "Restriction Data": {
       "stage": "Tech3",
       "itemList": [
-        "extendedcrafting:advanced_component",
-        "extendedcrafting:advanced_catalyst",
-        "extendedcrafting:advanced_table",
-        "extendedcrafting:advanced_auto_table",
-        "packagedexcrafting:advanced_crafter",
-        "alltheores:invar_ingot", "alltheores:invar_dust", "alltheores:invar_rod", "alltheores:invar_gear", "alltheores:invar_plate", "alltheores:invar_nugget", "alltheores:invar_block",
-        "alltheores:iridium_ingot", "alltheores:iridium_dust", "alltheores:iridium_rod", "alltheores:iridium_gear", "alltheores:iridium_plate", "alltheores:iridium_nugget", "alltheores:iridium_block"
+        {"item": "extendedcrafting:advanced_component"},
+        {"item": "extendedcrafting:advanced_catalyst"},
+        {"item": "extendedcrafting:advanced_table"},
+        {"item": "extendedcrafting:advanced_auto_table"},
+        {"item": "packagedexcrafting:advanced_crafter"},
+        {"item": "alltheores:invar_ingot"}, {"item": "alltheores:invar_dust"}, {"item": "alltheores:invar_rod"}, {"item": "alltheores:invar_gear"}, {"item": "alltheores:invar_plate"}, {"item":  "alltheores:invar_nugget"}, {"item": "alltheores:invar_block"}, 
+        {"item": "alltheores:iridium_ingot"}, {"item": "alltheores:iridium_dust"}, {"item": "alltheores:iridium_rod"}, {"item": "alltheores:iridium_gear"}, {"item": "alltheores:iridium_plate"}, {"item":  "alltheores:iridium_nugget"}, {"item": "alltheores:iridium_block"}
     
       ],
       "modList": [
@@ -24,7 +24,11 @@
         "cobblefordays"
       ],
       "tagList": [],
-      "exceptionList": ["ftbic:rubber", "ftbic:industrial_grade_metal", "ftbic:fuse"],
+      "exceptionList": [
+        {"item": "ftbic:rubber"},
+        {"item": "ftbic:industrial_grade_metal"},
+        {"item": "ftbic:fuse"}
+      ],
       "containerList": [],
       "dimensionList": []
     },

@@ -2,13 +2,12 @@
     "Restriction Data": {
       "stage": "Tech5",
       "itemList": [
-        "extendedcrafting:ultimate_component",
-        "extendedcrafting:ultimate_catalyst",
-        "extendedcrafting:ultimate_table",
-        "extendedcrafting:ultimate_auto_table",
-        "packagedexcrafting:ultimate_crafter",
-        "alltheores:osmium_rod", "alltheores:osmium_gear"
-
+        {"item": "extendedcrafting:ultimate_component"},
+        {"item": "extendedcrafting:ultimate_catalyst"},
+        {"item": "extendedcrafting:ultimate_table"},
+        {"item": "extendedcrafting:ultimate_auto_table"},
+        {"item": "packagedexcrafting:ultimate_crafter"},
+        {"item": "alltheores:osmium_rod"}, {"item": "alltheores:osmium_gear"}
       ],
       "modList": [
         "mekanism",
@@ -25,9 +24,9 @@
       ],
       "tagList": [],
       "exceptionList": [
-        "mekanism:coal_dust", 
-        "mekanism:charcoal_dust",
-        "mekanism:enriched_iron"
+        {"item": "mekanism:coal_dust"},
+        {"item": "mekanism:charcoal_dust"},
+        {"item": "mekanism:enriched_iron"}
       ],
       "containerList": [],
       "dimensionList": []
