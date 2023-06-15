@@ -2,7 +2,7 @@
     "Restriction Data": {
       "stage": "Tech2",
       "itemList": [
-        {"item": "alltheores:steel_ingot"}, {"item": "minecraft:chest"}, {"item": "alltheores:steel_rod"}, {"item": "alltheores:steel_gear"}, {"item": "alltheores:steel_plate"}, {"item": "alltheores:steel_nugget"}, {"item": "alltheores:steel_block"},
+        {"item": "alltheores:steel_ingot"}, {"item": "alltheores:steel_rod"}, {"item": "alltheores:steel_gear"}, {"item": "alltheores:steel_plate"}, {"item": "alltheores:steel_nugget"}, {"item": "alltheores:steel_block"},
         {"item": "alltheores:electrum_ingot"}, {"item": "alltheores:electrum_rod"}, {"item": "alltheores:electrum_gear"}, {"item": "alltheores:electrum_plate"}, {"item": "alltheores:electrum_nugget"}, {"item": "alltheores:electrum_block"},
         {"item": "alltheores:constantan_ingot"}, {"item": "alltheores:constantan_rod"}, {"item": "alltheores:constantan_gear"}, {"item": "alltheores:constantan_plate"}, {"item": "alltheores:constantan_nugget"}, {"item": "alltheores:constantan_block"}
       ],

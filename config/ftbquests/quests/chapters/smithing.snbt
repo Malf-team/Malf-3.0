@@ -1,0 +1,403 @@
+{
+	id: "2E4061F6951D8AAA"
+	group: "3F50DC826F056590"
+	order_index: 0
+	filename: "smithing"
+	title: "Smithing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.5d
+			y: -6.0d
+			subtitle: "Build a Furnic"
+			description: ["Unlocks: Iron Ingot, Iron Nugget, Block of Raw Iron, Block of Coal, Charcoal"]
+			dependencies: ["60B67A6FB7EEA51C"]
+			id: "7DE80A7CCD864447"
+			tasks: [{
+				id: "3F95846E121A8FD4"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			title: "Iron Ingot"
+			x: -5.5d
+			y: -7.5d
+			subtitle: "Melt Iron"
+			description: ["Unlcok: Iron Tools, Copper Ingot, Copper Nugget, Block of Iron, Block of Raw Coppar"]
+			dependencies: ["7DE80A7CCD864447"]
+			id: "15761FB5FD4040C3"
+			tasks: [{
+				id: "4291EA3829692532"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 5L
+			}]
+		}
+		{
+			title: "Copper Ingot"
+			x: -5.5d
+			y: -9.0d
+			subtitle: "Melt Coppar"
+			description: ["Unlock: Gold Ingot, Gold Nugget Blast Furnace, Block of Coppar, Block of Raw Gold"]
+			dependencies: ["15761FB5FD4040C3"]
+			id: "11BE766A23468673"
+			tasks: [{
+				id: "5D60D6670317AF22"
+				type: "item"
+				item: "minecraft:copper_ingot"
+				count: 5L
+			}]
+		}
+		{
+			title: "Iron Tools"
+			x: -4.0d
+			y: -7.5d
+			subtitle: "Build an Iron Tool"
+			description: ["Unlock: Iron Armor, Gold Tools, Bucket, Minecart, Anvil, Grindstone"]
+			dependencies: ["15761FB5FD4040C3"]
+			min_required_tasks: 1
+			id: "0212CF53A910661C"
+			tasks: [
+				{
+					id: "6654CE3BA8D2AB09"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77576F24D90A3490"
+					type: "item"
+					item: {
+						id: "minecraft:iron_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B446B60C16B3964"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "48CF8CF53E0B8099"
+					type: "item"
+					item: {
+						id: "minecraft:iron_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -7.5d
+			subtitle: "Build Anvil"
+			description: ["Unlcok: Cauldron, Chain, Iron Bars, Iron Trapdoor, Smithing Table"]
+			dependencies: ["0212CF53A910661C"]
+			id: "661DBEA114B6AD1D"
+			tasks: [{
+				id: "7144F7C1D7C44464"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+		}
+		{
+			title: "Gold Tools"
+			x: -4.0d
+			y: -9.0d
+			subtitle: "Build a Gold Tool"
+			description: ["Unlock: Gold Armor"]
+			dependencies: ["0212CF53A910661C"]
+			optional: true
+			min_required_tasks: 1
+			id: "1B6F9CDB9DEFE074"
+			tasks: [
+				{
+					id: "38787F3F879BCDE6"
+					type: "item"
+					item: {
+						id: "minecraft:golden_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7AE518F699C3836A"
+					type: "item"
+					item: {
+						id: "minecraft:golden_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "102C59C060326095"
+					type: "item"
+					item: {
+						id: "minecraft:golden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7A62501572276F37"
+					type: "item"
+					item: {
+						id: "minecraft:golden_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0469E3F53B82AA92"
+					type: "item"
+					item: {
+						id: "minecraft:golden_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			subtitle: "Build Bucket"
+			description: ["Unlcok: Shears"]
+			dependencies: ["0212CF53A910661C"]
+			id: "6E2839BF78F79A3A"
+			tasks: [{
+				id: "33D9ACBBBAF199BE"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			title: "Gold Armor"
+			x: -4.0d
+			y: -10.5d
+			subtitle: "Macke Two Gold Armor Pices"
+			description: ["Unlock: Netherite"]
+			dependencies: ["1B6F9CDB9DEFE074"]
+			min_required_tasks: 2
+			id: "0FE4D7E4EB3A7609"
+			tasks: [
+				{
+					id: "60E2CFAB21FCEC69"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "032EAF3F3025A199"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B6920E4FE5A8637"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "563058304E358A9E"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Netherite Armor"
+			x: -4.0d
+			y: -12.0d
+			subtitle: "Build a Pice of Netherite Armor"
+			description: ["Unlcok: Netherite Tools"]
+			dependencies: ["0FE4D7E4EB3A7609"]
+			min_required_tasks: 2
+			id: "37C12311CC871046"
+			tasks: [
+				{
+					id: "15F9549F6F48B905"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5DAADC39410B7D19"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "69F60A1F4F331B60"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3FFAB59D0E4BC563"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -10.5d
+			subtitle: "Build a Blast Furnice"
+			description: ["Unlcok: Glass, Netherite Scrap"]
+			dependencies: ["11BE766A23468673"]
+			id: "329CF9559C20A363"
+			tasks: [{
+				id: "4D90EACD40DB6A08"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			title: "Glass"
+			x: -5.5d
+			y: -12.0d
+			subtitle: "Melt Sand"
+			description: ["Unlock: Glass Pane, Stained Glass"]
+			dependencies: ["329CF9559C20A363"]
+			id: "4587630E0FD7949D"
+			tasks: [{
+				id: "638030ADFBD42FA7"
+				type: "item"
+				item: "minecraft:glass"
+				count: 5L
+			}]
+		}
+		{
+			title: "Glass Pane"
+			x: -5.5d
+			y: -13.5d
+			subtitle: "Build Glass Pane"
+			description: ["Unlock: Glass Bottle, Stained Glass Pane"]
+			dependencies: ["4587630E0FD7949D"]
+			id: "131F684047FDC153"
+			tasks: [{
+				id: "4E4582C9DA0F0531"
+				type: "item"
+				item: "minecraft:glass_pane"
+				count: 5L
+			}]
+		}
+		{
+			title: "Netherite Scrap"
+			x: -7.0d
+			y: -10.5d
+			subtitle: "Melt Ancient Debri"
+			description: ["Unlock: Netherite Ingot"]
+			dependencies: ["329CF9559C20A363"]
+			id: "071012FCEAD91662"
+			tasks: [{
+				id: "3B5250BF8B08AE3E"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 5L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -10.5d
+			subtitle: "Build a Netherite Ingot"
+			description: ["Unlock: Block of Netherite"]
+			dependencies: ["071012FCEAD91662"]
+			id: "4E1A4D9DC4305272"
+			tasks: [{
+				id: "3ED9900DF8009694"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "Gold Ingot"
+			x: -7.0d
+			y: -9.0d
+			subtitle: "Melt Gold"
+			description: ["Unlock: Block of Gold"]
+			dependencies: ["11BE766A23468673"]
+			id: "4EE8544B010351E6"
+			tasks: [{
+				id: "53BA856DC532A2B6"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 5L
+			}]
+		}
+	]
+	quest_links: [ ]
+}
