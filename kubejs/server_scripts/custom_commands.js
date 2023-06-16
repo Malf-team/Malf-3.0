@@ -1,4 +1,4 @@
-onEvent('command.registry', event => {
+ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event;
     event.register(
         Commands.literal('command-in-chat')

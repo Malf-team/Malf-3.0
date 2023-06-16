@@ -14,108 +14,126 @@
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.5
-		#Spacing (in chunks) [default: 37]
-		#Range: 0 ~ 200
-		spacing = 37
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 32]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 32
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.castle_ruin]
 		#Spawn Chance [default: 0.6]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.6
-		#Spacing (in chunks) [default: 33]
-		#Range: 0 ~ 200
-		spacing = 33
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 32]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 32
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.desert_house]
 		#Spawn Chance [default: 0.7]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
-		#Spacing (in chunks) [default: 28]
-		#Range: 0 ~ 200
-		spacing = 28
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 20]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 20
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.forge]
 		#Spawn Chance [default: 0.7]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
-		#Spacing (in chunks) [default: 28]
-		#Range: 0 ~ 200
-		spacing = 28
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 20]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 20
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.player_house]
 		#Spawn Chance [default: 0.7]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
-		#Spacing (in chunks) [default: 28]
-		#Range: 0 ~ 200
-		spacing = 28
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 18]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 18
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.spawner_dungeon]
-		#Spawn Chance [default: 0.7]. 
+		#Spawn Chance [default: 0.8]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
-		#Spacing (in chunks) [default: 28]
-		#Range: 0 ~ 200
-		spacing = 28
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 18]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 18
+		#The margin around the structure [default: 0].
+		#Range: 0 ~ 50
+		margin = 0
 
 	[structures.tower_ruin]
 		#Spawn Chance [default: 0.8]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.8
-		#Spacing (in chunks) [default: 23]
-		#Range: 0 ~ 200
-		spacing = 23
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 22]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 22
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
 
 	[structures.witch_hut]
 		#Spawn Chance [default: 0.85]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.85
-		#Spacing (in chunks) [default: 23]
-		#Range: 0 ~ 200
-		spacing = 23
-		#Minimum Separation (in chunks) [default: 6]
-		#Range: 0 ~ 200
-		separation = 6
+		#The size of the structure [default: 13]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 13
+		#The margin around the structure [default: 3].
+		#Range: 0 ~ 50
+		margin = 3
 
 	[structures.big_tree]
 		#Spawn Chance [default: 0.7]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
-		#Spacing (in chunks) [default: 28]
-		#Range: 0 ~ 200
-		spacing = 28
-		#Minimum Separation (in chunks) [default: 7]
-		#Range: 0 ~ 200
-		separation = 7
+		#The size of the structure [default: 25]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
+		#Range: 0 ~ 100
+		size = 25
+		#The margin around the structure [default: 12].
+		#Range: 0 ~ 50
+		margin = 12
+
+	[structures.spawner_room]
+		#Spawn Chance [default: 0.9]. 
+		# 1.0 = generate the structure always, 0.0 = never generate the structure
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.9
+		#The margin around the structure [default: 0].
+		#Range: 0 ~ 50
+		margin = 0
+
+	[structures.deep_spawner_room]
+		#Spawn Chance [default: 1.0]. 
+		# 1.0 = generate the structure always, 0.0 = never generate the structure
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 1.0
+		#The margin around the structure [default: 0].
+		#Range: 0 ~ 50
+		margin = 0
 
 [blocks]
 

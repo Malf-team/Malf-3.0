@@ -1,0 +1,16 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jun 16, 2023, 11:32:28 PM
+
+#neapolitan:unaffected_by_vanilla_scent
+- supplementaries:overencumbered? (from supplementaries-1.19.2-2.3.17.jar)
+
+#ars_nouveau:unstable_gifts
+- minecraft:slow_falling (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:night_vision (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:conduit_power (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:absorption (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:strength (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:fire_resistance (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:haste (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:speed (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:regeneration (from ars_nouveau-1.19.2-3.15.1.jar)
+- minecraft:resistance (from ars_nouveau-1.19.2-3.15.1.jar)

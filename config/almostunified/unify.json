@@ -82,7 +82,10 @@
     "uranium",
     "zinc"
   ],
-  "priorityOverrides": {"forge:storage_blocks/steel":"immersiveengineering"},
+  "priorityOverrides": {
+    "forge:storage_blocks/steel": "immersiveengineering"
+  },
+  "tagOwnerships": {},
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [

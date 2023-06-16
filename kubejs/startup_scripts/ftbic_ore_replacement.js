@@ -2,7 +2,7 @@
 
 console.info('Hello, World! (You will only see this line once in console, during startup)')
 
-onEvent('worldgen.remove', (event) => {
+WorldgenEvents.remove(event => {
 	
 	const ftbic_ores = ["aluminum", "lead", "tin"]
 	

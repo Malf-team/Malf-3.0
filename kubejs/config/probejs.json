@@ -4,5 +4,8 @@
   "vanillaOrder": true,
   "exportClassNames": false,
   "allowObfuscated": false,
-  "docsTimestamp": 1670492928753
+  "docsTimestamp": 0,
+  "allowRegistryObjectDumps": false,
+  "requireSingleAndPerm": true,
+  "version": 1
 }

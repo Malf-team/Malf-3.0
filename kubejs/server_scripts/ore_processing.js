@@ -1,14 +1,10 @@
 // priority: 0
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = false
-settings.logErroringRecipes = true
 
 //______________________________________________________________________________________________
 
 
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 	function setup_ore_processing(ore) {
 		// Smelting/Blasting Recipes for all items
 		// Extra boosted output for some ores, like cinnabar
@@ -161,7 +157,7 @@ onEvent('recipes', event => {
 		  }).id("malf:washed_"+ore+"_vacuum")
 
 		//FTBIC-Macerate
-		event.custom(
+		/*event.custom(
 			{
 				"type": "ftbic:macerating",
 				"inputItems": [
@@ -208,7 +204,7 @@ onEvent('recipes', event => {
 					}
 				]
 			}
-		).id('malf:'+ore+"_centrifuge1")
+		).id('malf:'+ore+"_centrifuge1")*/
 
 			
 		//IF-dissolution (dust, pulverized)
@@ -246,7 +242,7 @@ onEvent('recipes', event => {
 
 
 		//Create-mixing
-		event.recipes.createMixing([
+		/*event.recipes.createMixing([
 			"malf:washed_" + ore,
 			Item.of(processing_output[ore][0])
 			
@@ -257,7 +253,7 @@ onEvent('recipes', event => {
 			Item.of("2x " + processing_output[ore][1]),
 			Item.of(processing_output[ore][2]).withChance(0.5)
 			
-		], Fluid.of('malf:refined_'+ ore +'_water', 200)).heated().id('malf:refined_'+ore+"_water_mixing")
+		], Fluid.of('malf:refined_'+ ore +'_water', 200)).heated().id('malf:refined_'+ore+"_water_mixing")*/
 
 		//Thermal-pulverizer
 		event.custom({

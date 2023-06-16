@@ -6,7 +6,7 @@ const processing_output = global['processing_output']
 const malf_common_ores = global['malf_common_ores']
 const malf_exotic_ores = global['malf_exotic_ores']
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 	
 		
 	/*event
@@ -39,7 +39,7 @@ onEvent('recipes', event => {
 		}).id('malf:lava_to_hydro')*/
 })
 
-onEvent('item.tags', event => {
+ServerEvents.tags('item', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
 

@@ -1,12 +1,8 @@
 // priority: 1
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = true
-settings.logErroringRecipes = true
 
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 	function addCrushing(item, dust) {
 		event.recipes.createCrushing(dust, item).id("malf:"+item.slice(5)+"_create_crushing")
 
@@ -24,7 +20,7 @@ onEvent('recipes', event => {
 			"energy": 16000
 		}).id("malf:"+item.slice(5)+"_IE_crushing")
 
-		event.custom(
+		/*event.custom(
 			{
 				"type": "ftbic:macerating",
 				"inputItems": [
@@ -34,7 +30,7 @@ onEvent('recipes', event => {
 					{ "item": dust}
 				]
 			}
-		).id("malf:"+item.slice(5)+"_ftbic_crushing")
+		).id("malf:"+item.slice(5)+"_ftbic_crushing")*/
 
 		event.custom({
 			"type": "thermal:pulverizer",
@@ -67,7 +63,7 @@ onEvent('recipes', event => {
 	
 })
 
-onEvent('item.tags', event => {
+ServerEvents.tags('item', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
 

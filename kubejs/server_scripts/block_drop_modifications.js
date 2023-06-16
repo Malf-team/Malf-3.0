@@ -1,11 +1,7 @@
 // priority: 0
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = true
-settings.logErroringRecipes = true
 
-onEvent('tags.items', event => {
+ServerEvents.tags('item', event => {
   // Get the #forge:cobblestone tag collection and add Diamond Ore to it
   event.add('forge:dusts', 'malf:rare_earth_dust')
   event.add('forge:dusts/rare_earth', 'malf:rare_earth_dust')
@@ -14,7 +10,7 @@ onEvent('tags.items', event => {
   event.add('forge:raw_materials/rare_earth', 'malf:rare_earth_mineral')
 	
 })
-onEvent('block.loot_tables', event => {
+ServerEvents.blockLootTables(event => {
 
   function addStandardDrops(ore, raw) { 
     if (typeof raw == 'undefined') {
