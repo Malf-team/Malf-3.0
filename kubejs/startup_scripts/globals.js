@@ -41,7 +41,7 @@ function convert_to_ID(output_array) {
             switch(item) {
                 case "#redstone":
                     new_id = "minecraft:redstone"
-                    nugget = "supercircuitmaker:tiny_redstone"
+                    nugget = "extendedcrafting:redstone_nugget"
                     break;
                 case "#lapis":
                     new_id = "minecraft:lapis_lazuli"

@@ -242,18 +242,18 @@ ServerEvents.recipes(event => {
 
 
 		//Create-mixing
-		/*event.recipes.createMixing([
+		event.recipes.create.mixing([
 			"malf:washed_" + ore,
-			Item.of(processing_output[ore][0])
+			processing_output[ore][0]
 			
-		], Fluid.of('malf:'+ore+'-rich_water', 500)).heated().id('malf:'+ore+"_water_mixing")
+		], [Fluid.of('malf:' + ore + '-rich_water', 500)]).heated().id('malf:'+ore+"_water_mixing")
 
-		event.recipes.createMixing([
+		event.recipes.create.mixing([
 			"malf:washed_" + ore,
 			Item.of("2x " + processing_output[ore][1]),
 			Item.of(processing_output[ore][2]).withChance(0.5)
 			
-		], Fluid.of('malf:refined_'+ ore +'_water', 200)).heated().id('malf:refined_'+ore+"_water_mixing")*/
+		], [Fluid.of('malf:refined_'+ ore +'_water', 200)]).heated().id('malf:refined_'+ore+"_water_mixing")
 
 		//Thermal-pulverizer
 		event.custom({
@@ -410,10 +410,7 @@ ServerEvents.recipes(event => {
 			}).id('malf:'+ore+"_centrifuge2")
 		}
 	}
-	
-
-
-
+	//event.recipes.create.mixing(["malf:washed_hematite", "chemlib:iron_dust"], [Fluid.of("malf:hematite-rich_water", 1000) ]).heated().id('malf:hematite_water_mixing')
 
 	malf_common_ores.forEach(setup_ore_processing)
 

@@ -75,10 +75,10 @@ ServerEvents.tags('fluid', event => {  //Remove fluids from the minecraft:water 
 	event.remove('minecraft:water', 'create:flowing_chocolate')
 	event.remove('minecraft:water', 'create:chocolate')
 
-	event.remove('minecraft:water', 'beyond_earth:fuel')
+	/*event.remove('minecraft:water', 'beyond_earth:fuel')
 	event.remove('minecraft:water', 'beyond_earth:flowing_fuel')
 	event.remove('minecraft:water', 'beyond_earth:oil')
-	event.remove('minecraft:water', 'beyond_earth:flowing_oil')
+	event.remove('minecraft:water', 'beyond_earth:flowing_oil')*/
 
 	event.remove('minecraft:water', 'sliceanddice:fertilizer')
 	event.remove('minecraft:water', 'sliceanddice:flowing_fertilizer')
