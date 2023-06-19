@@ -75,3 +75,7 @@ config/cucumber-tags.json
 config/silentgear-common-2.toml.bak
 config/silentgear-common-3.toml.bak
 config/silentgear-common-4.toml.bak
+config/ftbic-common.snbt
+config/railways-client.toml
+config/railways-common.tml
+mods/.index/
