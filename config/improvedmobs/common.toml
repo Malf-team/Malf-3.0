@@ -34,6 +34,16 @@
 
 #Black/Whitelist for various stuff
 [list]
+	#Entities added here will be blacklisted from their assigned flags. Usage:
+	#<entity registry name> or <namespace> followed by any of:
+	#[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PARROT,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].
+	#Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!
+	#Examples (without <>):
+	#<minecraft:sheep> (equal to minecraft:sheep|ALL) excludes sheeps from all modifications
+	#<minecraft:sheep|REVERSE|ATTRIBUTES will> add sheep to attributes modification only
+	#<minecraft:sheep|ATTRIBUTES> will add sheep to everything except attributes
+	#<minecraft> blacklists all minecraft mobs from everything
+	"Entity Configs" = ["alexsmobs:emu", "ars_nouveau:familiar_whirlisprig", "alexsmobs:cockroach", "alexsmobs:froststalker", "alexsmobs:centipede_tail", "ars_nouveau:wixie", "ad_astra:glacian_ram", "alexsmobs:snow_leopard", "alexsmobs:lobster", "alexsmobs:seagull", "littlelogistics:fluid_barge", "alexsmobs:moose", "alexsmobs:seal", "littlelogistics:energy_tug", "minecraft:glow_squid", "alexsmobs:shoebill", "alexsmobs:flutter", "byg:pumpkin_warden", "alexsmobs:roadrunner", "alexsmobs:laviathan", "minecraft:trader_llama", "ars_nouveau:familiar_wixie", "ars_nouveau:cascading_weald_walker", "ars_nouveau:vexing_weald_walker", "alexsmobs:terrapin", "alexsmobs:capuchin_monkey", "alexsmobs:endergrade", "minecraft:horse", "alexsmobs:anaconda", "minecraft:polar_bear", "simplyswords:battlestandarddark", "minecraft:llama", "minecraft:pig", "minecraft:turtle", "alexsmobs:alligator_snapping_turtle", "alexsmobs:maned_wolf", "minecraft:sheep", "minecraft:tadpole", "minecraft:goat", "minecraft:dolphin", "littlelogistics:tug", "alexsmobs:rattlesnake", "alexsmobs:gelada_monkey", "ars_nouveau:animated_block", "farmingforblockheads:merchant", "ars_nouveau:animated_head", "minecraft:cod", "alexsmobs:mantis_shrimp", "littlelogistics:chunk_loader_barge", "ars_nouveau:familiar_starbuncle", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "minecraft:donkey", "alexsmobs:tiger", "alexsmobs:raccoon", "ars_nouveau:starbuncle", "alexsmobs:grizzly_bear", "alexsmobs:platypus", "minecraft:squid", "minecraft:skeleton_horse", "alexsmobs:potoo", "quark:stoneling", "minecraft:cow", "ars_nouveau:dummy", "alexsmobs:fly", "ars_nouveau:familiar_drygmy", "minecraft:bee", "ars_nouveau:whirlisprig", "alexsmobs:devils_hole_pupfish", "quark:shiba", "pneumaticcraft:harvesting_drone", "simplyswords:battlestandard", "alexsmobs:crocodile", "quark:toretoise", "guardvillagers:guard", "alexsmobs:blue_jay", "ars_nouveau:gift_starby", "byg:man_o_war", "alexsmobs:toucan", "minecraft:salmon", "alexsmobs:sea_bear", "minecraft:snow_golem", "alexsmobs:rhinoceros", "minecraft:mooshroom", "alexsmobs:frilled_shark", "ars_nouveau:flourishing_weald_walker", "alexsmobs:bison", "alexsmobs:anteater", "alexsmobs:mudskipper", "minecraft:villager", "pneumaticcraft:amadrone", "alexsmobs:rain_frog", "alexsmobs:bald_eagle", "alexsmobs:sugar_glider", "supplementaries:red_merchant", "minecraft:rabbit", "minecraft:axolotl", "botania:doppleganger", "alexsmobs:blobfish", "pneumaticcraft:drone", "pneumaticcraft:programmable_controller", "alexsmobs:gorilla", "littlelogistics:barge", "littlelogistics:seater_barge", "alexsmobs:orca", "alexsmobs:tusklin", "minecraft:strider", "minecraft:parrot", "alexsmobs:leafcutter_ant", "quark:crab", "littlelogistics:fishing_barge", "alexsmobs:cosmic_cod", "alexsmobs:underminer", "ars_nouveau:drygmy", "alexsmobs:mungus", "alexsmobs:jerboa", "minecraft:bat", "minecraft:wandering_trader", "pneumaticcraft:logistics_drone", "alexsmobs:spectre", "alexsmobs:cosmaw", "ars_nouveau:summon_horse", "ars_nouveau:familiar_bookwyrm", "alexsmobs:catfish", "ad_astra:lunarian", "minecraft:frog", "minecraft:iron_golem", "alexsmobs:kangaroo", "alexsmobs:comb_jelly", "botania:pixie", "alexsmobs:banana_slug", "dummmmmmy:target_dummy", "ars_nouveau:familiar_amethyst_golem", "railways:conductor", "alexsmobs:mimic_octopus", "alexsmobs:hummingbird", "alexsmobs:elephant", "alexsmobs:bunfungus", "pneumaticcraft:collector_drone", "alexsmobs:gazelle", "minecraft:mule", "alexsmobs:skunk", "alexsmobs:crow", "ars_nouveau:bookwyrm", "minecraft:zombie_horse", "alexsmobs:sunbird", "alexsmobs:flying_fish", "alexsmobs:tasmanian_devil", "alexsmobs:centipede_body", "minecraft:cat", "minecraft:pufferfish", "alexsmobs:stradpole", "ars_nouveau:amethyst_golem", "alexsmobs:tarantula_hawk", "ars_nouveau:blazing_weald_walker", "minecraft:fox", "alexsmobs:cachalot_whale", "ars_nouveau:summon_wolf", "minecraft:allay", "minecraft:tropical_fish", "pneumaticcraft:guard_drone", "mekanism:robit", "ad_astra:lunarian_wandering_trader", "minecraft:ocelot", "alexsmobs:warped_toad", "minecraft:chicken", "alexsmobs:giant_squid", "minecraft:wolf", "minecraft:panda"]
 	#Any of the following 
 	#[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, PARROT, TARGETVILLAGER, NEUTRALAGGRO]
 	#added here will disable that feature completely.
@@ -55,22 +65,12 @@
 	"Steal Whitelist" = false
 	#Treat GUARDIAN flags as whitelist
 	"Guardian Whitelist" = false
+	#Treat PARROT flags as whitelist
+	"Phantom Whitelist" = false
 	#Treat TARGETVILLAGER flags as whitelist
 	"Villager Whitelist" = false
 	#Treat NEUTRALAGGRO flags as whitelist
 	"Neutral Aggro Whitelist" = false
-	#Entities added here will be blacklisted from their assigned flags. Usage:
-	#<entity registry name> or <namespace> followed by any of:
-	#[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PARROT,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].
-	#Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!
-	#Examples (without <>):
-	#<minecraft:sheep> (equal to minecraft:sheep|ALL) excludes sheeps from all modifications
-	#<minecraft:sheep|REVERSE|ATTRIBUTES will> add sheep to attributes modification only
-	#<minecraft:sheep|ATTRIBUTES> will add sheep to everything except attributes
-	#<minecraft> blacklists all minecraft mobs from everything
-	"Entity Configs" = ["ars_nouveau:familiar_whirlisprig", "alexsmobs:emu", "alexsmobs:cockroach", "alexsmobs:froststalker", "alexsmobs:centipede_tail", "ars_nouveau:wixie", "alexsmobs:snow_leopard", "alexsmobs:lobster", "alexsmobs:seagull", "littlelogistics:fluid_barge", "alexsmobs:moose", "alexsmobs:seal", "littlelogistics:energy_tug", "minecraft:glow_squid", "alexsmobs:shoebill", "alexsmobs:flutter", "alexsmobs:roadrunner", "alexsmobs:laviathan", "minecraft:trader_llama", "ars_nouveau:familiar_wixie", "ars_nouveau:cascading_weald_walker", "ars_nouveau:vexing_weald_walker", "alexsmobs:terrapin", "alexsmobs:capuchin_monkey", "alexsmobs:endergrade", "minecraft:horse", "alexsmobs:anaconda", "minecraft:polar_bear", "minecraft:llama", "minecraft:pig", "minecraft:turtle", "alexsmobs:alligator_snapping_turtle", "alexsmobs:maned_wolf", "minecraft:sheep", "minecraft:goat", "minecraft:dolphin", "littlelogistics:tug", "alexsmobs:rattlesnake", "alexsmobs:gelada_monkey", "farmingforblockheads:merchant", "minecraft:cod", "alexsmobs:mantis_shrimp", "littlelogistics:chunk_loader_barge", "ars_nouveau:familiar_starbuncle", "alexsmobs:komodo_dragon", "alexsmobs:hammerhead_shark", "minecraft:donkey", "alexsmobs:tiger", "alexsmobs:raccoon", "ars_nouveau:starbuncle", "alexsmobs:grizzly_bear", "alexsmobs:platypus", "minecraft:squid", "minecraft:skeleton_horse", "quark:stoneling", "minecraft:cow", "ars_nouveau:dummy", "alexsmobs:fly", "ars_nouveau:familiar_drygmy", "minecraft:bee", "ars_nouveau:whirlisprig", "quark:shiba", "alexsmobs:devils_hole_pupfish", "pneumaticcraft:harvesting_drone", "quark:toretoise", "alexsmobs:crocodile", "guardvillagers:guard", "alexsmobs:toucan", "minecraft:salmon", "alexsmobs:sea_bear", "quark:frog", "minecraft:snow_golem", "minecraft:mooshroom", "ars_nouveau:flourishing_weald_walker", "alexsmobs:frilled_shark", "alexsmobs:bison", "alexsmobs:anteater", "minecraft:villager", "pneumaticcraft:amadrone", "alexsmobs:bald_eagle", "supplementaries:red_merchant", "minecraft:rabbit", "minecraft:axolotl", "botania:doppleganger", "alexsmobs:blobfish", "pneumaticcraft:drone", "pneumaticcraft:programmable_controller", "alexsmobs:gorilla", "littlelogistics:barge", "littlelogistics:seater_barge", "alexsmobs:orca", "alexsmobs:tusklin", "minecraft:strider", "beyond_earth:alien", "minecraft:parrot", "quark:crab", "alexsmobs:leafcutter_ant", "littlelogistics:fishing_barge", "alexsmobs:cosmic_cod", "decoration_delight:stool_entity", "ars_nouveau:drygmy", "alexsmobs:mungus", "alexsmobs:jerboa", "minecraft:bat", "minecraft:wandering_trader", "pneumaticcraft:logistics_drone", "alexsmobs:spectre", "alexsmobs:cosmaw", "ars_nouveau:summon_horse", "ars_nouveau:familiar_bookwyrm", "alexsmobs:catfish", "minecraft:iron_golem", "alexsmobs:kangaroo", "alexsmobs:comb_jelly", "botania:pixie", "dummmmmmy:target_dummy", "alexsmobs:mimic_octopus", "alexsmobs:hummingbird", "alexsmobs:elephant", "alexsmobs:bunfungus", "pneumaticcraft:collector_drone", "alexsmobs:gazelle", "minecraft:mule", "ars_nouveau:bookwyrm", "alexsmobs:crow", "minecraft:zombie_horse", "alexsmobs:sunbird", "alexsmobs:flying_fish", "alexsmobs:tasmanian_devil", "alexsmobs:centipede_body", "minecraft:cat", "minecraft:pufferfish", "alexsmobs:stradpole", "ars_nouveau:amethyst_golem", "alexsmobs:tarantula_hawk", "ars_nouveau:blazing_weald_walker", "minecraft:fox", "ars_nouveau:summon_wolf", "alexsmobs:cachalot_whale", "minecraft:tropical_fish", "pneumaticcraft:guard_drone", "mekanism:robit", "minecraft:ocelot", "alexsmobs:warped_toad", "minecraft:chicken", "alexsmobs:giant_squid", "minecraft:wolf", "minecraft:panda"]
-	#Treat PARROT flags as whitelist
-	"Phantom Whitelist" = false
 
 #Settings for mod integration
 [integration]
@@ -83,6 +83,12 @@
 
 #Settings regarding custom ai for mobs
 [ai]
+	#Whitelist for blocks, which can be actively broken. 
+	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
+	#Note: If you include common blocks (like grass blocks) the pathfinding can have undesirable results.
+	"Block Break Whitelist" = ["forge:glass", "forge:glass_panes", "minecraft:fence_gates", "forge:fence_gates", "minecraft:wooden_doors"]
+	#Treat Block Whitelist as Blocklist
+	"Breaklist as Blacklist" = false
 	#Use the block breaking sound instead of a knocking sound
 	Sound = false
 	#Chance for a mob to be able to break blocks
@@ -94,15 +100,19 @@
 	#Cooldown for breaking blocks
 	#Range: > 0
 	"Breaker Cooldown" = 20
+	#If mobs should break blocks when not chasing a target
+	"Idle Break" = false
 	#Chance for a mob to be able to steal items from inventory blocks
 	#Range: 0.0 ~ 1.0
 	"Stealer Chance" = 0.3
 	#Items which will be given to mobs who can break blocks. Empty list = no items. Syntax: id;weight
 	#Note: Mobs can only break blocks if the tool they are holding can break the blocks
 	"Breaking items" = ["minecraft:diamond_pickaxe;1", "minecraft:iron_axe;2"]
+	#Should mobs be able to break block entities? Evaluated before the break list
+	"Break BlockEntities" = true
 	#Chance for neutral mobs to be aggressive
 	#Range: 0.0 ~ 1.0
-	"Neutral Aggressive Chance" = 0.2
+	"Neutral Aggressive Chance" = 0.1
 	#List for of pairs containing which mobs auto target others. Syntax is [mob id]-[mob id] where second value is the target.
 	# e.g. minecraft:zombie-minecraft:skeleton makes all zombies target skeletons
 	"Auto Target List" = []
@@ -115,16 +125,6 @@
 	#Chance for mobs to be able to summon an aquatic mount
 	#Range: 0.0 ~ 1.0
 	"Guardian Chance" = 1.0
-	#Whitelist for blocks, which can be actively broken. 
-	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
-	#Note: If you include common blocks (like grass blocks) the pathfinding can have undesirable results.
-	"Block Break Whitelist" = ["forge:glass", "forge:glass_panes", "minecraft:fence_gates", "forge:fence_gates", "minecraft:wooden_doors"]
-	#Treat Block Whitelist as Blocklist
-	"Breaklist as Blacklist" = false
-	#If mobs should break blocks when not chasing a target
-	"Idle Break" = false
-	#Should mobs be able to break block entities? Evaluated before the break list
-	"Break BlockEntities" = true
 	#Chance for mobs to be able to summon a flying mount
 	#Range: 0.0 ~ 1.0
 	"Phantom Chance" = 0.5

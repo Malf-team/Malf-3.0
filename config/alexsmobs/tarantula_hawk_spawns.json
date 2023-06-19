@@ -2,36 +2,24 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "forge:is_dry/overworld"
       },
       {
-        "type": "BIOME_CATEGORY",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "desert"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
+        "value": "forge:is_hot/overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "hot"
+        "value": "forge:is_sandy"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "dry"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "sandy"
+        "type": "BIOME_TAG",
+        "negate": true,
+        "value": "minecraft:is_badlands"
       }
     ],
     [

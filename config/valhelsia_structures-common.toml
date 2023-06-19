@@ -73,7 +73,7 @@
 		#Spawn Chance [default: 0.8]. 
 		# 1.0 = generate the structure always, 0.0 = never generate the structure
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.8
 		#The size of the structure [default: 18]. Used in the calculations that check whether the surface area is flat enough to generate the structure.
 		#Range: 0 ~ 100
 		size = 18

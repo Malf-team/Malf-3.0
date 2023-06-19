@@ -79,3 +79,5 @@ config/ftbic-common.snbt
 config/railways-client.toml
 config/railways-common.tml
 mods/.index/
+.qmenu_opened.marker
+schematics/

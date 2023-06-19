@@ -1,7 +1,5 @@
 
 [general]
-	#Can new players for a world receive a starting item?. Server configuration overrides client.
-	"New Players Get Starting Item" = true
 	#Determines if the mineshaft chest is included when building mineshafts for various structures.
 	"Include Mineshaft Chest" = true
 	#Determines if the Preview buttons in structure GUIs and other structure previews functions are enabled. Client side only.
@@ -9,6 +7,8 @@
 	#General
 	#Determines which starting item a player gets on first world join. Valid values for this option are: "Starting House", "Moderate House", "Nothing". Server configuration overrides client.
 	"Starting Item" = "Starting House"
+	#Can new players for a world receive a starting item?. Server configuration overrides client.
+	"New Players Get Starting Item" = true
 	#Determines if the bulldozer item can create drops when it clears an area.
 	"Bulldozer Creates Drops" = true
 	#Determines if the spawners for the Monster Masher building are included. Server configuration overrides client.
@@ -18,13 +18,28 @@
 	#Determines if water can be generated in structures when the current dimension is not the oveworld. Does not affect Nether
 	"Include Water In Non-Overworld Dimesions" = true
 
+	[general."starter house"]
+		#Determines if the mineshaft is included in the starter house. When playing on a server, the server configuration is used
+		"Add Mineshaft" = true
+		#Starter House Options
+		#Determines if the bed is included in the starter house. When playing on a server, the server configuration is used
+		"Add Bed" = true
+		#Determines if chests are included in the starter house. When playing on a server, the server configuration is used
+		"Add Chests" = true
+		#Determines if the crafting table is included in the starter house. When playing on a server, the server configuration is used
+		"Add Crafting Table" = true
+		#Determines if the chest contents is included in the starter house. When playing on a server, the server configuration is used
+		"Add Chest Contents" = true
+		#Determines if the furnace is included in the starter house. When playing on a server, the server configuration is used
+		"Add Furnace" = true
+
 	[general.recipes]
 		#Determines if the recipe(s) associated with the Grassy Plains are enabled.
 		"Grassy Plains" = true
-		#Determines if the recipe(s) associated with the Smart Glass are enabled.
-		"Smart Glass" = true
 		#Determines if the recipe(s) associated with the Upgrade are enabled.
 		Upgrade = true
+		#Determines if the recipe(s) associated with the Smart Glass are enabled.
+		"Smart Glass" = true
 		#Determines if the recipe(s) associated with the Jail are enabled.
 		Jail = true
 		#Determines if the recipe(s) associated with the Windmill are enabled.
@@ -105,10 +120,10 @@
 		"Ski Lodge" = true
 		#Determines if the recipe(s) associated with the Compressed Dirt are enabled.
 		"Compressed Dirt" = true
-		#Determines if the recipe(s) associated with the Bunch of Eggs are enabled.
-		"Bunch of Eggs" = true
 		#Determines if the recipe(s) associated with the Improved House are enabled.
 		"Improved House" = true
+		#Determines if the recipe(s) associated with the Bunch of Eggs are enabled.
+		"Bunch of Eggs" = true
 		#Determines if the recipe(s) associated with the Quartz-Crete are enabled.
 		Quartz-Crete = true
 		#Determines if the recipe(s) associated with the Improved Warehouse are enabled.
@@ -127,48 +142,6 @@
 		"Bunch of Beets" = true
 		#Determines if the recipe(s) associated with the Improved Farm are enabled.
 		"Improved Farm" = true
-
-	[general."chest contents"]
-		#Determines if seeds, potatoes and carrots are added the the chest when the house is created.
-		"Add Crops" = true
-		#Determines if a set of oak saplings are added the the chest when the house is created.
-		"Add Saplings" = true
-		#Determines if a Stone Axe is added the the chest when the house is created.
-		"Add Axe" = true
-		#Determines if a Stone Hoe is added the the chest when the house is created.
-		"Add Hoe" = true
-		#Determines if a stack of dirt is added the the chest when the house is created.
-		"Add Dirt" = true
-		#Chest Options
-		#Determines if a Stone Sword is added the the chest when the house is created.
-		"Add Sword" = true
-		#Determines if a set of torches are added the the chest when the house is created.
-		"Add Torches" = true
-		#Determines if a stack of cobble is added the the chest when the house is created.
-		"Add Cobblestone" = true
-		#Determines if a Stone Pickaxe is added the the chest when the house is created.
-		"Add Pickaxe" = true
-		#Determines if Leather Armor is added the the chest when the house is created.
-		"Add Armor" = true
-		#Determines if Bread is added the the chest when the house is created.
-		"Add Food" = true
-		#Determines if a Stone Shovel is added the the chest when the house is created.
-		"Add Shovel" = true
-
-	[general."starter house"]
-		#Determines if the mineshaft is included in the starter house. When playing on a server, the server configuration is used
-		"Add Mineshaft" = true
-		#Starter House Options
-		#Determines if the bed is included in the starter house. When playing on a server, the server configuration is used
-		"Add Bed" = true
-		#Determines if chests are included in the starter house. When playing on a server, the server configuration is used
-		"Add Chests" = true
-		#Determines if the crafting table is included in the starter house. When playing on a server, the server configuration is used
-		"Add Crafting Table" = true
-		#Determines if the chest contents is included in the starter house. When playing on a server, the server configuration is used
-		"Add Chest Contents" = true
-		#Determines if the furnace is included in the starter house. When playing on a server, the server configuration is used
-		"Add Furnace" = true
 
 	[general."structure options"]
 		item_prefab_item_house_prefab_gui_house_tree_display = true
@@ -249,4 +222,31 @@
 		item_prefab_item_house_prefab_gui_house_camping_display = true
 		item_prefab_item_house_prefab_gui_house_ranch_display = true
 		item_prefab_item_house_advanced_prefab_gui_house_advanced_workshop = true
+
+	[general."chest contents"]
+		#Determines if seeds, potatoes and carrots are added the the chest when the house is created.
+		"Add Crops" = true
+		#Determines if a set of oak saplings are added the the chest when the house is created.
+		"Add Saplings" = true
+		#Determines if a Stone Axe is added the the chest when the house is created.
+		"Add Axe" = true
+		#Determines if a Stone Hoe is added the the chest when the house is created.
+		"Add Hoe" = true
+		#Determines if a stack of dirt is added the the chest when the house is created.
+		"Add Dirt" = true
+		#Chest Options
+		#Determines if a Stone Sword is added the the chest when the house is created.
+		"Add Sword" = true
+		#Determines if a set of torches are added the the chest when the house is created.
+		"Add Torches" = true
+		#Determines if a stack of cobble is added the the chest when the house is created.
+		"Add Cobblestone" = true
+		#Determines if a Stone Pickaxe is added the the chest when the house is created.
+		"Add Pickaxe" = true
+		#Determines if Leather Armor is added the the chest when the house is created.
+		"Add Armor" = true
+		#Determines if Bread is added the the chest when the house is created.
+		"Add Food" = true
+		#Determines if a Stone Shovel is added the the chest when the house is created.
+		"Add Shovel" = true
 
