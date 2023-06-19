@@ -1,0 +1,14 @@
+name = "Elevator Mod"
+filename = "elevatorid-1.19.2-1.8.9.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "32b09e803742e5904d3f5fedb5932bce8b073b81"
+
+[update]
+[update.curseforge]
+file-id = 4086868
+project-id = 250832

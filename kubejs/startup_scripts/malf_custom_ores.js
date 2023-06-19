@@ -23,7 +23,7 @@ function fancify(name) { //Capitalizes and adds spaces to an item id name ('lapi
 }
 
 
-onEvent('item.registry', event => {
+StartupEvents.registry('item', event => {
 	
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
@@ -97,7 +97,7 @@ onEvent('item.registry', event => {
 	
 })
 
-onEvent('block.registry', event => {
+StartupEvents.registry('block', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 
@@ -196,7 +196,7 @@ onEvent('block.registry', event => {
 	
 })
 
-onEvent('item.modification', event => {
+ItemEvents.modification(event => {
 
 
 })

@@ -1,15 +1,4 @@
 
-[biome_dictionary]
-	#
-	# A list of mod IDs that will be ignored when the biome dictionary attempts to register unregistered biomes.
-	# Example: ["biomesoplenty", "byg", "autumnity"]
-	# Default: []
-	ignored_mods = []
-	#
-	# Determines if the biome dictionary should make assumptions for unregistered biomes. Setting this to false can fix issues where a structure generates weird biomes.
-	# Default: true
-	make_best_guess = true
-
 [building_tool]
 	#
 	# The required permission level of a player needed to use the Building Tool.

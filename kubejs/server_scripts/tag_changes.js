@@ -1,17 +1,13 @@
 // priority: 0
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = false
-settings.logErroringRecipes = true
 
 var tag_list = global['tag_list']
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 	
 })
 
-onEvent('item.tags', event => {
+ServerEvents.tags('item', event => {
 	//event.get('forge:plates').add('malf:iron_plate')
 	//event.get('forge:plates/iron').add('malf:iron_plate')
 	//event.get('forge:dusts').add('malf:iron_dust')
@@ -63,7 +59,7 @@ onEvent('item.tags', event => {
 	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
 })
 
-onEvent('tags.fluids', event => {  //Remove fluids from the minecraft:water tag
+ServerEvents.tags('fluid', event => {  //Remove fluids from the minecraft:water tag
 	var chemlib_gasses = ["acetylene", "acetic_acid", "ammonia", "ammonium", "argon", "butane", "carbon_dioxide", "carbon_monoxide", "chlorine", "ethane", "ethylene", "fluorine", "helium", "hydrogen", "hydrogen_sulfide", "krypton", "methane", "neon", "nitric_oxide", "nitrogen_dioxide", "nitrogen", "oxygen", "propane", "radon", "sulfur_dioxide", "xenon", "mercury", "bromine", "sulfuric_acid", "ethanol", "hydrochloric_acid", "nitric_acid", "sulfur_trioxide", "hexane", "pentane", "epinephrine", "carbon_disulfide"]
 	function removeGasFromWaterTag(gas) {
 		event.remove('minecraft:water', 'chemlib:'+gas+'_flowing')
@@ -79,10 +75,10 @@ onEvent('tags.fluids', event => {  //Remove fluids from the minecraft:water tag
 	event.remove('minecraft:water', 'create:flowing_chocolate')
 	event.remove('minecraft:water', 'create:chocolate')
 
-	event.remove('minecraft:water', 'beyond_earth:fuel')
+	/*event.remove('minecraft:water', 'beyond_earth:fuel')
 	event.remove('minecraft:water', 'beyond_earth:flowing_fuel')
 	event.remove('minecraft:water', 'beyond_earth:oil')
-	event.remove('minecraft:water', 'beyond_earth:flowing_oil')
+	event.remove('minecraft:water', 'beyond_earth:flowing_oil')*/
 
 	event.remove('minecraft:water', 'sliceanddice:fertilizer')
 	event.remove('minecraft:water', 'sliceanddice:flowing_fertilizer')

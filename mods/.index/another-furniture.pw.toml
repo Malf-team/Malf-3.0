@@ -1,0 +1,14 @@
+name = "Another Furniture"
+filename = "another_furniture-forge-2.1.2-1.19.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "9758202e8b24b43eacbbab65f1c61ab9c6009bd9"
+
+[update]
+[update.curseforge]
+file-id = 4034009
+project-id = 610492

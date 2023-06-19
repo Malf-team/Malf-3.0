@@ -1,0 +1,14 @@
+name = "MmmMmmMmmMmm"
+filename = "dummmmmmy-1.19.2-1.7.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "27dba288fb5435f2b110ea31ea5f1209c71a93d6"
+
+[update]
+[update.curseforge]
+file-id = 4410143
+project-id = 225738

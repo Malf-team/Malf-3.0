@@ -1,0 +1,14 @@
+name = "T.H.I.S"
+filename = "thitemstages-1.19.2-0.1.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "391df0a49b7f252cfdd8fdbc0f246e5c4e37715d"
+
+[update]
+[update.curseforge]
+file-id = 4173519
+project-id = 628919

@@ -9,6 +9,7 @@
 		#Cost in Joules of using the Atomic Disassembler as a weapon.
 		energyUsageWeapon = "2000"
 		#The max Atomic Disassembler Vein Mining Block Count.
+		#Range: 2 ~ 1000000
 		miningCount = 128
 		#Enable the 'Slow' mode for the Atomic Disassembler.
 		slowMode = true
@@ -16,14 +17,19 @@
 		fastMode = true
 		#Enable the 'Vein Mining' mode for the Atomic Disassembler.
 		veinMining = false
-		#The amount of damage the Atomic Disassembler does when it is out of power. (Value is in number of half hearts)
+		#The bonus attack damage of the Atomic Disassembler when it is out of power. (Value is in number of half hearts)
+		#Range: 0 ~ 1000
 		minDamage = 4
-		#The amount of damage the Atomic Disassembler does when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
+		#The bonus attack damage of the Atomic Disassembler when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
+		#Range: 1 ~ 10000
 		maxDamage = 20
 		#Maximum amount (joules) of energy the Atomic Disassembler can contain.
 		maxEnergy = "1000000"
 		#Amount (joules) of energy the Atomic Disassembler can accept per tick.
 		chargeRate = "5000"
+		#Attack speed of the Atomic Disassembler.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 
 	#Configurator Settings
 	[gear.configurator]
@@ -126,6 +132,7 @@
 		#Amount (joules) of energy the Portable Teleporter can accept per tick.
 		chargeRate = "5000"
 		#Delay in ticks before a player is teleported after clicking the Teleport button in the portable teleporter.
+		#Range: 0 ~ 6000
 		delay = 0
 
 	#Scuba Tank Settings
@@ -166,10 +173,13 @@
 		#Cost in Joules of using the Meka-Tool to teleport 10 blocks.
 		energyUsageTeleport = "1000"
 		#Maximum distance a player can teleport with the Meka-Tool.
+		#Range: 2 ~ 1024
 		maxTeleportReach = 100
-		#Base damage applied by the Meka-Tool without using any energy.
+		#Base bonus damage applied by the Meka-Tool without using any energy.
+		#Range: 0 ~ 100000
 		baseDamage = 4
 		#Efficiency of the Meka-Tool with energy but without any upgrades.
+		#Range: 0.1 ~ 100.0
 		baseEfficiency = 4.0
 		#Energy capacity (Joules) of the Meka-Tool without any installed upgrades. Quadratically scaled by upgrades.
 		baseEnergyCapacity = "16000000"
@@ -185,6 +195,9 @@
 		energyUsageShearEntity = "10"
 		#Enable the 'Extended Vein Mining' mode for the Meka-Tool. (Allows vein mining everything not just ores/logs)
 		extendedMining = true
+		#Attack speed of the Meka-Tool.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 
 	#MekaSuit Settings
 	[gear.mekasuit]
@@ -250,6 +263,8 @@
 		#Knockback resistance value of the MekaSuit.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		knockbackResistance = 0.10000000149011612
+		#Should the Gravitational Modulation unit give off vibrations when in use.
+		gravitationalVibrations = true
 
 		[gear.mekasuit.damage_absorption]
 			#Percent of damage taken from fall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.

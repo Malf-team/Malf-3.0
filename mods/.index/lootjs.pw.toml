@@ -1,0 +1,14 @@
+name = "LootJS"
+filename = "lootjs-forge-1.19.2-2.8.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d281692fd0acb2ba9b6eb6f48431e0d7a5565f0c"
+
+[update]
+[update.curseforge]
+file-id = 4487197
+project-id = 570630

@@ -1,0 +1,14 @@
+name = "Large Meals (An Add-on for Farmer's Delight)"
+filename = "largemeals-1.18.2-2.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "c361d511a935822470d05b736a371443f5392e5b"
+
+[update]
+[update.curseforge]
+file-id = 4032025
+project-id = 625110

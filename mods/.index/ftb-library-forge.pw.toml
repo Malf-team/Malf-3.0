@@ -1,0 +1,14 @@
+name = "FTB Library"
+filename = "ftb-library-forge-1902.3.19-build.214.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "924c3b331726e51244ee2d0b304704bef21ef1b0"
+
+[update]
+[update.curseforge]
+file-id = 4541987
+project-id = 404465

@@ -1,4 +1,4 @@
-onEvent('jei.hide.items', (event) => {
+JEIEvents.hideItems(event => {
 	console.log('JEI Hide item event fired')
 
 	const hide = [

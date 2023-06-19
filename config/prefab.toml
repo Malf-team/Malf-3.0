@@ -1,15 +1,16 @@
 
 [general]
+	#Can new players for a world receive a starting item?. Server configuration overrides client.
+	"New Players Get Starting Item" = true
 	#Determines if the mineshaft chest is included when building mineshafts for various structures.
 	"Include Mineshaft Chest" = true
 	#Determines if the Preview buttons in structure GUIs and other structure previews functions are enabled. Client side only.
 	"Include Structure Previews" = true
+	#General
 	#Determines which starting item a player gets on first world join. Valid values for this option are: "Starting House", "Moderate House", "Nothing". Server configuration overrides client.
 	"Starting Item" = "Starting House"
 	#Determines if the bulldozer item can create drops when it clears an area.
 	"Bulldozer Creates Drops" = true
-	#Enable Automation Options For Moderate Farm
-	"Enable Automation Options For Moderate Farm" = true
 	#Determines if the spawners for the Monster Masher building are included. Server configuration overrides client.
 	"Include Spawners in Monster Masher" = true
 	#Play Sound When Generating Blueprint
@@ -17,25 +18,13 @@
 	#Determines if water can be generated in structures when the current dimension is not the oveworld. Does not affect Nether
 	"Include Water In Non-Overworld Dimesions" = true
 
-	[general."starter house"]
-		#Determines if the mineshaft is included in the starter house. When playing on a server, the server configuration is used
-		"Add Mineshaft" = true
-		#Determines if the bed is included in the starter house. When playing on a server, the server configuration is used
-		"Add Bed" = true
-		#Determines if chests are included in the starter house. When playing on a server, the server configuration is used
-		"Add Chests" = true
-		#Determines if the crafting table is included in the starter house. When playing on a server, the server configuration is used
-		"Add Crafting Table" = true
-		#Determines if the chest contents is included in the starter house. When playing on a server, the server configuration is used
-		"Add Chest Contents" = true
-		#Determines if the furnace is included in the starter house. When playing on a server, the server configuration is used
-		"Add Furnace" = true
-
 	[general.recipes]
 		#Determines if the recipe(s) associated with the Grassy Plains are enabled.
 		"Grassy Plains" = true
 		#Determines if the recipe(s) associated with the Smart Glass are enabled.
 		"Smart Glass" = true
+		#Determines if the recipe(s) associated with the Upgrade are enabled.
+		Upgrade = true
 		#Determines if the recipe(s) associated with the Jail are enabled.
 		Jail = true
 		#Determines if the recipe(s) associated with the Windmill are enabled.
@@ -58,16 +47,14 @@
 		"Ton of Timber" = true
 		#Determines if the recipe(s) associated with the Green House are enabled.
 		"Green House" = true
-		#Determines if the recipe(s) associated with the Moderate Farm are enabled.
-		"Moderate Farm" = true
 		#Determines if the recipe(s) associated with the Compressed Glowstone are enabled.
 		"Compressed Glowstone" = true
-		#Determines if the recipe(s) associated with the Moderate House are enabled.
-		"Moderate House" = true
+		#Determines if the recipe(s) associated with the House are enabled.
+		House = true
+		#Determines if the recipe(s) associated with the Light Switch are enabled.
+		"Light Switch" = true
 		#Determines if the recipe(s) associated with the Ender Gateway are enabled.
 		"Ender Gateway" = true
-		#Determines if the recipe(s) associated with the Starting House are enabled.
-		"Starting House" = true
 		#Determines if the recipe(s) associated with the Town Hall are enabled.
 		"Town Hall" = true
 		#Determines if the recipe(s) associated with the Compressed Obsidian are enabled.
@@ -76,14 +63,14 @@
 		"Advanced Farm" = true
 		#Determines if the recipe(s) associated with the Machinery Tower are enabled.
 		"Machinery Tower" = true
-		#Determines if the recipe(s) associated with the Starter Farm are enabled.
-		"Starter Farm" = true
 		#Determines if the recipe(s) associated with the Bundle of Timber are enabled.
 		"Bundle of Timber" = true
 		#Determines if the recipe(s) associated with the Villager Houses are enabled.
 		"Villager Houses" = true
 		#Determines if the recipe(s) associated with the Saloon are enabled.
 		Saloon = true
+		#Determines if the recipe(s) associated with the Advanced House are enabled.
+		"Advanced House" = true
 		#Determines if the recipe(s) associated with the Paper Lantern are enabled.
 		"Paper Lantern" = true
 		#Determines if the recipe(s) associated with the Warehouse are enabled.
@@ -120,20 +107,26 @@
 		"Compressed Dirt" = true
 		#Determines if the recipe(s) associated with the Bunch of Eggs are enabled.
 		"Bunch of Eggs" = true
+		#Determines if the recipe(s) associated with the Improved House are enabled.
+		"Improved House" = true
 		#Determines if the recipe(s) associated with the Quartz-Crete are enabled.
 		Quartz-Crete = true
-		#Determines if the recipe(s) associated with the Warehouse Upgrade are enabled.
-		"Warehouse Upgrade" = true
+		#Determines if the recipe(s) associated with the Improved Warehouse are enabled.
+		"Improved Warehouse" = true
 		#Determines if the recipe(s) associated with the Nether Gate are enabled.
 		"Nether Gate" = true
 		#Determines if the recipe(s) associated with the Instant Bridge are enabled.
 		"Instant Bridge" = true
+		#Determines if the recipe(s) associated with the Dark Light Lamp are enabled.
+		"Dark Light Lamp" = true
 		#Determines if the recipe(s) associated with the Heap of Timber are enabled.
 		"Heap of Timber" = true
+		#Determines if the recipe(s) associated with the Farm are enabled.
+		Farm = true
 		#Determines if the recipe(s) associated with the Bunch of Beets are enabled.
 		"Bunch of Beets" = true
-		#Determines if the recipe(s) associated with the Advanced Warehouse are enabled.
-		"Advanced Warehouse" = true
+		#Determines if the recipe(s) associated with the Improved Farm are enabled.
+		"Improved Farm" = true
 
 	[general."chest contents"]
 		#Determines if seeds, potatoes and carrots are added the the chest when the house is created.
@@ -146,6 +139,7 @@
 		"Add Hoe" = true
 		#Determines if a stack of dirt is added the the chest when the house is created.
 		"Add Dirt" = true
+		#Chest Options
 		#Determines if a Stone Sword is added the the chest when the house is created.
 		"Add Sword" = true
 		#Determines if a set of torches are added the the chest when the house is created.
@@ -160,4 +154,99 @@
 		"Add Food" = true
 		#Determines if a Stone Shovel is added the the chest when the house is created.
 		"Add Shovel" = true
+
+	[general."starter house"]
+		#Determines if the mineshaft is included in the starter house. When playing on a server, the server configuration is used
+		"Add Mineshaft" = true
+		#Starter House Options
+		#Determines if the bed is included in the starter house. When playing on a server, the server configuration is used
+		"Add Bed" = true
+		#Determines if chests are included in the starter house. When playing on a server, the server configuration is used
+		"Add Chests" = true
+		#Determines if the crafting table is included in the starter house. When playing on a server, the server configuration is used
+		"Add Crafting Table" = true
+		#Determines if the chest contents is included in the starter house. When playing on a server, the server configuration is used
+		"Add Chest Contents" = true
+		#Determines if the furnace is included in the starter house. When playing on a server, the server configuration is used
+		"Add Furnace" = true
+
+	[general."structure options"]
+		item_prefab_item_house_prefab_gui_house_tree_display = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_construction_site = true
+		item_prefab_item_house_improved_prefab_gui_modern_house = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_melon = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_monster = true
+		item_prefab_item_farm_prefab_gui_farm_cactus = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_mini_hotel = true
+		item_prefab_item_house_prefab_gui_house_izba_display = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_acacia = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_jungle = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_earthen = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_spruce = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_crimson_house = true
+		item_prefab_item_farm_improved_prefab_gui_farm_improved_chicken = true
+		item_prefab_item_villager_houses_prefab_gui_villager_house_fenced = true
+		item_prefab_item_farm_improved_prefab_gui_farm_improved_automated = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_gas_station = true
+		item_prefab_item_farm_prefab_gui_farm_berry = true
+		item_prefab_item_farm_prefab_gui_farm_chicken = true
+		item_prefab_item_villager_houses_prefab_gui_villager_house_flat = true
+		item_prefab_item_house_prefab_gui_house_subaquatic_display = true
+		item_prefab_item_house_prefab_gui_house_desert_display = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_cottage_house = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_hobbit_house = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_hipster_fruit_stand = true
+		item_prefab_item_house_prefab_gui_house_loft_display = true
+		item_prefab_item_nether_gate_item_prefab_item_nether_gate_skull = true
+		item_prefab_item_house_advanced_prefab_gui_house_advanced_estate = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_barn = true
+		item_prefab_item_nether_gate_item_prefab_item_nether_gate_tree = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_produce = true
+		item_prefab_item_watch_tower_item_prefab_item_watch_tower_dark = true
+		item_prefab_item_villager_houses_prefab_gui_villager_long_house = true
+		item_prefab_item_farm_prefab_gui_farm_beef = true
+		item_prefab_item_farm_prefab_gui_farm_horse = true
+		item_prefab_item_house_prefab_gui_house_tower_display = true
+		item_prefab_item_house_advanced_prefab_gui_house_advanced_manor = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_tree = true
+		item_prefab_item_house_prefab_gui_house_snowy_display = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_cottage = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_apartment = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_bank = true
+		item_prefab_item_farm_improved_prefab_gui_farm_improved_bee = true
+		item_prefab_item_farm_improved_prefab_gui_farm_improved_sugar_cane = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_green_house = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_cinema = true
+		item_prefab_item_villager_houses_prefab_gui_villager_house_angled = true
+		item_prefab_item_house_prefab_gui_house_modern_display = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_water_park = true
+		item_prefab_item_house_prefab_gui_house_cabin_display = true
+		item_prefab_item_house_prefab_gui_house_basic_display = true
+		item_prefab_item_farm_improved_prefab_gui_farm_mushroom = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_juice_shop = true
+		item_prefab_item_farm_prefab_gui_farm_elevated = true
+		item_prefab_item_farm_prefab_gui_farm_rabbit = true
+		item_prefab_item_villager_houses_prefab_gui_villager_blacksmith = true
+		item_prefab_item_farm_prefab_gui_farm_multi_level = true
+		item_prefab_item_farm_improved_prefab_gui_farm_advanced_green_house = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_nether = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_tower_house = true
+		item_prefab_item_farm_improved_prefab_gui_farm_advanced_barn = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_mountain = true
+		item_prefab_item_watch_tower_item_prefab_item_watch_tower_2 = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_bamboo = true
+		item_prefab_item_farm_advanced_prefab_gui_farm_advanced_horse = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_library = true
+		item_prefab_item_modern_buildings_prefab_gui_modern_restaurant = true
+		item_prefab_item_farm_improved_prefab_gui_farm_improved_fish = true
+		item_prefab_item_house_prefab_gui_house_mushroom_display = true
+		item_prefab_item_house_prefab_gui_house_desert_display2 = true
+		item_prefab_item_house_improved_prefab_gui_house_improved_acacia_2 = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_house = true
+		item_prefab_item_watch_tower_item_prefab_item_watch_tower = true
+		item_prefab_item_modern_buildings_improved_prefab_gui_modern_mall_store = true
+		item_prefab_item_house_prefab_gui_house_hobbit_display = true
+		item_prefab_item_house_prefab_gui_house_camping_display = true
+		item_prefab_item_house_prefab_gui_house_ranch_display = true
+		item_prefab_item_house_advanced_prefab_gui_house_advanced_workshop = true
 

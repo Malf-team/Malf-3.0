@@ -1,0 +1,14 @@
+name = "Project MMO"
+filename = "pmmo-1.19.2-3.1.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "07dccd6328ebbdd041cfa3c403b67358b3c4425c"
+
+[update]
+[update.curseforge]
+file-id = 4575829
+project-id = 353935

@@ -1,0 +1,14 @@
+name = "MaxHealthFix"
+filename = "MaxHealthFix-Forge-1.19.2-8.0.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "4946f5b8f0b0d842d5c2cc100354c82ef5ce3e87"
+
+[update]
+[update.curseforge]
+file-id = 3943055
+project-id = 492246

@@ -1,12 +1,8 @@
 // priority: 1000
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = true
-settings.logErroringRecipes = true
 
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
 	function removeTag(item) {
 		return item.slice(item.indexOf(":") + 1)
@@ -30,7 +26,7 @@ onEvent('recipes', event => {
 			"energy": 1600
 		}).id("malf:" + short_name + "_IE_crushing")
 
-		event.custom(
+		/*event.custom(
 			{
 				"type": "ftbic:macerating",
 				"inputItems": [
@@ -40,7 +36,7 @@ onEvent('recipes', event => {
 					{ "item": result }
 				]
 			}
-		).id("malf:" + short_name + "_ftbic_crushing")
+		).id("malf:" + short_name + "_ftbic_crushing")*/
 
 		event.custom({
 			"type": "thermal:pulverizer",
@@ -70,7 +66,7 @@ onEvent('recipes', event => {
 
 	//------------------------------------------------------------------------------------------------------------
 
-	event.replaceInput({id: 'beyond_earth:compressor'}, 'beyond_earth:hammer', '#forge:plates/steel')
+	//event.replaceInput({id: 'beyond_earth:compressor'}, 'beyond_earth:hammer', '#forge:plates/steel')
 
 	event.shaped('immersiveengineering:survey_tools', 
 		[
@@ -295,7 +291,7 @@ onEvent('recipes', event => {
 	}).id("malf:ie_fluid_pipe")
 
 	event.remove({output: 'pipez:fluid_pipe'})
-	event.shaped('6x pipez:fluid_pipe',
+	/*event.shaped('6x pipez:fluid_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -305,7 +301,7 @@ onEvent('recipes', event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:fluid_pipe",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_fluid_pipe")
+	}).id("malf:p_fluid_pipe")*/
 
 	event.remove({output: 'thermal:fluid_duct'})
 	event.shaped('2x thermal:fluid_duct',
@@ -327,13 +323,13 @@ onEvent('recipes', event => {
 		P: "mekanism:basic_control_circuit"
 	}).id("malf:m_fluid_pipe")
 	
-	event.shaped('3x create:belt_connector',
+	/*event.shaped('3x create:belt_connector',
 	[
 		"XXX"
 	],
 	{
 		X: "ftbic:rubber"
-	}).id("malf:create_belt_cheap")
+	}).id("malf:create_belt_cheap")*/
 
 	event.remove({output: 'immersiveengineering:conveyor_basic'})
 	event.shaped('8x immersiveengineering:conveyor_basic',
@@ -348,7 +344,7 @@ onEvent('recipes', event => {
 	}).id("malf:ie_belt")
 
 	event.remove({output: 'pipez:item_pipe'})
-	event.shaped('6x pipez:item_pipe',
+	/*event.shaped('6x pipez:item_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -358,7 +354,7 @@ onEvent('recipes', event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:conveyor_basic",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_belt")
+	}).id("malf:p_belt")*/
 
 	event.remove({output: 'mekanism:basic_logistical_transporter'})
 	event.shaped('8x mekanism:basic_logistical_transporter',
@@ -381,7 +377,7 @@ onEvent('recipes', event => {
 	}).id("malf:pn_energy_pipe")
 
 	event.remove({output: 'pipez:energy_pipe'})
-	event.shaped('6x pipez:energy_pipe',
+	/*event.shaped('6x pipez:energy_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -391,7 +387,7 @@ onEvent('recipes', event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:wirecoil_steel",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_energy_pipe")
+	}).id("malf:p_energy_pipe")*/
 
 	event.remove({output: 'thermal:energy_duct'})
 	event.shaped('4x thermal:energy_duct',
@@ -431,15 +427,15 @@ onEvent('recipes', event => {
 
 	//T3
 
-	event.remove({id: 'ftbic:smelting/industrial_grade_metal'})
-	event.remove({id: 'ftbic:blasting/industrial_grade_metal'})
+	//event.remove({id: 'ftbic:smelting/industrial_grade_metal'})
+	//event.remove({id: 'ftbic:blasting/industrial_grade_metal'})
 
 	
 
 
 })
 
-onEvent('item.tags', event => {
+ServerEvents.tags('item', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
 

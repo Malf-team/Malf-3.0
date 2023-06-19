@@ -1,0 +1,14 @@
+name = "TerraForged"
+filename = "TerraForged-1.18.2-0.3.1-alpha-2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "de20592765c4e0303ff119971a4c3b95ed16d5a4"
+
+[update]
+[update.curseforge]
+file-id = 3811021
+project-id = 363820

@@ -1,12 +1,8 @@
 // priority: 0
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-settings.logSkippedRecipes = false
-settings.logErroringRecipes = true
 
 
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 	
 		
 	/*event
@@ -39,7 +35,7 @@ onEvent('recipes', event => {
 		}).id('malf:lava_to_hydro')*/
 })
 
-onEvent('item.tags', event => {
+ServerEvents.tags('item', event => {
 	// Get the #forge:cobblestone tag collection and add Diamond Ore to it
 	// event.get('forge:cobblestone').add('minecraft:diamond_ore')
 

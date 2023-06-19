@@ -72,7 +72,7 @@ const ore_color = {	"hematite":0x998888,
 const chemical_color_add = 0xCCCCDD
 const refined_color_add = 0xCCCC3D
 
-onEvent('fluid.registry', event => {
+StartupEvents.registry('fluid', event => {
 	// These first examples are 1.16.5 and 1.18.2 syntax
 	
 	// Basic "thick" (looks like lava) fluid with red tint

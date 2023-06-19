@@ -1,0 +1,14 @@
+name = "Simply Jetpacks 2"
+filename = "SimplyJetpacks2-1.18.2-2.8.0.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "5c32a87a70a4d92d3e11bd2c0883efdd5c8e05af"
+
+[update]
+[update.curseforge]
+file-id = 3914653
+project-id = 251792

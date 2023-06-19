@@ -1,0 +1,14 @@
+name = "Glassential"
+filename = "glassential-forge-1.19-1.2.4.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d8ea647f7d3371115129ba0ccb5d4b8c545a4293"
+
+[update]
+[update.curseforge]
+file-id = 3901780
+project-id = 319194

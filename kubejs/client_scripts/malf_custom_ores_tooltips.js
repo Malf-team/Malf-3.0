@@ -40,7 +40,7 @@ function capitalizeFirstLetter(string) { //Capitalizes first letter, also remove
 
 
 
-onEvent('item.tooltip', tooltip => {
+ItemEvents.tooltip(tooltip => {
 	tooltip.add('immersiveengineering:hammer', "\u00A7c"+"\u00A7o"+'Only used for multiblock structuring and crafting! Will break if used for plate making or ore crushing.')
 
 	function addChemicalFormulaTT(ore) {
@@ -81,14 +81,14 @@ onEvent('item.tooltip', tooltip => {
 })
 
 
-onEvent('jei.information', event => {
+JEIEvents.information(event => {
 	event.add('malf:rare_earth_ore', ['Found under Y=0, more commonly in cold biomes.'])
 	event.add('malf:deepslate_rare_earth_ore', ['Found under Y=0, more commonly in cold biomes.'])
 	event.add('malf:nether_rare_earth_ore', ['Found under Y=0, more commonly in cold biomes.'])
 	event.add('malf:end_rare_earth_ore', ['Found under Y=0, more commonly in cold biomes.'])
 })
 
-onEvent('jei.hide.items', event => {
+JEIEvents.hideItems(event => {
 	// Hide items in JEI here
 	// event.hide('minecraft:cobblestone')
 })
