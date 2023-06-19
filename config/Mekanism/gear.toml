@@ -23,13 +23,13 @@
 		#The bonus attack damage of the Atomic Disassembler when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
 		#Range: 1 ~ 10000
 		maxDamage = 20
+		#Attack speed of the Atomic Disassembler.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 		#Maximum amount (joules) of energy the Atomic Disassembler can contain.
 		maxEnergy = "1000000"
 		#Amount (joules) of energy the Atomic Disassembler can accept per tick.
 		chargeRate = "5000"
-		#Attack speed of the Atomic Disassembler.
-		#Range: -4.0 ~ 100.0
-		attackSpeed = -2.4
 
 	#Configurator Settings
 	[gear.configurator]
@@ -178,6 +178,9 @@
 		#Base bonus damage applied by the Meka-Tool without using any energy.
 		#Range: 0 ~ 100000
 		baseDamage = 4
+		#Attack speed of the Meka-Tool.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 		#Efficiency of the Meka-Tool with energy but without any upgrades.
 		#Range: 0.1 ~ 100.0
 		baseEfficiency = 4.0
@@ -195,9 +198,6 @@
 		energyUsageShearEntity = "10"
 		#Enable the 'Extended Vein Mining' mode for the Meka-Tool. (Allows vein mining everything not just ores/logs)
 		extendedMining = true
-		#Attack speed of the Meka-Tool.
-		#Range: -4.0 ~ 100.0
-		attackSpeed = -2.4
 
 	#MekaSuit Settings
 	[gear.mekasuit]
@@ -233,6 +233,8 @@
 		energyUsageDamage = "100000"
 		#Energy usage (Joules) of MekaSuit per tick of attracting a single item.
 		energyUsageItemAttraction = "250"
+		#Should the Gravitational Modulation unit give off vibrations when in use.
+		gravitationalVibrations = true
 		#Maximum amount of Nutritional Paste storable by the nutritional injection unit.
 		#Range: > 1
 		nutritionalMaxStorage = 128000
@@ -263,8 +265,6 @@
 		#Knockback resistance value of the MekaSuit.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		knockbackResistance = 0.10000000149011612
-		#Should the Gravitational Modulation unit give off vibrations when in use.
-		gravitationalVibrations = true
 
 		[gear.mekasuit.damage_absorption]
 			#Percent of damage taken from fall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.

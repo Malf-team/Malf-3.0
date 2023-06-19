@@ -7,8 +7,8 @@
 	enableBoneMealCoffeeBush = false
 	#Chance of generating clusters. Smaller value = more frequent.
 	#Range: > 0
-	teaBushChance = 10
+	teaBushChance = 1
 	#Chance of generating clusters. Smaller value = more frequent.
 	#Range: > 0
-	coffeeBushChance = 10
+	coffeeBushChance = 1
 

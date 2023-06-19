@@ -1,9 +1,6 @@
 
 #lots of cosmetic stuff in here
 [visuals]
-	#Skin used by the dummy
-	#Allowed Values: DEFAULT, ORIGINAL, DUNGEONS, ALTERNATIVE
-	texture = "DEFAULT"
 	#How much the dummy swings in degrees with respect to the damage dealt. default=0.75
 	#Range: 0.0 ~ 2.0
 	animation_intensity = 0.75
@@ -13,6 +10,9 @@
 	damage_numbers = true
 	#Display particles fullbright
 	full_bright_damage_numbers = true
+	#Skin used by the dummy
+	#Allowed Values: DEFAULT, ORIGINAL, DUNGEONS, ALTERNATIVE
+	texture = "DEFAULT"
 
 	[visuals.damage_number_colors]
 		#hex color for various damage sources

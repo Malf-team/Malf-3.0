@@ -12,6 +12,12 @@
     "minecraft:gravel",
     "minecraft:sand",
     "minecraft:sandstone",
+    "minecraft:red_sand",
+    "minecraft:red_sandstone",
+    "minecraft:ice",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:powder_snow",
     "minecraft:oak_log",
     "minecraft:dark_oak_log",
     "minecraft:spruce_log",
@@ -31,6 +37,7 @@
     "minecraft:netherrack",
     "minecraft:end_stone",
     "minecraft:podzol",
+    "minecraft:mycelium",
     "minecraft:bamboo",
     "minecraft:seagrass",
     "minecraft:tall_seagrass",
@@ -38,7 +45,6 @@
     "minecraft:kelp_plant",
     "minecraft:deepslate",
     "minecraft:tuff",
-    "minecraft:glow_lichen",
-    "minecraft:calcite"
+    "minecraft:glow_lichen"
   ]
 }

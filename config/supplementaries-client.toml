@@ -10,6 +10,10 @@
 		#Displays current coordinates when using a globe
 		show_coordinates = true
 
+	[blocks.notice_board]
+		#Allows notice board displayed text to be centered instead of being left aligned
+		centered_text = true
+
 	[blocks.clock_block]
 		#Display 24h time format. False for 12h format
 		24h_format = true
@@ -112,10 +116,6 @@
 		#Range: 0.01 ~ 200.0
 		wobbling_period = 12.0
 
-	[blocks.notice_board]
-		#Allows notice board displayed text to be centered instead of being left aligned
-		centered_text = true
-
 #Particle parameters
 [particles]
 
@@ -134,6 +134,8 @@
 	tooltip_hints = true
 	#Show tooltips items that have been made placeable
 	placeable_tooltips = true
+	#Enables custom Configured config screen
+	custom_configured_screen = true
 	#ignore this
 	#Range: -10.0 ~ 10.0
 	test1 = 0.0
@@ -143,8 +145,6 @@
 	#ignore this
 	#Range: -10.0 ~ 10.0
 	test3 = 0.0
-	#Enables custom Configured config screen
-	custom_configured_screen = true
 
 #Game tweaks
 [tweaks]
@@ -155,10 +155,10 @@
 	crossbows_colors = true
 	#Allow to right click with a clock to display current time in numerical form
 	clock_right_click = true
-	#Renders an enchantment glint on placeable enchanted books
-	placeable_books_glint = false
 	#Allow to right click with a compass to display current coordinates in numerical form
 	compass_right_click = false
+	#Renders an enchantment glint on placeable enchanted books
+	placeable_books_glint = false
 	#Placeable books random colors
 	#This is a list. Add more entries with syntax [[...]]
 	placeable_books_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple"]
@@ -171,13 +171,24 @@
 
 [items]
 
+	[items.slingshot]
+		#Adds an overlay to slingshots in gui displaying currently selected block
+		overlay = true
+		#Render the block outline for distant blocks that are reachable with a slingshot enchanted with Stasis
+		stasis_block_outline = true
+		#An RGBA color for the block outline in hex format, for example 0x00000066 for vanilla outline colors
+		block_outline_color = "ffffff66"
+		#How big should a slingshot projectile look
+		#Range: 0.0 ~ 1.0
+		projectile_scale = 0.5
+
 	[items.quiver]
 		#Z offset for quiver render when wearing armor. Useful for when you have custom armor bigger than vanilla to void clipping. Leave at -1 for automatic offset
 		#Range: -1.0 ~ 1.0
 		armor_render_offset = -1.0
 		#How quivers should render onto players
 		#Allowed Values: HIDDEN, BACK, HIP, THIGH
-		render_mode = "HIP"
+		render_mode = "THIGH"
 		#How skeleton with quivers should render it
 		#Allowed Values: HIDDEN, BACK, HIP, THIGH
 		skeleton_render_mode = "THIGH"
@@ -191,17 +202,6 @@
 		#Quiver GUI Y offset from default position
 		#Range: -1000 ~ 1000
 		gui_y_offset = 0
-
-	[items.slingshot]
-		#Adds an overlay to slingshots in gui displaying currently selected block
-		overlay = true
-		#Render the block outline for distant blocks that are reachable with a slingshot enchanted with Stasis
-		stasis_block_outline = true
-		#An RGBA color for the block outline in hex format, for example 0x00000066 for vanilla outline colors
-		block_outline_color = "ffffff66"
-		#How big should a slingshot projectile look
-		#Range: 0.0 ~ 1.0
-		projectile_scale = 0.5
 
 	[items.wrench]
 		#Display visual particles when a block is rotated

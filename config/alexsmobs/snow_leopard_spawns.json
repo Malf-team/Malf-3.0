@@ -2,19 +2,14 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "mountain"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "snowy"
+        "value": "forge:is_snowy"
       }
     ],
     [

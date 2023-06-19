@@ -5,6 +5,8 @@
 	dimensionBlacklist = []
 	#Spawn a book in the players inventory on login
 	spawnBook = true
+	#Inform the player of Dynamic lights once.
+	informLights = true
 	#How much mana whirlisprigs consume per generation
 	#Range: 0 ~ 10000
 	sylphManaCost = 250
@@ -12,13 +14,11 @@
 	#Range: 0 ~ 10000
 	whirlisprigProgress = 250
 	#Should the Wilden Hunter attack animals?
-	hunterHuntsAnimals = true
+	hunterHuntsAnimals = false
 	#Should the Wilden Stalker attack animals?
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
-	#Inform the player of Dynamic lights once.
-	informLights = true
 	#Should the Wilden Chimera dive bomb destroy blocks?
 	destructiveDiveBomb = true
 	#Archwood forest spawn weight

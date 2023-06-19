@@ -5,6 +5,8 @@
 	enablePlayerSounds = true
 	#If enabled machines play their sounds while running.
 	enableMachineSounds = true
+	#If enabled tries to force all radial menu text to be white.
+	whiteRadialText = false
 	#Should holiday greetings and easter eggs play for holidays (ex: Christmas and New Years).
 	holidays = true
 	#Adjust Mekanism sounds' base volume. < 1 is softer, higher is louder.
@@ -14,6 +16,8 @@
 	opaqueTransmitters = false
 	#Allow sneak + scroll to change item modes.
 	allowModeScroll = true
+	#If true will move HUD text alignment and compass rendering to the right side of the screen, and move the MekaSuit module rendering to the left side.
+	reverseHUD = false
 	#Scale of the text displayed on the HUD.
 	#Range: 0.25 ~ 1.0
 	hudScale = 0.6
@@ -24,10 +28,6 @@
 	#Range at which Tile Entity Renderer's added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for TERs to 64 for most blocks, but uses a range of 256 for beacons and end gateways.
 	#Range: 1 ~ 1024
 	terRange = 256
-	#If enabled tries to force all radial menu text to be white.
-	whiteRadialText = false
-	#If true will move HUD text alignment and compass rendering to the right side of the screen, and move the MekaSuit module rendering to the left side.
-	reverseHUD = false
 
 	#Particle Config
 	[client.particle]
@@ -75,16 +75,16 @@
 				y = 2147483647
 
 			[client.gui.window.crafting0]
-				x = -150
-				y = 14
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.crafting1]
-				x = -151
-				y = 93
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.crafting2]
-				x = -153
-				y = 181
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.mekaSuitHelmet]
 				x = 2147483647
@@ -99,8 +99,8 @@
 				y = 2147483647
 
 			[client.gui.window.sideConfig]
-				x = 10
-				y = 15
+				x = 2147483647
+				y = 2147483647
 
 			[client.gui.window.transporterConfig]
 				x = 2147483647
@@ -114,14 +114,14 @@
 	[client.qio]
 		#Sorting strategy when viewing items in a QIO Item Viewer.
 		#Allowed Values: NAME, SIZE, MOD
-		itemViewerSortType = "SIZE"
+		itemViewerSortType = "NAME"
 		#Sorting direction when viewing items in a QIO Item Viewer.
 		#Allowed Values: ASCENDING, DESCENDING
-		itemViewerSortDirection = "DESCENDING"
+		itemViewerSortDirection = "ASCENDING"
 		#Number of slots to view horizontally on a QIO Item Viewer.
 		#Range: 8 ~ 16
 		itemViewerSlotsX = 8
 		#Number of slots to view vertically on a QIO Item Viewer.
 		#Range: 2 ~ 48
-		itemViewerSlotsY = 12
+		itemViewerSlotsY = 4
 

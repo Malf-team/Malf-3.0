@@ -2,26 +2,14 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_CATEGORY",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "savanna"
-      }
-    ],
-    [
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "savanna"
+        "value": "minecraft:is_savanna"
       }
     ],
     [

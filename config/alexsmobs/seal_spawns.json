@@ -2,31 +2,26 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "beach"
+        "value": "minecraft:is_beach"
       }
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "ocean"
+        "value": "minecraft:is_ocean"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "snowy"
+        "value": "forge:is_cold/overworld"
       }
     ],
     [
@@ -34,6 +29,20 @@
         "type": "REGISTRY_NAME",
         "negate": false,
         "value": "terralith:gravel_beach"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:dune_beach"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:stony_shore"
       }
     ]
   ]

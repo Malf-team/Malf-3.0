@@ -2,36 +2,43 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "savanna"
-      },
-      {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "forest"
+        "value": "minecraft:is_forest"
       }
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": true,
-        "value": "savanna"
+        "value": "minecraft:is_savanna"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "plains"
+        "value": "forge:is_plains"
+      }
+    ],
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_overworld"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_taiga"
       }
     ],
     [
@@ -165,6 +172,13 @@
         "type": "REGISTRY_NAME",
         "negate": false,
         "value": "terralith:mirage_isles"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:redwood_forest"
       }
     ]
   ]

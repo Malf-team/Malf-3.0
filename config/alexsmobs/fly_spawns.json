@@ -2,47 +2,19 @@
   "biomes": [
     [
       {
-        "type": "BIOME_DICT",
-        "negate": false,
-        "value": "overworld"
+        "type": "BIOME_TAG",
+        "negate": true,
+        "value": "minecraft:is_end"
       },
       {
-        "type": "BIOME_CATEGORY",
+        "type": "BIOME_TAG",
         "negate": true,
-        "value": "ocean"
+        "value": "minecraft:is_nether"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": true,
-        "value": "ocean"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:skylands_autumn"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:skylands_spring"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:skylands_summer"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:skylands_winter"
+        "value": "minecraft:is_ocean"
       }
     ]
   ]

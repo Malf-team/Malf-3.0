@@ -9,24 +9,19 @@
     ],
     [
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "overworld"
+        "value": "minecraft:is_overworld"
       },
       {
-        "type": "BIOME_DICT",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "snowy"
+        "value": "forge:is_snowy"
       },
       {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "forest"
-      },
-      {
-        "type": "BIOME_DICT",
-        "negate": true,
-        "value": "mountain"
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "forge:is_plains"
       }
     ],
     [
