@@ -81,3 +81,5 @@ config/railways-common.tml
 mods/.index/
 .qmenu_opened.marker
 schematics/
+ESM/soundsMuffled.dat
+ESM/New World/anchors.dat
