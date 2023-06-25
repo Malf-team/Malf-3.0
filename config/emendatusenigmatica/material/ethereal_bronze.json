@@ -7,7 +7,7 @@
     "nugget",
     "gear",
     "rod",
-    "fluid"
+    "plate"
   ],
   "properties": {
   "materialType": "alloy",
@@ -16,8 +16,7 @@
   "isEmissive": true
 },
   "colors": {
-    "fluidColor": "E8C6FF",
-    "materialColor": "EFB6E8",
+    "materialColor": "D59AFC",
     "particlesColor": "FAE4EB"
   },
   "compat": {

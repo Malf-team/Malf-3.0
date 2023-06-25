@@ -1,6 +1,0 @@
-{
-  "parent": "forge:item/bucket_drip",
-  "apply_tint": true,
-  "fluid": "emendatusenigmatica:ethereal_bronze",
-  "loader": "forge:fluid_container"
-}
