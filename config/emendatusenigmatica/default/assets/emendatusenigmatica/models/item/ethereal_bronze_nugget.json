@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/nugget/00",
+    "layer1": "emendatusenigmatica:items/templates/nugget/01",
+    "layer2": "emendatusenigmatica:items/templates/nugget/02",
+    "layer3": "emendatusenigmatica:items/templates/nugget/03",
+    "layer4": "emendatusenigmatica:items/templates/nugget/04"
+  }
+}

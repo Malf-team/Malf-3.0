@@ -1,0 +1,28 @@
+ {
+  "id": "ethereal_bronze",
+  "source": "modded",
+  "localizedName": "Ethereal Bronze",
+  "processedTypes": [
+    "storage_block",
+    "nugget",
+    "gear",
+    "rod",
+    "fluid"
+  ],
+  "properties": {
+  "materialType": "alloy",
+  "harvestLevel": 3,
+  "hasParticles": true,
+  "isEmissive": true
+},
+  "colors": {
+    "fluidColor": "E8C6FF",
+    "materialColor": "EFB6E8",
+    "particlesColor": "FAE4EB"
+  },
+  "compat": {
+    "thermal": true,
+    "mekanism": false,
+    "create": true
+  }
+}

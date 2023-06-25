@@ -1,0 +1,12 @@
+{
+  "type": "thermal:pulverizer",
+  "energy_mod": 0.5,
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": {
+    "tag": "forge:ingots/ethereal_bronze"
+  },
+  "results": {
+    "count": 1,
+    "item": "emendatusenigmatica:ethereal_bronze_dust"
+  }
+}

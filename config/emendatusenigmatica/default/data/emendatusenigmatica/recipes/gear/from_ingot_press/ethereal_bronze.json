@@ -1,0 +1,16 @@
+{
+  "type": "thermal:press",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "count": 4,
+      "tag": "forge:ingots/ethereal_bronze"
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "results": {
+    "item": "emendatusenigmatica:ethereal_bronze_gear"
+  }
+}

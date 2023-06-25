@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/rod/00",
+    "layer1": "emendatusenigmatica:items/templates/rod/01",
+    "layer2": "emendatusenigmatica:items/templates/rod/02",
+    "layer3": "emendatusenigmatica:items/templates/rod/03",
+    "layer4": "emendatusenigmatica:items/templates/rod/04"
+  }
+}

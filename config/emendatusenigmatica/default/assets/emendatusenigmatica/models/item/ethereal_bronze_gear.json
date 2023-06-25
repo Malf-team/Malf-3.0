@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "emendatusenigmatica:items/templates/gear/00",
+    "layer1": "emendatusenigmatica:items/templates/gear/01",
+    "layer2": "emendatusenigmatica:items/templates/gear/02",
+    "layer3": "emendatusenigmatica:items/templates/gear/03",
+    "layer4": "emendatusenigmatica:items/templates/gear/04"
+  }
+}
