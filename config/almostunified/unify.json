@@ -1,10 +1,10 @@
 {
   "modPriorities": [
     "malf",
+    "chemlib",
     "emendatusenigmatica",
     "minecraft",
     "kubejs",
-    "chemlib",
     "crafttweaker",
     "immersiveengineering",
     "create",
@@ -78,6 +78,7 @@
     "steel",
     "sulfur",
     "tin",
+    "titanium",
     "tungsten",
     "uranium",
     "zinc"
