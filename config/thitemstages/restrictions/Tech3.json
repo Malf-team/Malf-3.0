@@ -21,7 +21,8 @@
         "darkutils",
         "mob_grinding_utils",
         "solarflux",
-        "cobblefordays"
+        "cobblefordays",
+        "shrink"
       ],
       "tagList": [],
       "exceptionList": [
