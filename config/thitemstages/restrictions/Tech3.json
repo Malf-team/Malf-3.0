@@ -7,8 +7,8 @@
         {"item": "extendedcrafting:advanced_table"},
         {"item": "extendedcrafting:advanced_auto_table"},
         {"item": "packagedexcrafting:advanced_crafter"},
-        {"item": "alltheores:invar_ingot"}, {"item": "alltheores:invar_dust"}, {"item": "alltheores:invar_rod"}, {"item": "alltheores:invar_gear"}, {"item": "alltheores:invar_plate"}, {"item":  "alltheores:invar_nugget"}, {"item": "alltheores:invar_block"}, 
-        {"item": "alltheores:iridium_ingot"}, {"item": "alltheores:iridium_dust"}, {"item": "alltheores:iridium_rod"}, {"item": "alltheores:iridium_gear"}, {"item": "alltheores:iridium_plate"}, {"item":  "alltheores:iridium_nugget"}, {"item": "alltheores:iridium_block"}
+        {"item": "emendatusenigmatica:invar_ingot"}, {"item": "emendatusenigmatica:invar_dust"}, {"item": "emendatusenigmatica:invar_rod"}, {"item": "emendatusenigmatica:invar_gear"}, {"item": "emendatusenigmatica:invar_plate"}, {"item":  "emendatusenigmatica:invar_nugget"}, {"item": "emendatusenigmatica:invar_block"}, 
+        {"item": "emendatusenigmatica:iridium_ingot"}, {"item": "emendatusenigmatica:iridium_dust"}, {"item": "emendatusenigmatica:iridium_rod"}, {"item": "emendatusenigmatica:iridium_gear"}, {"item": "emendatusenigmatica:iridium_plate"}, {"item":  "emendatusenigmatica:iridium_nugget"}, {"item": "emendatusenigmatica:iridium_block"}
     
       ],
       "modList": [

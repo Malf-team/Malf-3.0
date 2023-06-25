@@ -7,7 +7,7 @@
         {"item": "extendedcrafting:ultimate_table"},
         {"item": "extendedcrafting:ultimate_auto_table"},
         {"item": "packagedexcrafting:ultimate_crafter"},
-        {"item": "alltheores:osmium_rod"}, {"item": "alltheores:osmium_gear"}
+        {"item": "emendatusenigmatica:osmium_rod"}, {"item": "emendatusenigmatica:osmium_gear"}
       ],
       "modList": [
         "mekanism",

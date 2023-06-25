@@ -2,9 +2,9 @@
     "Restriction Data": {
       "stage": "Tech2",
       "itemList": [
-        {"item": "alltheores:steel_ingot"}, {"item": "alltheores:steel_rod"}, {"item": "alltheores:steel_gear"}, {"item": "alltheores:steel_plate"}, {"item": "alltheores:steel_nugget"}, {"item": "alltheores:steel_block"},
-        {"item": "alltheores:electrum_ingot"}, {"item": "alltheores:electrum_rod"}, {"item": "alltheores:electrum_gear"}, {"item": "alltheores:electrum_plate"}, {"item": "alltheores:electrum_nugget"}, {"item": "alltheores:electrum_block"},
-        {"item": "alltheores:constantan_ingot"}, {"item": "alltheores:constantan_rod"}, {"item": "alltheores:constantan_gear"}, {"item": "alltheores:constantan_plate"}, {"item": "alltheores:constantan_nugget"}, {"item": "alltheores:constantan_block"}
+        {"item": "emendatusenigmatica:steel_ingot"}, {"item": "emendatusenigmatica:steel_rod"}, {"item": "emendatusenigmatica:steel_gear"}, {"item": "emendatusenigmatica:steel_plate"}, {"item": "emendatusenigmatica:steel_nugget"}, {"item": "emendatusenigmatica:steel_block"},
+        {"item": "emendatusenigmatica:electrum_ingot"}, {"item": "emendatusenigmatica:electrum_rod"}, {"item": "emendatusenigmatica:electrum_gear"}, {"item": "emendatusenigmatica:electrum_plate"}, {"item": "emendatusenigmatica:electrum_nugget"}, {"item": "emendatusenigmatica:electrum_block"},
+        {"item": "emendatusenigmatica:constantan_ingot"}, {"item": "emendatusenigmatica:constantan_rod"}, {"item": "emendatusenigmatica:constantan_gear"}, {"item": "emendatusenigmatica:constantan_plate"}, {"item": "emendatusenigmatica:constantan_nugget"}, {"item": "emendatusenigmatica:constantan_block"}
       ],
       "modList": [
         "immersiveengineering",
@@ -26,7 +26,7 @@
         {"item": "immersiveengineering:shader_bag_rare"},
         {"item": "immersiveengineering:shader_bag_epic"},
         {"item": "immersiveengineering:shader_bag_ie_masterwork"},
-        {"item": "alltheores:steel_ingot"},
+        {"item": "emendatusenigmatica:steel_ingot"},
         {"item": "immersiveengineering:hammer"}
       ],
       "containerList": [],

@@ -141,10 +141,10 @@
         {"item": "extendedcrafting:elite_auto_table"},
         {"item": "packagedexcrafting:elite_crafter"},
 
-        {"item": "alltheores:signalum_ingot"}, {"item": "alltheores:signalum_dust"}, {"item": "alltheores:signalum_rod"}, {"item": "alltheores:signalum_gear"}, {"item": "alltheores:signalum_plate"}, {"item": "alltheores:signalum_nugget"}, {"item": "alltheores:signalum_block"}, 
-        {"item": "alltheores:lumium_ingot"}, {"item": "alltheores:lumium_dust"}, {"item": "alltheores:lumium_rod"}, {"item": "alltheores:lumium_gear"}, {"item": "alltheores:lumium_plate"}, {"item": "alltheores:lumium_nugget"}, {"item": "alltheores:lumium_block"}, 
-        {"item": "alltheores:signalum_ingot"}, {"item": "alltheores:signalum_dust"}, {"item": "alltheores:signalum_rod"}, {"item": "alltheores:signalum_gear"}, {"item": "alltheores:signalum_plate"}, {"item": "alltheores:signalum_nugget"}, {"item": "alltheores:signalum_block"}, 
-        {"item": "alltheores:platinum_rod"}, {"item": "alltheores:platinum_gear"}
+        {"item": "emendatusenigmatica:signalum_ingot"}, {"item": "emendatusenigmatica:signalum_dust"}, {"item": "emendatusenigmatica:signalum_rod"}, {"item": "emendatusenigmatica:signalum_gear"}, {"item": "emendatusenigmatica:signalum_plate"}, {"item": "emendatusenigmatica:signalum_nugget"}, {"item": "emendatusenigmatica:signalum_block"}, 
+        {"item": "emendatusenigmatica:lumium_ingot"}, {"item": "emendatusenigmatica:lumium_dust"}, {"item": "emendatusenigmatica:lumium_rod"}, {"item": "emendatusenigmatica:lumium_gear"}, {"item": "emendatusenigmatica:lumium_plate"}, {"item": "emendatusenigmatica:lumium_nugget"}, {"item": "emendatusenigmatica:lumium_block"}, 
+        {"item": "emendatusenigmatica:signalum_ingot"}, {"item": "emendatusenigmatica:signalum_dust"}, {"item": "emendatusenigmatica:signalum_rod"}, {"item": "emendatusenigmatica:signalum_gear"}, {"item": "emendatusenigmatica:signalum_plate"}, {"item": "emendatusenigmatica:signalum_nugget"}, {"item": "emendatusenigmatica:signalum_block"}, 
+        {"item": "emendatusenigmatica:platinum_rod"}, {"item": "emendatusenigmatica:platinum_gear"}
     ],
 
       "modList": [
