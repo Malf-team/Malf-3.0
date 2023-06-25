@@ -33,7 +33,7 @@ ServerEvents.tags('item', event => {
 		event.get('forge:raw').add('malf:iron_plate')
 	}
 
-
+/*
 	var blocks_to_fix = []
 
 	Ingredient.of('@chemlib').stacks.forEach(item => {
@@ -54,6 +54,7 @@ ServerEvents.tags('item', event => {
 		event.get('forge:storage_blocks').add(item)
 		event.get('forge:storage_blocks/'+material_name).add(item)
 	})
+*/
 
 
 	// event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
@@ -75,10 +76,10 @@ ServerEvents.tags('fluid', event => {  //Remove fluids from the minecraft:water 
 	event.remove('minecraft:water', 'create:flowing_chocolate')
 	event.remove('minecraft:water', 'create:chocolate')
 
-	/*event.remove('minecraft:water', 'beyond_earth:fuel')
-	event.remove('minecraft:water', 'beyond_earth:flowing_fuel')
-	event.remove('minecraft:water', 'beyond_earth:oil')
-	event.remove('minecraft:water', 'beyond_earth:flowing_oil')*/
+	event.remove('minecraft:water', 'ad_astra:fuel')
+	event.remove('minecraft:water', 'ad_astra:flowing_fuel')
+	event.remove('minecraft:water', 'ad_astra:oil')
+	event.remove('minecraft:water', 'ad_astra:flowing_oil')
 
 	event.remove('minecraft:water', 'sliceanddice:fertilizer')
 	event.remove('minecraft:water', 'sliceanddice:flowing_fertilizer')

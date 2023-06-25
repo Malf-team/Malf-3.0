@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 			"energy": 1600
 		}).id("malf:" + short_name + "_IE_crushing")
 
-		/*event.custom(
+		event.custom(
 			{
 				"type": "ftbic:macerating",
 				"inputItems": [
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 					{ "item": result }
 				]
 			}
-		).id("malf:" + short_name + "_ftbic_crushing")*/
+		).id("malf:" + short_name + "_ftbic_crushing")
 
 		event.custom({
 			"type": "thermal:pulverizer",
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 	event.recipes.createMixing(["mekanism:enriched_iron"], ['8x mekanism:dust_charcoal', 'chemlib:iron_dust']).id("malf:enriched_iron_mixing_charcoal")
 
 	event.recipes.createSequencedAssembly([ // start the recipe
-		Item.of('alltheores:steel_dust'), // have this item be an output with a certain chance
+		Item.of('emendatusenigmatica:steel_dust'), // have this item be an output with a certain chance
 	], 'mekanism:enriched_iron', [ // 'create:brass_ingot' is the input.
 		// the transitional item set by "transitionalItem('malf:unprocessed_steel_dust')" is the item that will be used during the recipe as the item that the input is using to transition to the output.
 		event.recipes.createFilling('malf:unprocessed_steel_dust', ['malf:unprocessed_steel_dust', Fluid.of('minecraft:lava', 500)]),
@@ -267,13 +267,13 @@ ServerEvents.recipes(event => {
 	event.remove({output: 'immersiveengineering:blastbrick_reinforced'})
 	event.recipes.createDeploying('immersiveengineering:blastbrick_reinforced', ['immersiveengineering:blastbrick', "#forge:plates/steel"]).id("malf:blastbrick_reinforced_deploying")
 
-	event.shaped('alltheores:steel_rod',
+	event.shaped('emendatusenigmatica:steel_rod',
 		[
 			"X",
 			"X"
 		],
 		{
-			X: "alltheores:steel_ingot"
+			X: "emendatusenigmatica:steel_ingot"
 		})
 
 	event.recipes.createCutting("12x immersiveengineering:sheetmetal_iron", "#forge:storage_blocks/iron").processingTime(200).id("malf:iron_sheetmetal_cutting")
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
 	}).id("malf:ie_fluid_pipe")
 
 	event.remove({output: 'pipez:fluid_pipe'})
-	/*event.shaped('6x pipez:fluid_pipe',
+	event.shaped('6x pipez:fluid_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:fluid_pipe",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_fluid_pipe")*/
+	}).id("malf:p_fluid_pipe")
 
 	event.remove({output: 'thermal:fluid_duct'})
 	event.shaped('2x thermal:fluid_duct',
@@ -323,13 +323,13 @@ ServerEvents.recipes(event => {
 		P: "mekanism:basic_control_circuit"
 	}).id("malf:m_fluid_pipe")
 	
-	/*event.shaped('3x create:belt_connector',
+	event.shaped('3x create:belt_connector',
 	[
 		"XXX"
 	],
 	{
 		X: "ftbic:rubber"
-	}).id("malf:create_belt_cheap")*/
+	}).id("malf:create_belt_cheap")
 
 	event.remove({output: 'immersiveengineering:conveyor_basic'})
 	event.shaped('8x immersiveengineering:conveyor_basic',
@@ -344,7 +344,7 @@ ServerEvents.recipes(event => {
 	}).id("malf:ie_belt")
 
 	event.remove({output: 'pipez:item_pipe'})
-	/*event.shaped('6x pipez:item_pipe',
+	event.shaped('6x pipez:item_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -354,7 +354,7 @@ ServerEvents.recipes(event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:conveyor_basic",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_belt")*/
+	}).id("malf:p_belt")
 
 	event.remove({output: 'mekanism:basic_logistical_transporter'})
 	event.shaped('8x mekanism:basic_logistical_transporter',
@@ -377,7 +377,7 @@ ServerEvents.recipes(event => {
 	}).id("malf:pn_energy_pipe")
 
 	event.remove({output: 'pipez:energy_pipe'})
-	/*event.shaped('6x pipez:energy_pipe',
+	event.shaped('6x pipez:energy_pipe',
 	[
 		"MMM",
 		"PXP",
@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
 		X: "#forge:dusts/redstone",
 		P: "immersiveengineering:wirecoil_steel",
 		M: "ftbic:industrial_grade_metal"
-	}).id("malf:p_energy_pipe")*/
+	}).id("malf:p_energy_pipe")
 
 	event.remove({output: 'thermal:energy_duct'})
 	event.shaped('4x thermal:energy_duct',
@@ -427,8 +427,8 @@ ServerEvents.recipes(event => {
 
 	//T3
 
-	//event.remove({id: 'ftbic:smelting/industrial_grade_metal'})
-	//event.remove({id: 'ftbic:blasting/industrial_grade_metal'})
+	event.remove({id: 'ftbic:smelting/industrial_grade_metal'})
+	event.remove({id: 'ftbic:blasting/industrial_grade_metal'})
 
 	
 

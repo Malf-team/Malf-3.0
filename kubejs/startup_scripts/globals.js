@@ -67,7 +67,7 @@ function convert_to_ID(output_array) {
                     break;
                 case "copper":
                     new_id = "chemlib:copper_dust"
-                    nugget = "alltheores:copper_nugget"
+                    nugget = "emendatusenigmatica:copper_nugget"
                     break;
                 case "gold":
                     new_id = "chemlib:gold_dust"

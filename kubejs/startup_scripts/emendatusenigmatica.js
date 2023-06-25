@@ -207,9 +207,17 @@ StartupEvents.registry('item', (event) => {
         event.create(`emendatusenigmatica:${item}_plate`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_plate`);
         event.create(`emendatusenigmatica:${item}_rod`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_rod`);
         event.create(`emendatusenigmatica:${item}_gear`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_gear`);
+
+        if (item == 'copper') {
+            event.create(`emendatusenigmatica:${item}_nugget`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_nugget`);
+        }
+
         if (item != 'iron') {
             event.create(`emendatusenigmatica:${item}_gravel`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_gravel`);
         }
+
+        
+
         if (item != 'gold') {
             event.create(`emendatusenigmatica:${item}_fragment`).texture(`emendatusenigmatica:vanilla/${item}/items/${item}_fragment`);
         }
@@ -230,12 +238,15 @@ StartupEvents.registry('item', (event) => {
                 event.create(`emendatusenigmatica:raw_${item}`).texture(`emendatusenigmatica:vanilla/${item}/items/raw_${item}`);
             }
         }
+
+        
+
     });
 })
 StartupEvents.registry('block', (event) => {
     emendatusenigmatica.forEach((block) => {
         if (block.name != 'coal' && block.name != 'redstone' && block.name != 'quartz' && block.name != 'lapis' && block.name != 'charoite') {
-            event.create(`emendatusenigmatica:${block.name}_block`).material('iron').textureAll(`emendatusenigmatica:${block.type}/${block.name}/blocks/${block.name}_block`).hardness(5)
+            event.create(`emendatusenigmatica:${block.name}_block`).material('metal').textureAll(`emendatusenigmatica:${block.type}/${block.name}/blocks/${block.name}_block`).hardness(5)
         }
     });
 });
