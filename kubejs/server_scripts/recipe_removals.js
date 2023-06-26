@@ -4,13 +4,8 @@
 console.info('Hello, World! (You will see this line every time server resources reload)')
 
 ServerEvents.recipes(event => {
-	event.remove({id: 'beyond_earth:steel_ingot_blasting'})
-	event.remove({id: 'beyond_earth:beyond_earth_steel_ingot'})
-	event.remove({id: 'beyond_earth:beyond_earth_iron_plate'})
-	event.remove({id: 'beyond_earth:beyond_earth_desh_plate'})
-
-	event.remove({input: '#alltheores:ore_hammers'})
-	event.remove({output: '#alltheores:ore_hammers'})
+	event.remove({id: 'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot'})
+	event.remove({input: 'ad_astra:hammer'})
 
 	event.remove({input: '#immersiveengineering:tools/hammers'})
 

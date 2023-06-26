@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
 		  }).id("malf:washed_"+ore+"_vacuum")
 
 		//FTBIC-Macerate
-		/*event.custom(
+		event.custom(
 			{
 				"type": "ftbic:macerating",
 				"inputItems": [
@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
 					}
 				]
 			}
-		).id('malf:'+ore+"_centrifuge1")*/
+		).id('malf:'+ore+"_centrifuge1")
 
 			
 		//IF-dissolution (dust, pulverized)
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
 			"ingredients": [
 			  {"item": "malf:centrifuged_" + ore}
 			],
-			"energy": 100000,
+			"energy": "100000",
 			"result": {
 			  "item": "malf:energized_" + ore
 			}
