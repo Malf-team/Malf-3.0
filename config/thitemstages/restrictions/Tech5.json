@@ -12,7 +12,7 @@
       "modList": [
         "mekanism",
         "mekanismgenerators",
-        "beyond_earth",
+        "ad_astra",
         "alchemistry",
 
         "fluxnetworks",
@@ -20,13 +20,19 @@
         "lazierae2",
         "aeinfinitybooster",
         "entangled",
-        "angelring"
+        "angelring",
+        "biggerreactors",
+        "rftoolsbase",
+        "rftoolsdim"
       ],
       "tagList": [],
       "exceptionList": [
         {"item": "mekanism:coal_dust"},
         {"item": "mekanism:charcoal_dust"},
-        {"item": "mekanism:enriched_iron"}
+        {"item": "mekanism:enriched_iron"},
+        {"item": "rftoolsbase:dimensionalshard_overworld"},
+        {"item": "rftoolsbase:dimensionalshard_nether"},
+        {"item": "rftoolsbase:dimensionalshard_end"}
       ],
       "containerList": [],
       "dimensionList": []

@@ -1,0 +1,21 @@
+{
+    /* 
+     * Enabled advanced config options
+     * Additional options will be shown after next config load
+     */
+    EnableAdvancedConfig: false,
+
+    /* 
+     * Enabled debug mode, creates additional warnings for testing
+     * Default: false
+     */
+    debugMode: false,
+
+    gui: {
+        /* 
+         * Valid range: [50,)
+         * Default: 200
+         */
+        UpdateIntervalMS: 200
+    }
+}
