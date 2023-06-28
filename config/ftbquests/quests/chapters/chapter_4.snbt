@@ -1,12 +1,12 @@
 {
-	id: "202C4F37EAB9ADDF"
-	group: "2109B316A6A26036"
-	order_index: 1
-	filename: "chapter_4"
-	title: "Tier 4"
-	icon: "thermal:dynamo_compression"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	default_quest_shape: ""
+	filename: "chapter_4"
+	group: "2109B316A6A26036"
+	icon: "thermal:dynamo_compression"
+	id: "202C4F37EAB9ADDF"
+	order_index: 1
 	quest_links: [ ]
+	quests: [ ]
+	title: "Tier 4"
 }

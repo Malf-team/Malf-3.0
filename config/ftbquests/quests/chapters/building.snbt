@@ -1,0 +1,127 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: "61DF7DB5F60EA918"
+	id: "0ECE6E07ECCA7E05"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60B67A6FB7EEA51C"]
+			description: ["Unlock: Wood Doors, Bowl, Chest, Packed Mud, Wood Slabs"]
+			id: "2ED957D9568614D4"
+			min_required_tasks: 1
+			rewards: [{
+				auto: "enabled"
+				command: "/skills set @s skills:build1 true"
+				id: "0508B9DEC979BD5E"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Get planks (only one neded)"
+			tasks: [
+				{
+					count: 5L
+					id: "0F814DF94C6E3462"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "751B20AE63517D65"
+					item: "minecraft:spruce_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "62C1C44B486A418C"
+					item: "minecraft:birch_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "68B405480F39F880"
+					item: "minecraft:jungle_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "16BAA9F84FCDB235"
+					item: "minecraft:acacia_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1CE59D0AE2F2CAD3"
+					item: "minecraft:dark_oak_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4C0FE0B2B2EA1B20"
+					item: "minecraft:mangrove_planks"
+					type: "item"
+				}
+			]
+			title: "Get Planks"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ED957D9568614D4"]
+			description: ["Unlock: Armor Stand, Trapdoor, Fences, Fence Gates, Scaffolding"]
+			id: "46F4923404263FAA"
+			min_required_tasks: 1
+			rewards: [{
+				auto: "enabled"
+				command: "/skills set @s skills:build2_1 true"
+				id: "771631EE99F1F7E1"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Get a Door"
+			tasks: [
+				{
+					id: "1EC280F3083A065C"
+					item: "minecraft:oak_door"
+					type: "item"
+				}
+				{
+					id: "738F9FF2ACBEC118"
+					item: "minecraft:spruce_door"
+					type: "item"
+				}
+				{
+					id: "468F525766CE2216"
+					item: "minecraft:birch_door"
+					type: "item"
+				}
+				{
+					id: "34E14068E0401C0D"
+					item: "minecraft:jungle_door"
+					type: "item"
+				}
+				{
+					id: "06044139C5321677"
+					item: "minecraft:acacia_door"
+					type: "item"
+				}
+				{
+					id: "3E4219C9D886141A"
+					item: "minecraft:dark_oak_door"
+					type: "item"
+				}
+				{
+					id: "489D78508E35F986"
+					item: "minecraft:mangrove_door"
+					type: "item"
+				}
+			]
+			title: "Door"
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+	title: "Building"
+}
