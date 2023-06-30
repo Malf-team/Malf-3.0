@@ -118,9 +118,115 @@
 					type: "item"
 				}
 			]
-			title: "Door"
+			title: "Get a Door"
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["46F4923404263FAA"]
+			description: ["Unlock: Signs, Woodstairs, barrel, Bookshelf, Lectern"]
+			id: "1D9885BC84C08675"
+			min_required_tasks: 1
+			rewards: [{
+				auto: "enabled"
+				command: "/skills set @s skills:build3_1 true"
+				id: "5D11D81830430A70"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Get a Fence"
+			tasks: [
+				{
+					id: "1B140084242708A9"
+					item: "minecraft:oak_fence"
+					type: "item"
+				}
+				{
+					id: "30A0E1EC36CFA76C"
+					item: "minecraft:spruce_fence"
+					type: "item"
+				}
+				{
+					id: "4EB73A5C6703DDA6"
+					item: "minecraft:birch_fence"
+					type: "item"
+				}
+				{
+					id: "428639137472FD26"
+					item: "minecraft:jungle_fence"
+					type: "item"
+				}
+				{
+					id: "5E466FE8A6042C87"
+					item: "minecraft:acacia_fence"
+					type: "item"
+				}
+				{
+					id: "511E17976F11118C"
+					item: "minecraft:dark_oak_fence"
+					type: "item"
+				}
+				{
+					id: "6398403A29D6E384"
+					item: "minecraft:mangrove_fence"
+					type: "item"
+				}
+			]
+			title: "Get Fences"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D9885BC84C08675"]
+			description: ["Unlock Mushroom Planks, Mushroom Signs, Mushroom Doors, Mushroom Fences, Stripping"]
+			id: "23B13AEBC22A88A0"
+			rewards: [{
+				auto: "enabled"
+				command: "/skills set @s skills:build4_1 true"
+				id: "7562CE62D7E45CF9"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Get a Bockshelf"
+			tasks: [{
+				id: "23C961463B6F73B7"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			title: "Get Bookshelf"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["23B13AEBC22A88A0"]
+			description: ["Unlock: Mushroom Slabs, Mushroom Stairs, Mushroom Trapdoor, Mushroom Fence Gate, Wood"]
+			id: "6AC4A258959DBE7F"
+			min_required_tasks: 1
+			rewards: [{
+				auto: "enabled"
+				command: "/skills set @s skills:build5_1 true"
+				id: "701F372C0F36A719"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Get Mushroom Planks"
+			tasks: [
+				{
+					count: 5L
+					id: "2FE76119ECA9F1B8"
+					item: "minecraft:warped_planks"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "460A80AEFB2A1DDA"
+					item: "minecraft:crimson_planks"
+					type: "item"
+				}
+			]
+			title: "Mushroom planks"
+			x: -5.0d
+			y: 3.0d
 		}
 	]
 	title: "Building"
